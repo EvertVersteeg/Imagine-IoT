@@ -9,7 +9,8 @@ To set this up, you can use the Arduino IDE boards manager:
 Open the Arduino IDE, and go to File -> Preferences.
 
 In the "Additional board manager URLs", add the following url: 
-https://raw.githubusercontent.com/EvertVersteeg/ImagineNode/master/package_imagine_index.json
+
+https://github.com/EvertVersteeg/Imagine-IoT/blob/main/Lora-nodes%20atmega328P/98%20Bootloader%20Imagine%20atmega328P/package_imagine_index.json
 
 Close the preferences, and open Tools -> Board -> Boards Manager...
 
@@ -19,3 +20,7 @@ Find the "Imagine IOT node" in the list, and click Install
 
 License
 The files in this repository are distributed under various licenses. Each file lists the license that applies to it, with the exception of the bootloader binaries. These are distributed under the GPLv2, see https://github.com/Optiboot/optiboot for the full terms and the sources used to compile the bootloader (see the commit log of this repository to find out the exact version used).
+
+
+OLD LINK:
+https://raw.githubusercontent.com/EvertVersteeg/ImagineNode/master/package_imagine_index.json
