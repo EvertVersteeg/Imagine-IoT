@@ -1,0 +1,27 @@
+{
+   "packages":[
+      {
+         "name": "ImagineNode",
+         "maintainer": "Imagine Solutions BV",
+         "websiteURL": "https://github.com/EvertVersteeg/ImagineNode/",
+         "email": "eversteeg@imaginebv.nl",
+         "platforms":[
+            {
+               "name": "Imagine IOT node",
+               "architecture": "avr",
+               "version": "1.0.0",
+               "category": "Contributed",
+               "url": "https://github.com/EvertVersteeg/ImagineNode/releases/download/v1.0.0/ImagineNode.zip",
+               "archiveFileName": "ImagineNode.zip",
+               "checksum": "SHA-256:FE4B441037C7AFCF95AB9E4ADDC9BE91635C61CE4567A8C9BF0BFEB7CDE72EF3",
+               "size": "5099",
+               "boards":[
+                  { "name": "IMN_V1" }
+               ],
+               "toolsDependencies":[]
+            }
+         ],
+         "tools":[]
+      }
+   ]
+}
