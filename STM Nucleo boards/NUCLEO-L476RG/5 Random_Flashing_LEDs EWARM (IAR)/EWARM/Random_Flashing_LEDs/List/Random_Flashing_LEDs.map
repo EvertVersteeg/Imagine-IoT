@@ -1,0 +1,545 @@
+###############################################################################
+#
+# IAR ELF Linker V8.10.1.12857/W32 for ARM                18/Oct/2020  15:07:26
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Exe\Random_Flashing_LEDs.out
+#    Map file     =  
+#        C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\List\Random_Flashing_LEDs.map
+#    Command line =  
+#        -f C:\Users\evers\AppData\Local\Temp\EWE060.tmp
+#        ("C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\gpio.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\main.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\startup_stm32l476xx.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_cortex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_dma.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_dma_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_exti.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_flash.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_flash_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_flash_ramfunc.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_gpio.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_i2c.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_i2c_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_msp.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_pwr.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_pwr_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_rcc.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_rcc_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_tim.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_tim_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_uart.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_hal_uart_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\stm32l4xx_it.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\system_stm32l4xx.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj\usart.o" -o
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Exe\Random_Flashing_LEDs.out"
+#        --map
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\List\Random_Flashing_LEDs.map"
+#        --config
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM
+#        (IAR)\Random_Flashing_LEDs\EWARM/stm32l476xx_flash.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x080fffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20017fff] { rw, block CSTACK, block HEAP };
+"P3":  place in [from 0x20000000 to 0x20017fff] {  };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                      0x188
+  .intvec            ro code  0x08000000   0x188  startup_stm32l476xx.o [1]
+                            - 0x08000188   0x188
+
+"P1":                                     0x34bc
+  .text              ro code  0x08000188   0xb40  pow64.o [4]
+  .text              ro code  0x08000cc8    0x20  DblCmpEq.o [4]
+  .text              ro code  0x08000ce8    0x70  frexp.o [4]
+  .text              ro code  0x08000d58    0x2e  DblCmpLe.o [4]
+  .text              ro code  0x08000d88   0x192  DblMul.o [4]
+  .text              ro code  0x08000f1c   0x178  DblAdd.o [4]
+  .text              ro code  0x08001094    0x3a  DblToS32.o [4]
+  .text              ro code  0x080010d0    0x22  S32ToDbl.o [4]
+  .text              ro code  0x080010f4    0xe2  DblSub.o [4]
+  .text              ro code  0x080011d8   0x246  DblDiv.o [4]
+  .text              ro code  0x08001420    0x2e  DblCmpGe.o [4]
+  .text              ro code  0x08001450   0x418  iar_Exp64.o [4]
+  .text              ro code  0x08001868   0x13a  ldexp.o [4]
+  .text              ro code  0x080019a4   0x768  stm32l4xx_hal_rcc.o [1]
+  .text              ro code  0x0800210c    0x44  stm32l4xx_hal.o [1]
+  .text              ro code  0x08002150     0xc  stm32l4xx_hal.o [1]
+  .text              ro code  0x0800215c    0x80  stm32l4xx_hal_pwr_ex.o [1]
+  .text              ro code  0x080021dc    0xac  stm32l4xx_hal_cortex.o [1]
+  .text              ro code  0x08002288   0x548  stm32l4xx_hal_rcc_ex.o [1]
+  .text              ro code  0x080027d0   0x458  stm32l4xx_hal_uart.o [1]
+  .text              ro code  0x08002c28    0xa0  usart.o [1]
+  .text              ro code  0x08002cc8    0xee  I64DivMod.o [5]
+  .text              ro code  0x08002db8   0x108  main.o [1]
+  .text              ro code  0x08002ec0     0x6  ABImemclr4.o [5]
+  .text              ro code  0x08002ec8   0x200  stm32l4xx_hal_gpio.o [1]
+  .text              ro code  0x080030c8     0x2  I64DivZer.o [5]
+  .text              ro code  0x080030ca    0x16  math_wrappers64.o [4]
+  .text              ro code  0x080030e0    0x2c  stm32l4xx_hal.o [1]
+  .text              ro code  0x0800310c    0xa4  gpio.o [1]
+  .text              ro code  0x080031b0    0xa8  rand.o [3]
+  .text              ro code  0x08003258    0x28  stm32l4xx_hal.o [1]
+  .text              ro code  0x08003280    0x32  ABImemset48.o [5]
+  .text              ro code  0x080032b4    0x30  stm32l4xx_hal_msp.o [1]
+  .text              ro code  0x080032e4    0x8c  system_stm32l4xx.o [1]
+  .text              ro code  0x08003370    0x40  zero_init3.o [5]
+  .text              ro code  0x080033b0    0x2c  copy_init3.o [5]
+  .text              ro code  0x080033dc    0x28  data_init.o [5]
+  Initializer bytes  const    0x08003404    0x28  <for P2-P3-1>
+  .text              ro code  0x0800342c    0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x08003450    0x24  - Linker created -
+  .text              ro code  0x08003474    0x1a  cmain.o [5]
+  .text              ro code  0x0800348e     0x4  low_level_init.o [3]
+  .text              ro code  0x08003492     0x4  exit.o [3]
+  .text              ro code  0x08003498     0xa  cexit.o [5]
+  .text              ro code  0x080034a4    0x14  exit.o [6]
+  .text              ro code  0x080034b8    0x14  stm32l4xx_it.o [1]
+  .text              ro code  0x080034cc    0x10  stm32l4xx_hal.o [1]
+  .text              ro code  0x080034dc    0x10  startup_stm32l476xx.o [1]
+  .text              ro code  0x080034ec     0xc  cstartup_M.o [5]
+  .rodata            const    0x080034f8     0x8  system_stm32l4xx.o [1]
+  .text              ro code  0x08003500     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003504     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003508     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800350c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003510     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003514     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003518     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800351c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003520     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003524     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003528     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800352c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003530     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003534     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003538     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800353c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003540     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003544     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003548     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800354c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003550     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003554     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003558     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800355c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003560     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003564     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003568     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800356c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003570     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003574     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003578     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800357c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003580     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003584     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003588     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800358c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003590     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003594     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003598     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800359c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035a0     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035a4     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035a8     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035ac     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035b0     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035b4     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035b8     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035bc     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035c0     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035c4     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035c8     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035cc     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035d0     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035d4     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035d8     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035dc     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035e0     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035e4     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035e8     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035ec     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035f0     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035f4     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035f8     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x080035fc     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003600     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003604     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003608     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800360c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003610     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003614     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003618     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800361c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003620     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003624     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003628     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800362c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003630     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003634     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003638     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x0800363c     0x4  startup_stm32l476xx.o [1]
+  .text              ro code  0x08003640     0x4  startup_stm32l476xx.o [1]
+  .rodata            const    0x08003644     0x0  zero_init3.o [5]
+  .rodata            const    0x08003644     0x0  copy_init3.o [5]
+                            - 0x08003644  0x34bc
+
+"P2-P3", part 1 of 3:                       0x28
+  P2-P3-1                     0x20000000    0x28  <Init block>
+    .data            inited   0x20000000    0x10  main.o [1]
+    .data            inited   0x20000010     0xc  stm32l4xx_hal.o [1]
+    .data            inited   0x2000001c     0x4  system_stm32l4xx.o [1]
+    .data            inited   0x20000020     0x8  rand.o [3]
+                            - 0x20000028    0x28
+
+"P2-P3", part 2 of 3:                      0x400
+  CSTACK                      0x20000028   0x400  <Block>
+    CSTACK           uninit   0x20000028   0x400  <Block tail>
+                            - 0x20000428   0x400
+
+"P2-P3", part 3 of 3:                      0x104
+  .bss               zero     0x20000428    0x84  rand.o [3]
+  .bss               zero     0x200004ac    0x80  usart.o [1]
+                            - 0x2000052c   0x104
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x104:
+          0x20000428  0x104
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x28:
+          0x08003404   0x28
+    1 destination range, total size 0x28:
+          0x20000000   0x28
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj: [1]
+    gpio.o                      164
+    main.o                      264       16       16
+    startup_stm32l476xx.o       732
+    stm32l4xx_hal.o             180       12       12
+    stm32l4xx_hal_cortex.o      172
+    stm32l4xx_hal_gpio.o        512
+    stm32l4xx_hal_msp.o          48
+    stm32l4xx_hal_pwr_ex.o      128
+    stm32l4xx_hal_rcc.o       1 896
+    stm32l4xx_hal_rcc_ex.o    1 352
+    stm32l4xx_hal_uart.o      1 112
+    stm32l4xx_it.o               20
+    system_stm32l4xx.o          140       12        4
+    usart.o                     160               128
+    -------------------------------------------------
+    Total:                    6 880       40      160
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                        4
+    low_level_init.o              4
+    rand.o                      168        8      140
+    -------------------------------------------------
+    Total:                      176        8      140
+
+m7M_tls.a: [4]
+    DblAdd.o                    376
+    DblCmpEq.o                   32
+    DblCmpGe.o                   46
+    DblCmpLe.o                   46
+    DblDiv.o                    582
+    DblMul.o                    402
+    DblSub.o                    226
+    DblToS32.o                   58
+    S32ToDbl.o                   34
+    fpinit_M.o                   34
+    frexp.o                     112
+    iar_Exp64.o               1 048
+    ldexp.o                     314
+    math_wrappers64.o            22
+    pow64.o                   2 880
+    -------------------------------------------------
+    Total:                    6 212
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                  6
+    ABImemset48.o                50
+    I64DivMod.o                 238
+    I64DivZer.o                   2
+    cexit.o                      10
+    cmain.o                      26
+    copy_init3.o                 44
+    cstartup_M.o                 12
+    data_init.o                  40
+    zero_init3.o                 64
+    -------------------------------------------------
+    Total:                      492
+
+shb_l.a: [6]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         26        2
+    Linker created                        36    1 024
+-----------------------------------------------------
+    Grand Total:             13 806       86    1 324
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x08003450          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08003474          --   Gb  - Linker created -
+?main                   0x08003475         Code  Gb  cmain.o [5]
+AHBPrescTable           0x08003330   0x10  Data  Gb  system_stm32l4xx.o [1]
+APBPrescTable           0x080034f8    0x8  Data  Gb  system_stm32l4xx.o [1]
+BusFault_Handler        0x080034bf    0x2  Code  Gb  stm32l4xx_it.o [1]
+CSTACK$$Base            0x20000028          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000428          --   Gb  - Linker created -
+DebugMon_Handler        0x080034c5    0x2  Code  Gb  stm32l4xx_it.o [1]
+Display                 0x08002db9   0x50  Code  Gb  main.o [1]
+Error_Handler           0x08002ebf    0x2  Code  Gb  main.o [1]
+HAL_Delay               0x08003259   0x28  Code  Wk  stm32l4xx_hal.o [1]
+HAL_GPIO_Init           0x08002ec9  0x1d2  Code  Gb  stm32l4xx_hal_gpio.o [1]
+HAL_GPIO_WritePin       0x0800309b    0xa  Code  Gb  stm32l4xx_hal_gpio.o [1]
+HAL_GetTick             0x08002151    0xc  Code  Wk  stm32l4xx_hal.o [1]
+HAL_IncTick             0x080034cd   0x10  Code  Wk  stm32l4xx_hal.o [1]
+HAL_Init                0x080030e1   0x28  Code  Gb  stm32l4xx_hal.o [1]
+HAL_InitTick            0x0800210d   0x44  Code  Wk  stm32l4xx_hal.o [1]
+HAL_MspInit             0x080032b5   0x30  Code  Gb  stm32l4xx_hal_msp.o [1]
+HAL_NVIC_SetPriority    0x08002211   0x3a  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                        0x080021f7   0x1a  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_PWREx_ControlVoltageScaling
+                        0x08002169   0x68  Code  Gb  stm32l4xx_hal_pwr_ex.o [1]
+HAL_PWREx_GetVoltageRange
+                        0x0800215d    0xc  Code  Gb  stm32l4xx_hal_pwr_ex.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                        0x08002289  0x312  Code  Gb  stm32l4xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig     0x08001e93   0xe0  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq    0x0800202d   0x10  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq    0x0800203d    0xe  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                        0x08001f9b   0x92  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x080019a5  0x4c4  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_SYSTICK_Config      0x0800224d   0x28  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_UART_Init           0x080027d1   0x30  Code  Gb  stm32l4xx_hal_uart.o [1]
+HAL_UART_MspInit        0x08002c5d   0x5e  Code  Gb  usart.o [1]
+HardFault_Handler       0x080034bb    0x2  Code  Gb  stm32l4xx_it.o [1]
+LEDS                    0x20000000   0x10  Data  Gb  main.o [1]
+MSIRangeTable           0x08003340   0x30  Data  Gb  system_stm32l4xx.o [1]
+MX_GPIO_Init            0x0800310d   0x98  Code  Gb  gpio.o [1]
+MX_USART2_UART_Init     0x08002c29   0x34  Code  Gb  usart.o [1]
+MemManage_Handler       0x080034bd    0x2  Code  Gb  stm32l4xx_it.o [1]
+NMI_Handler             0x080034b9    0x2  Code  Gb  stm32l4xx_it.o [1]
+PendSV_Handler          0x080034c7    0x2  Code  Gb  stm32l4xx_it.o [1]
+RCCEx_PLLSAI1_Config    0x080025bf   0xec  Code  Lc  stm32l4xx_hal_rcc_ex.o [1]
+RCCEx_PLLSAI2_Config    0x080026c1   0xce  Code  Lc  stm32l4xx_hal_rcc_ex.o [1]
+RCC_SetFlashLatencyFromMSIRange
+                        0x08002055   0x76  Code  Lc  stm32l4xx_hal_rcc.o [1]
+Region$$Table$$Base     0x08003450          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08003474          --   Gb  - Linker created -
+SVC_Handler             0x080034c3    0x2  Code  Gb  stm32l4xx_it.o [1]
+SysTick_Handler         0x080034c9    0x4  Code  Gb  stm32l4xx_it.o [1]
+SystemClock_Config      0x08002e45   0x7a  Code  Gb  main.o [1]
+SystemCoreClock         0x2000001c    0x4  Data  Gb  system_stm32l4xx.o [1]
+SystemInit              0x080032e5   0x3c  Code  Gb  system_stm32l4xx.o [1]
+UART_AdvFeatureConfig   0x08002a89   0xc6  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_CheckIdleState     0x08002b4f   0x5a  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_SetConfig          0x08002851  0x210  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                        0x08002ba9   0x60  Code  Gb  stm32l4xx_hal_uart.o [1]
+UsageFault_Handler      0x080034c1    0x2  Code  Gb  stm32l4xx_it.o [1]
+_Rand_idx               0x200004a8    0x4  Data  Lc  rand.o [3]
+_Rand_rv                0x20000428   0x80  Data  Lc  rand.o [3]
+_Randinit               0x20000020    0x1  Data  Gb  rand.o [3]
+_Randseed               0x20000024    0x4  Data  Gb  rand.o [3]
+__NVIC_SetPriority      0x080021dd   0x1a  Code  Lc  stm32l4xx_hal_cortex.o [1]
+__aeabi_cdcmpeq         0x08000cc9         Code  Gb  DblCmpEq.o [4]
+__aeabi_cdcmple         0x08000d59         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x08001421         Code  Gb  DblCmpGe.o [4]
+__aeabi_d2iz            0x08001095         Code  Gb  DblToS32.o [4]
+__aeabi_dadd            0x08000f1d         Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x080011d9         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08000d89         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x080010f5         Code  Gb  DblSub.o [4]
+__aeabi_i2d             0x080010d1         Code  Gb  S32ToDbl.o [4]
+__aeabi_ldiv0           0x080030c9         Code  Gb  I64DivZer.o [5]
+__aeabi_memclr4         0x08002ec1         Code  Gb  ABImemclr4.o [5]
+__aeabi_uldivmod        0x08002cc9         Code  Gb  I64DivMod.o [5]
+__cmain                 0x08003475         Code  Gb  cmain.o [5]
+__exit                  0x080034a5   0x14  Code  Gb  exit.o [6]
+__iar_Exp64             0x08001451  0x3b8  Code  Gb  iar_Exp64.o [4]
+__iar_Memset4_word      0x08003281         Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x08003281         Code  Gb  ABImemset48.o [5]
+__iar_Pow64             0x08000189  0x668  Code  Lc  pow64.o [4]
+__iar_copy_init3        0x080033b1   0x2c  Code  Gb  copy_init3.o [5]
+__iar_dadd              0x08001105         Code  Gb  DblSub.o [4]
+__iar_data_init3        0x080033dd   0x28  Code  Gb  data_init.o [5]
+__iar_dsub              0x08000f2d         Code  Gb  DblAdd.o [4]
+__iar_dsubStart         0x08000f3f         Code  Gb  DblAdd.o [4]
+__iar_frexp             0x08000cf5         Code  Gb  frexp.o [4]
+__iar_frexpl            0x08000cf5         Code  Gb  frexp.o [4]
+__iar_init_vfp          0x0800342d         Code  Gb  fpinit_M.o [4]
+__iar_ldexp64           0x08001869         Code  Gb  ldexp.o [4]
+__iar_pow64             0x08000891   0x14  Code  Gb  pow64.o [4]
+__iar_pow_medium        0x08000891   0x14  Code  Gb  pow64.o [4]
+__iar_pow_medium64      0x08000891   0x14  Code  Gb  pow64.o [4]
+__iar_pow_mediuml       0x08000891   0x14  Code  Gb  pow64.o [4]
+__iar_program_start     0x080034ed         Code  Gb  cstartup_M.o [5]
+__iar_scalbln64         0x08001869         Code  Gb  ldexp.o [4]
+__iar_scalbn64          0x08001869         Code  Gb  ldexp.o [4]
+__iar_softfp___iar_frexp64
+                        0x08000ce9         Code  Gb  frexp.o [4]
+__iar_softfp_frexp      0x08000ce9         Code  Gb  frexp.o [4]
+__iar_softfp_frexpl     0x08000ce9         Code  Gb  frexp.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001         Data  Gb  command line/config [2]
+__iar_vfp_pow           0x080030d1   0x10  Code  Gb  math_wrappers64.o [4]
+__iar_zero_init3        0x08003371   0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800348f    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32l476xx.o [1]
+_call_main              0x08003481         Code  Gb  cmain.o [5]
+_exit                   0x08003499         Code  Gb  cexit.o [5]
+_main                   0x0800348b         Code  Gb  cmain.o [5]
+exit                    0x08003493    0x4  Code  Gb  exit.o [3]
+huart2                  0x200004ac   0x80  Data  Gb  usart.o [1]
+ldexp                   0x08001869         Code  Gb  ldexp.o [4]
+ldexpl                  0x08001869         Code  Gb  ldexp.o [4]
+lnbias                  0x080008a8  0x420  Data  Lc  pow64.o [4]
+main                    0x08002e15   0x30  Code  Gb  main.o [1]
+pow                     0x08000891   0x14  Code  Gb  pow64.o [4]
+powl                    0x08000891   0x14  Code  Gb  pow64.o [4]
+rand                    0x080031b1   0x96  Code  Gb  rand.o [3]
+scalbln                 0x08001869         Code  Gb  ldexp.o [4]
+scalblnl                0x08001869         Code  Gb  ldexp.o [4]
+scalbn                  0x08001869         Code  Gb  ldexp.o [4]
+scalbnl                 0x08001869         Code  Gb  ldexp.o [4]
+uwTick                  0x20000014    0x4  Data  Gb  stm32l4xx_hal.o [1]
+uwTickFreq              0x20000010    0x1  Data  Gb  stm32l4xx_hal.o [1]
+uwTickPrio              0x20000018    0x4  Data  Gb  stm32l4xx_hal.o [1]
+
+
+[1] = C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM Nucleo boards\NUCLEO-L476RG\5 Random_Flashing_LEDs EWARM (IAR)\Random_Flashing_LEDs\EWARM\Random_Flashing_LEDs\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  13 806 bytes of readonly  code memory
+      86 bytes of readonly  data memory
+   1 324 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
