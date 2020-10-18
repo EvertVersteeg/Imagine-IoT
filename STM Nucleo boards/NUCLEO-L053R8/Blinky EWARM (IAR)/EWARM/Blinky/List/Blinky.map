@@ -1,0 +1,366 @@
+###############################################################################
+#
+# IAR ELF Linker V8.10.1.12857/W32 for ARM                17/Oct/2020  16:13:02
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Exe\Blinky.out
+#    Map file     =  
+#        C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\List\Blinky.map
+#    Command line =  
+#        -f C:\Users\evers\AppData\Local\Temp\EW1C75.tmp
+#        ("C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\main.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\startup_stm32l053xx.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_cortex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_dma.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_flash.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_flash_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_flash_ramfunc.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_gpio.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_i2c.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_i2c_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_msp.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_pwr.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_pwr_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_rcc.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_rcc_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_tim.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_tim_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_uart.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_hal_uart_ex.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\stm32l0xx_it.o"
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo
+#        boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj\system_stm32l0xx.o" -o
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Exe\Blinky.out" --map
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\List\Blinky.map"
+#        --config
+#        "C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM
+#        Nucleo boards\NUCLEO-L053R8\Blinky\EWARM/stm32l053xx_flash.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001fff] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                       0xc0
+  .intvec            ro code  0x08000000    0xc0  startup_stm32l053xx.o [1]
+                            - 0x080000c0    0xc0
+
+"P1":                                     0x152e
+  .text              ro code  0x080000c0   0x6ec  stm32l0xx_hal_rcc.o [1]
+  .text              ro code  0x080007ac    0x44  stm32l0xx_hal.o [1]
+  .text              ro code  0x080007f0     0xc  stm32l0xx_hal.o [1]
+  .text              ro code  0x080007fc    0x36  I32DivMod.o [4]
+  .text              ro code  0x08000832     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08000834    0x70  stm32l0xx_hal_cortex.o [1]
+  .text              ro code  0x080008a4     0x2  IntDivZer.o [4]
+  .text              ro code  0x080008a6     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080008a8   0x470  stm32l0xx_hal_uart.o [1]
+  .text              ro code  0x08000d18    0x78  stm32l0xx_hal_msp.o [1]
+  .text              ro code  0x08000d90    0x6a  I64DivMod.o [4]
+  .text              ro code  0x08000dfa     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08000dfc    0x34  ABImemset.o [4]
+  .text              ro code  0x08000e30   0x1b8  stm32l0xx_hal_gpio.o [1]
+  .text              ro code  0x08000fe8     0x2  I64DivZer.o [4]
+  .text              ro code  0x08000fea     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08000fec   0x1f0  main.o [1]
+  .text              ro code  0x080011dc    0x28  stm32l0xx_hal.o [1]
+  .text              ro code  0x08001204    0x28  stm32l0xx_hal.o [1]
+  .text              ro code  0x0800122c   0x1cc  stm32l0xx_hal_rcc_ex.o [1]
+  .text              ro code  0x080013f8    0x74  system_stm32l0xx.o [1]
+  .text              ro code  0x0800146c    0x40  zero_init3.o [4]
+  .text              ro code  0x080014ac    0x30  copy_init3.o [4]
+  .text              ro code  0x080014dc    0x28  data_init.o [4]
+  .iar.init_table    const    0x08001504    0x24  - Linker created -
+  .text              ro code  0x08001528    0x1a  cmain.o [4]
+  .text              ro code  0x08001542     0x4  low_level_init.o [3]
+  .text              ro code  0x08001546     0x8  exit.o [3]
+  .text              ro code  0x0800154e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08001550     0xa  cexit.o [4]
+  .text              ro code  0x0800155a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x0800155c    0x14  exit.o [5]
+  .text              ro code  0x08001570    0x10  startup_stm32l053xx.o [1]
+  .text              ro code  0x08001580    0x10  stm32l0xx_hal.o [1]
+  .text              ro code  0x08001590    0x10  stm32l0xx_it.o [1]
+  Initializer bytes  const    0x080015a0    0x10  <for P2-1>
+  .text              ro code  0x080015b0     0xc  cstartup_M.o [4]
+  .rodata            const    0x080015bc     0x8  system_stm32l0xx.o [1]
+  .text              ro code  0x080015c4     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015c6     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015c8     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015ca     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015cc     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015ce     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015d0     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015d2     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015d4     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015d6     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015d8     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015da     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015dc     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015de     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015e0     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015e2     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015e4     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015e6     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015e8     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015ea     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080015ec     0x2  startup_stm32l053xx.o [1]
+  .rodata            const    0x080015ee     0x0  zero_init3.o [4]
+  .rodata            const    0x080015ee     0x0  copy_init3.o [4]
+                            - 0x080015ee  0x152e
+
+"P2", part 1 of 3:                          0x10
+  P2-1                        0x20000000    0x10  <Init block>
+    .data            inited   0x20000000     0xc  stm32l0xx_hal.o [1]
+    .data            inited   0x2000000c     0x4  system_stm32l0xx.o [1]
+                            - 0x20000010    0x10
+
+"P2", part 2 of 3:                         0x400
+  CSTACK                      0x20000010   0x400  <Block>
+    CSTACK           uninit   0x20000010   0x400  <Block tail>
+                            - 0x20000410   0x400
+
+"P2", part 3 of 3:                          0x80
+  .bss               zero     0x20000410    0x80  main.o [1]
+                            - 0x20000490    0x80
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x80:
+          0x20000410  0x80
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10:
+          0x080015a0  0x10
+    1 destination range, total size 0x10:
+          0x20000000  0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM Nucleo boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj: [1]
+    main.o                      496               128
+    startup_stm32l053xx.o       262
+    stm32l0xx_hal.o             176       12       12
+    stm32l0xx_hal_cortex.o      112
+    stm32l0xx_hal_gpio.o        440
+    stm32l0xx_hal_msp.o         120
+    stm32l0xx_hal_rcc.o       1 772
+    stm32l0xx_hal_rcc_ex.o      460
+    stm32l0xx_hal_uart.o      1 136
+    stm32l0xx_it.o               16
+    system_stm32l0xx.o          116       12        4
+    -------------------------------------------------
+    Total:                    5 106       24      144
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                        8
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                       12
+
+rt6M_tl.a: [4]
+    ABImemset.o                  52
+    I32DivMod.o                  54
+    I64DivMod.o                 106
+    I64DivZer.o                   2
+    IntDivZer.o                   2
+    cexit.o                      10
+    cmain.o                      26
+    copy_init3.o                 48
+    cstartup_M.o                 12
+    data_init.o                  40
+    zero_init3.o                 64
+    -------------------------------------------------
+    Total:                      416
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Linker created                        36    1 024
+-----------------------------------------------------
+    Grand Total:              5 554       60    1 168
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x08001504          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08001528          --   Gb  - Linker created -
+?main                   0x08001529         Code  Gb  cmain.o [4]
+AHBPrescTable           0x08001450   0x10  Data  Gb  system_stm32l0xx.o [1]
+APBPrescTable           0x080015bc    0x8  Data  Gb  system_stm32l0xx.o [1]
+CSTACK$$Base            0x20000010          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000410          --   Gb  - Linker created -
+HAL_Delay               0x08001205   0x28  Code  Wk  stm32l0xx_hal.o [1]
+HAL_GPIO_Init           0x08000e31  0x190  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_WritePin       0x08000fc9    0xc  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GetTick             0x080007f1    0xc  Code  Wk  stm32l0xx_hal.o [1]
+HAL_IncTick             0x08001581   0x10  Code  Wk  stm32l0xx_hal.o [1]
+HAL_Init                0x080011dd   0x24  Code  Gb  stm32l0xx_hal.o [1]
+HAL_InitTick            0x080007ad   0x44  Code  Wk  stm32l0xx_hal.o [1]
+HAL_MspInit             0x08000d19   0x16  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_NVIC_SetPriority    0x08000869    0x8  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                        0x0800122d  0x19e  Code  Gb  stm32l0xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig     0x08000575  0x168  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq    0x08000759    0xe  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq    0x08000767    0xc  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                        0x080006e9   0x6c  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x080000c1  0x4a2  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_SYSTICK_Config      0x08000871   0x28  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_UART_Init           0x080008a9   0x56  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_MspInit        0x08000d2f   0x54  Code  Gb  stm32l0xx_hal_msp.o [1]
+HardFault_Handler       0x08001593    0x2  Code  Gb  stm32l0xx_it.o [1]
+MX_GPIO_Init            0x080010d5   0xd8  Code  Lc  main.o [1]
+NMI_Handler             0x08001591    0x2  Code  Gb  stm32l0xx_it.o [1]
+NVIC_SetPriority        0x08000835   0x34  Code  Lc  stm32l0xx_hal_cortex.o [1]
+PLLMulTable             0x08001460    0xc  Data  Gb  system_stm32l0xx.o [1]
+PendSV_Handler          0x08001597    0x2  Code  Gb  stm32l0xx_it.o [1]
+Region$$Table$$Base     0x08001504          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08001528          --   Gb  - Linker created -
+SVC_Handler             0x08001595    0x2  Code  Gb  stm32l0xx_it.o [1]
+SysTick_Handler         0x08001599    0x8  Code  Gb  stm32l0xx_it.o [1]
+SystemClock_Config      0x0800106d   0x68  Code  Gb  main.o [1]
+SystemCoreClock         0x2000000c    0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemInit              0x080013f9   0x40  Code  Gb  system_stm32l0xx.o [1]
+UART_AdvFeatureConfig   0x08000b39   0xc8  Code  Gb  stm32l0xx_hal_uart.o [1]
+UART_CheckIdleState     0x08000c05   0x64  Code  Gb  stm32l0xx_hal_uart.o [1]
+UART_SetConfig          0x08000915  0x206  Code  Gb  stm32l0xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                        0x08000c69   0x6a  Code  Gb  stm32l0xx_hal_uart.o [1]
+__aeabi_idiv0           0x080008a5         Code  Gb  IntDivZer.o [4]
+__aeabi_ldiv0           0x08000fe9         Code  Gb  I64DivZer.o [4]
+__aeabi_memclr4         0x08000e2d         Code  Gb  ABImemset.o [4]
+__aeabi_memclr8         0x08000e2d         Code  Gb  ABImemset.o [4]
+__aeabi_uldivmod        0x08000d91         Code  Gb  I64DivMod.o [4]
+__cmain                 0x08001529         Code  Gb  cmain.o [4]
+__exit                  0x0800155d   0x14  Code  Gb  exit.o [5]
+__iar_Memset4_word      0x08000dfd         Code  Gb  ABImemset.o [4]
+__iar_copy_init3        0x080014ad   0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x080014dd   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x080015b1         Code  Gb  cstartup_M.o [4]
+__iar_small_uidiv       0x080007fd         Code  Gb  I32DivMod.o [4]
+__iar_small_uidivmod    0x080007fd         Code  Gb  I32DivMod.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001         Data  Gb  command line/config [2]
+__iar_zero_init3        0x0800146d   0x40  Code  Gb  zero_init3.o [4]
+__low_level_init        0x08001543    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32l053xx.o [1]
+_call_main              0x08001535         Code  Gb  cmain.o [4]
+_exit                   0x08001551         Code  Gb  cexit.o [4]
+_main                   0x0800153f         Code  Gb  cmain.o [4]
+exit                    0x08001547    0x8  Code  Gb  exit.o [3]
+huart2                  0x20000410   0x80  Data  Gb  main.o [1]
+main                    0x08000fed   0x80  Code  Gb  main.o [1]
+uwTick                  0x20000004    0x4  Data  Gb  stm32l0xx_hal.o [1]
+uwTickFreq              0x20000000    0x1  Data  Gb  stm32l0xx_hal.o [1]
+uwTickPrio              0x20000008    0x4  Data  Gb  stm32l0xx_hal.o [1]
+
+
+[1] = C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\STM Nucleo boards\NUCLEO-L053R8\Blinky\EWARM\Blinky\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  5 554 bytes of readonly  code memory
+     60 bytes of readonly  data memory
+  1 168 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
