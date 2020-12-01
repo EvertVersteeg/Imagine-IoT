@@ -1,0 +1,17 @@
+function Decoder(bytes, port) {
+  var decoded = {};
+
+  // Temperature (2 bytes)
+  decoded.t = ((bytes[2]) | (bytes[1] << 8 )) / 100.0;
+  
+  // Humidity (2 bytes)
+  decoded.h = ((bytes[4]) | (bytes[3] << 8 )) / 100.0;
+    
+  //Pressure (4 bytes)
+  decoded.p = ((bytes[8]) | (bytes[7] << 8 ) | (bytes[6] << 16 )  | (bytes[5] << 24 )) / 100.0;
+  
+    //Gas (resistance, 4 bytes)
+  decoded.g = ((bytes[12]) | (bytes[11] << 8 ) | (bytes[10] << 16 ) | (bytes[9] << 24 )) / 100.0;
+
+  return decoded;
+}
