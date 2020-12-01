@@ -9,9 +9,13 @@ Imagine-IoT! maker files repo!
 * Boardfiles
 
 ## Nordic nRF52840 Boards
-### RAK Wisblock Core
-* WisBlock LPWAN Modle (RAK4631)
+* RAK WisBlock LPWAN Module (RAK4631)
 * TTN Payload decoder (WisBlock)
+
+## ATTiny84 Boards
+* ATTNode ATTiny84
+* Case (3D)
+* PCB Board files
 
 ## NUCLEO Boards
 ### NUCLEO-L476RG
