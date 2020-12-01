@@ -2,14 +2,18 @@ Imagine-IoT! maker files repo!
 =======================================
 
 #### Imagine IOT Nodes firmware
-* IMN001
-* IMN002
+
+## Atmega 328p Boards
+* IMN00x Nodes
 * Imagine Bootloader
 * Boardfiles
 
+## Nordic nRF52840 Boards
+### RAK Wisblock Core
+* WisBlock LPWAN Modle (RAK4631)
+* TTN Payload decoder (WisBlock)
+
 ## NUCLEO Boards
-
-
 ### NUCLEO-L476RG
 * Blinky
 * Alternating Flashing LEDs
