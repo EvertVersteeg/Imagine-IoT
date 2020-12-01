@@ -4,32 +4,34 @@ Imagine-IoT! maker files repo!
 #### Imagine IOT Nodes firmware
 
 ## Atmega 328p Boards
-* IMN00x Nodes
+* IMN00x Nodes (Arduino-IDE)
 * Imagine Bootloader
-* Boardfiles
+* PCB Boardfiles (KiCad)
 
 ## Nordic nRF52840 Boards
-* RAK WisBlock LPWAN Module (RAK4631)
-* TTN Payload decoder (WisBlock)
+* RAK WisBlock LPWAN Module (RAK4631) (Arduino-IDE)
+* TTN Payload decoder (for WisBlock)
 
 ## ATTiny84 Boards
-* ATTNode ATTiny84
-* Case (3D)
-* PCB Board files
+* ATTNode ATTiny84 (PlatformIO)
+* Case (3D / SCAD)
+* PCB Boardfiles (KiCad)
 
 ## NUCLEO Boards
 ### NUCLEO-L476RG
-* Blinky
-* Alternating Flashing LEDs
-* Rotating LEDs
-* Binay Counter with LEDs
-* Random Flashing LEDs
+* Blinky (IAR / MBED-OS)
+* Alternating Flashing LEDs (IAR)
+* Rotating LEDs (IAR)
+* Binary Counter with LEDs (IAR)
+* Random Flashing LEDs (IAR)
+* Push button and LEDs (IAR)
+* LCD Displaying Text (IAR)
 
 ### NUCLEO-L053R8
-* Blinky
+* Blinky (IAR)
 
 ### NUCLEO-G071RB
-* Blinky
+* Blinky (Cube-IDE / MBED-OS)
  
 License
 =======
