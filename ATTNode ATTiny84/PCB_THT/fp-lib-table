@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name RFM)(type KiCad)(uri /data/Git/IOT/attiny84_lora_nonsmd/RFM95)(options "")(descr ""))
+  (lib (name battery_holder)(type KiCad)(uri /data/Git/IOT/attiny84_lora/battery_holder.pretty)(options "")(descr ""))
+)
