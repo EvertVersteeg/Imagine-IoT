@@ -36,7 +36,7 @@ bool doOTAA = true;
 #define LORAWAN_TX_POWER TX_POWER_5								  /*LoRaMac tx power definition, from TX_POWER_0 to TX_POWER_15*/
 #define JOINREQ_NBTRIALS 3										  /**< Number of trials for the join request. */
 DeviceClass_t gCurrentClass = CLASS_A;							  /* class definition*/
-lmh_confirm gCurrentConfirm = LMH_CONFIRMED_MSG;				  /* confirm/unconfirm packet definition*/
+lmh_confirm gCurrentConfirm = LMH_UNCONFIRMED_MSG;				  /* confirm/unconfirm packet definition*/
 uint8_t gAppPort = LORAWAN_APP_PORT;							  /* data port*/
 
 /**@brief Structure containing LoRaWan parameters, needed for lmh_init()
@@ -55,9 +55,9 @@ static lmh_callback_t lora_callbacks = {BoardGetBatteryLevel, BoardGetUniqueId, 
 										lorawan_rx_handler, lorawan_has_joined_handler, lorawan_confirm_class_handler};
 
 //OTAA keys
-uint8_t nodeDeviceEUI[8] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x33, 0x33};
-uint8_t nodeAppEUI[8] = {0xB8, 0x27, 0xEB, 0xFF, 0xFE, 0x39, 0x00, 0x00};
-uint8_t nodeAppKey[16] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x33, 0x33, 0x33, 0x33, 0x33};
+uint8_t nodeDeviceEUI[8] = {xxxxxx};
+uint8_t nodeAppEUI[8] = {xxxxxx};
+uint8_t nodeAppKey[16] = {xxxxx};
 
 // Private defination
 #define LORAWAN_APP_DATA_BUFF_SIZE 64										  /**< buffer size of the data to be transmitted. */
