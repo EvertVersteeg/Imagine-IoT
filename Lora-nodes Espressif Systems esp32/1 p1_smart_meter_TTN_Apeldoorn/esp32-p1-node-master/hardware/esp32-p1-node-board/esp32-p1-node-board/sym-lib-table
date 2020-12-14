@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name esp32_node)(type Legacy)(uri C:/Users/drasv/GitHub/esp32-sensor-classes/esp32_node_board/esp32_node_board/esp32_node.lib)(options "")(descr ""))
+)
