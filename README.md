@@ -3,21 +3,27 @@ Imagine-IoT! maker files repo!
 
 #### Imagine IOT Nodes firmware
 
-## Atmega 328p Boards
+## 1 ATmega 328p Boards
 * IMN00x Nodes (Arduino-IDE)
 * Imagine Bootloader
 * PCB Boardfiles (KiCad)
 
-## Nordic nRF52840 Boards
+## 2 Nordic nRF52840 Boards
 * RAK WisBlock LPWAN Module (RAK4631) (Arduino-IDE)
 * TTN Payload decoder (for WisBlock)
 
-## ATTiny84 Boards
+## 3 ATtiny84 Boards
 * ATTNode ATTiny84 (PlatformIO)
 * Case (3D / SCAD)
 * PCB Boardfiles (KiCad)
 
-## NUCLEO Boards
+## 4 esp8266 Boards
+* Wemos node (Wifi Localisation)
+
+## 5 esp32 Boards
+* P1 smart meter node (TTN Apeldoorn)
+
+## 9 NUCLEO Boards
 ### NUCLEO-L476RG
 * Blinky (IAR / MBED-OS)
 * Alternating Flashing LEDs (IAR)
