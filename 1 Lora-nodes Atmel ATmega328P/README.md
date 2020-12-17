@@ -12,3 +12,8 @@
 * Board: MeetJeStad
 * Lora radio, ttn, Cayenne_LPP, LMIC
  
+#### Imagine Node 003 (IMN003)
+* SDS011 nova, Particulate Matter Sensor
+* DS18B20, Temperature sensor
+* Board: MeetJeStad
+* Lora radio, ttn, Cayenne_LPP, LMIC
