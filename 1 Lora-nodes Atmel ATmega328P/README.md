@@ -25,3 +25,9 @@
 * 2x DS18B20, Temperature sensor
 * Board: MeetJeStad
 * Lora radio, ttn, Cayenne_LPP, LMIC
+
+#### Imagine Node 006 (IMN006)
+* BEEHIVE Node => PT100 temperature (thinner sensor than DS18B20 (less space between honeycomb))
+* MAX31865 / PT100
+* Board: MeetJeStad
+* Lora radio, ttn, Cayenne_LPP, LMIC
