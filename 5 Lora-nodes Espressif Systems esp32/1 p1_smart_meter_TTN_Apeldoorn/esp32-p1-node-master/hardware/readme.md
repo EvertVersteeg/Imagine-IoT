@@ -7,17 +7,17 @@ The hardware part of the repository has 5 folders:
    1. Documentation
    2. Board (esp32-p1-node-board)
    3. Housing (esp32-p1-node-housing)
-   4. bom.md "BOM"
-   5. instructions.md "Building instructions"
+   4. [BOM](bom.md "BOM")
+   5. [Building instructions](instructions.md "Building instructions")
 
 ### Documentation
-This [folder](documentation/ "folder") contains relevant documentation, datasheets and links to topics that are relevant for the project.
+This ![folder](documentation/ "folder") contains relevant documentation, datasheets and links to topics that are relevant for the project.
 
 ### Board (esp32-p1-node-board)
-This ![folder](esp32-p1-node-board/ "folder") contains the complete PCB design and libraries for the P1-Node for <a href="https://kicad-pcb.org/" target="_blank">KiCad</a>.
+This [folder](esp32-p1-node-board/ "folder") contains the complete PCB design and libraries for the P1-Node for <a href="https://kicad-pcb.org/" target="_blank">KiCad</a>.
 
 ### Housing (esp32-p1-node-housing)
-This ![folder](esp32-p1-node-housing/ "folder") contains both the source of the 3D printed frame as well as the .stl file for printing it. Also the measures for the holes that shall be made in the ABS housing are documented here.
+This [folder](esp32-p1-node-housing/ "folder") contains both the source of the 3D printed frame as well as the .stl file for printing it. Also the measures for the holes that shall be made in the ABS housing are documented here.
 
 File            | Note
 ----------------|--------------------------
@@ -25,10 +25,10 @@ Venster_003.skp | Source file of the frame in <a href="https://www.sketchup.com/
 Venster_003.stl | 3D file for printing in <a href="https://en.wikipedia.org/wiki/STL_(file_format)" target="_blank">STL</a> format.
 
 ### BOM (Bill of Materials)
-The ![BOM](bom.md "BOM") presents a extensive list of materials for the P1-Node.
+The [BOM](bom.md "BOM") presents a extensive list of materials for the P1-Node.
 
 ### Building Instructions
-The ![Building instructions](instructions.md "Building instructions") describe how to build and progam de P1-Node.
+The [Building instructions](instructions.md "Building instructions") describe how to build and progam de P1-Node.
 
 # License
 The TTN-Apeldoorn P1-Node node is free soft- and hardware:
