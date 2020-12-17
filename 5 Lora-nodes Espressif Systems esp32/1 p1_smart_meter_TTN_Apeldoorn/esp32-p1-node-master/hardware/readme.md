@@ -7,11 +7,11 @@ The hardware part of the repository has 5 folders:
    1. Documentation
    2. Board (esp32-p1-node-board)
    3. Housing (esp32-p1-node-housing)
-   4. ![BOM](bom.md "BOM")
-   5. ![Building instructions](instructions.md "Building instructions")
+   4. bom.md "BOM"
+   5. instructions.md "Building instructions"
 
 ### Documentation
-This ![folder](documentation/ "folder") contains relevant documentation, datasheets and links to topics that are relevant for the project.
+This (documentation/ "folder") contains relevant documentation, datasheets and links to topics that are relevant for the project.
 
 ### Board (esp32-p1-node-board)
 This ![folder](esp32-p1-node-board/ "folder") contains the complete PCB design and libraries for the P1-Node for <a href="https://kicad-pcb.org/" target="_blank">KiCad</a>.
