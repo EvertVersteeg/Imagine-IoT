@@ -8,7 +8,7 @@ D1 | 1 | BAT54S | SMD:SOT-23 |  RS-Components  | https://nl.rs-online.com/web/p/
 J1 | 1 | RJ11-6 | RJ12_Amphenol_54601 |  RS-Components  | https://nl.rs-online.com/web/p/ethernet-connectors/1370999/
 Q1 | 1 | BC547 (BC847) | SMD:SOT-323_SC-70 (SOT23) |  RS-Components  | https://nl.rs-online.com/web/p/bjt-bipolar-transistors/6900091/
 R1,  | 1 | 10K | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/7219908/
-R2, R3, R4, R8 | 1 | 1K | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/9013724/
+R2, R3, R4, R8 | 4 | 1K | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/9013724/
 R5, R6, R7 | 3 | 180 | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/7219762/
 Housing | 1 |  | Hammond 1591 ABS Enclosure, Flanged |  RS-Components  | https://nl.rs-online.com/web/p/general-purpose-enclosures/8180514/
 PCB | 1 |  | Aisler, PCB & Stencil |  Aisler  | http://www.aisler.net
