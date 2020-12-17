@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SparkFun-Connectors:RJ11-6 J1
+L esp32-p1-node-board-rescue:RJ11-6-SparkFun-Connectors J1
 U 1 1 5F00D179
 P 1200 1550
 F 0 "J1" H 1156 2360 45  0000 C CNN
@@ -136,7 +136,7 @@ DATA
 Text Label 2600 2150 0    50   ~ 0
 5V
 $Comp
-L esp32_node:TTGO_LoRa32_V11 U1
+L esp32-p1-node-board-rescue:TTGO_LoRa32_V11-esp32_node U1
 U 1 1 5F01626F
 P 5500 2650
 F 0 "U1" H 5475 3465 50  0000 C CNN
@@ -253,7 +253,7 @@ Text Label 4400 2300 0    50   ~ 0
 Text Notes 4400 2600 0    50   ~ 0
 TXD
 $Comp
-L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP1
+L esp32-p1-node-board-rescue:JUMPER-SMT_3_1-NC-SparkFun-Jumpers JP1
 U 1 1 5F1DD89F
 P 3550 4450
 F 0 "JP1" V 3886 4450 45  0000 C CNN
@@ -287,7 +287,7 @@ Wire Wire Line
 Text Label 6150 2900 0    50   ~ 0
 SOFT_RXD
 $Comp
-L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP2
+L esp32-p1-node-board-rescue:JUMPER-SMT_3_1-NC-SparkFun-Jumpers JP2
 U 1 1 5F1EB1BA
 P 3550 5400
 F 0 "JP2" V 3886 5400 45  0000 C CNN
@@ -337,7 +337,7 @@ Connection ~ 5900 5050
 Wire Wire Line
 	5900 5050 6600 5050
 $Comp
-L esp32_node:THT_USB-B-Mini Conn1
+L esp32-p1-node-board-rescue:THT_USB-B-Mini-esp32_node Conn1
 U 1 1 5F1FC4B8
 P 5300 5300
 F 0 "Conn1" H 5244 5815 50  0000 C CNN
@@ -386,7 +386,7 @@ Connection ~ 6050 5450
 Text Label 6500 5450 2    50   ~ 0
 GND
 $Comp
-L esp32_node:SMA-ANT-CONN COAX1
+L esp32-p1-node-board-rescue:SMA-ANT-CONN-esp32_node COAX1
 U 1 1 5F1FA2D2
 P 5400 4450
 F 0 "COAX1" H 5456 4815 50  0000 C CNN
@@ -397,7 +397,7 @@ F 3 "" H 5400 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP3
+L esp32-p1-node-board-rescue:JUMPER-SMT_3_1-NC-SparkFun-Jumpers JP3
 U 1 1 5F231B69
 P 3550 6350
 F 0 "JP3" V 3886 6350 45  0000 C CNN
