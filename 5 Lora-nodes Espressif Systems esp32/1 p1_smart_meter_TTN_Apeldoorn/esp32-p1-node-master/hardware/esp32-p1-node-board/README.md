@@ -1,4 +1,6 @@
-# TTN-Apeldoorn P1-Node Hardware settings
+# TTN-Apeldoorn P1-Node Hardware
+
+## TTN-Apeldoorn P1-Node Hardware settings
 THe board has tree hardware settings:
 JP1: selection between hard and software serial, default soft serial
 => You must use Hardware Serial if baudrate > 57.6K
@@ -7,6 +9,14 @@ JP2: selection between soft and hard request, default hard request.
 JP3: Selection between yes/no change polarity.
 
 ## TTGO LoRa32 SX1276 OLED Overview
-
 The TTGO LoRa32 SX1276 OLED is a development board with an ESP32, a built-in LoRa chip and an SSD1306 OLED display.
 <img src="TTGO-LoRa-ESP32-Dev-Board.jpg" alt="TTGO" style="width:300px;height:300px;">
+
+## TTGO LoRa32 SX1276 OLED Pins
+The following figure shows the TTGO LoRa32 OLED board pinout.
+<img src="TTGO-LoRa-Board-Pinout.jpg" alt="TTGO Pins" style="width:300px;height:300px;">
+
+The OLED displays communicates using I2C communication protocol. It is internally connected to the ESP32 on the following pins:
+* SDA	GPIO 4
+* SCL	GPIO 15
+* RST	GPIO 16
