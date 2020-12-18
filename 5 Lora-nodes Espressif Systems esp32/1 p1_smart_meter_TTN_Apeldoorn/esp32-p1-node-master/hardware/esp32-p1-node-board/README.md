@@ -20,6 +20,7 @@ The OLED displays communicates using I2C communication protocol. It is internall
 * SDA	GPIO 4
 * SCL	GPIO 15
 * RST	GPIO 16
+
 The SX1276 LoRa chip communicates via SPI communication protocol, and it is internally connected to the ESP32 on the following GPIOs:
 * MISO	GPIO 19
 * MOSI	GPIO 27
