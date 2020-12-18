@@ -9,4 +9,4 @@ JP3: Selection between yes/no change polarity.
 ## TTGO LoRa32 SX1276 OLED Overview
 
 The TTGO LoRa32 SX1276 OLED is a development board with an ESP32, a built-in LoRa chip and an SSD1306 OLED display.
-[Image](TTGO-LoRa-ESP32-Dev_Board)
+<img src="TTGO-LoRa-ESP32-Dev-Board.jpg" alt="TTGO" style="width:300px;height:300px;">
