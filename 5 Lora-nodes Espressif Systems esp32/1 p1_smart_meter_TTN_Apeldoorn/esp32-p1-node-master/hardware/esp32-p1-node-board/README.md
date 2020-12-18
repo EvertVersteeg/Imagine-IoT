@@ -28,3 +28,12 @@ The SX1276 LoRa chip communicates via SPI communication protocol, and it is inte
 * CS	GPIO 18
 * IRQ	GPIO 26
 * RST	GPIO 14
+
+There are several libraries available to control the OLED display with the ESP32. In this tutorial we’ll use two Adafruit libraries: Adafruit_SSD1306 library and Adafruit_GFX library.
+
+Follow the next steps to install those libraries.
+
+1. Open your Arduino IDE and go to Sketch > Include Library > Manage Libraries. The Library Manager should open.
+2. Type “SSD1306” in the search box and install the SSD1306 library from Adafruit.
+3. After installing the SSD1306 library from Adafruit, type “GFX” in the search box and install the library.
+
