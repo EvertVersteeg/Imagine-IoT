@@ -3,13 +3,14 @@ This is the Bill of Materials for the P1-Node. Although this list is created wit
 
 Ref | n | Value | Footprint | Shop | Datasheet
 ----|---|-------|-----------|------|-------------------------------------
-C1 | 1 | 10n | SMD:1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/2989220/
+C1, C2, C3 | 3 | 10n | SMD:1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/2989220/
 D1 | 1 | BAT54S | SMD:SOT-23 |  RS-Components  | https://nl.rs-online.com/web/p/rectifier-diodes-schottky-diodes/5444584/
 J1 | 1 | RJ11-6 | RJ12_Amphenol_54601 |  RS-Components  | https://nl.rs-online.com/web/p/ethernet-connectors/1370999/
 Q1 | 1 | BC547 (BC847) | SMD:SOT-323_SC-70 (SOT23) |  RS-Components  | https://nl.rs-online.com/web/p/bjt-bipolar-transistors/6900091/
-R1,  | 1 | 10K | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/7219908/
-R2, R3, R4, R8 | 4 | 1K | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/9013724/
-R5, R6, R7 | 3 | 180 | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/7219762/
+Q2 | 1 | BSS138 | SMD:SOT-23 |  RS-Components  | https://nl.rs-online.com/web/p/mosfets/6710324/
+R1, R4, R5  | 3 | 10K | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/7219908/
+R2 | 1 | 1K | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/9013724/
+R3 | 1 | 12k | SMD:R_1206_3216 |  RS-Components  | https://nl.rs-online.com/web/p/surface-mount-fixed-resistors/8654642/
 Housing | 1 |  | Hammond 1591 ABS Enclosure, Flanged |  RS-Components  | https://nl.rs-online.com/web/p/general-purpose-enclosures/8180514/
 PCB | 1 |  | Aisler, PCB & Stencil |  Aisler  | http://www.aisler.net
 header | 2 | FemalePCBHeader | 1 Row Straight PCB Socket |  RS-Components  | https://nl.rs-online.com/web/p/pcb-sockets/0252399/
