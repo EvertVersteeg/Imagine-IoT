@@ -14,7 +14,8 @@ It is planned to deliver a project to TTN-Apeldoorn community in which the membe
 
 ## About this repository
 This repository holds all information te build de P1-Node. 
-
+Version 1.1 => Reading every 10 minutes, low/high tarif meter reading (deliver/return readings), gas meter reading
+Version 1.2 => Reading every 5 minutes, low/high tarif meter reading (deliver/return readings), gas meter reading, actual power (deliver/return), status current tarif
 
 
 
