@@ -1,0 +1,16 @@
+Segment		GPIO-pin	CN10		4x 7-segment-pin
+a		PA_6		13		13
+b		PA_7		15		9
+c		PA_8		23		4
+d		PA_9		21		2
+e		PA_10		33		1
+f		PA_11		14		12
+g		PA_12		12		5
+EN D1		PC_10				10
+EN D2		PC_12				6
+
+
+Enable connections via NPN transistor to GND (Collector to display, emitter to GND, base via 1k Resistor to GPIO)
+
+Enable digit 1 => 10
+Enable digit 3 => 5
