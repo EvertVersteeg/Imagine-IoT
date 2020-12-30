@@ -31,6 +31,7 @@ Imagine-IoT! maker files repo!
 * Binary Counter with LEDs (IAR)
 * Random Flashing LEDs (IAR)
 * Push button and LEDs (IAR)
+* 7 Segment LED counter (IAR)
 * LCD Displaying Text (IAR)
 
 ### NUCLEO-L053R8
