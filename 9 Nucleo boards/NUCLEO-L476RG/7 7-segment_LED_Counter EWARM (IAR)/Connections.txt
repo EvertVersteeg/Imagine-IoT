@@ -1,0 +1,10 @@
+Segment		GPIO-pin	CN10		7-segment-pin
+a		PA_6		13		7
+b		PA_7		15		6
+c		PA_8		23		4
+d		PA_9		21		2
+e		PA_10		33		1
+f		PA_11		14		9
+g		PA_12		12		10
+
+GND => 3 + 8
