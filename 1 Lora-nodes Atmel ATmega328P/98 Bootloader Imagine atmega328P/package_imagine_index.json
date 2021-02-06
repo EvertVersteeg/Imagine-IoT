@@ -3,7 +3,7 @@
       {
          "name": "ImagineNode",
          "maintainer": "Imagine Solutions BV",
-         "websiteURL": "https://github.com/EvertVersteeg/Imagine-IoT/",
+         "websiteURL": "https://github.com/EvertVersteeg/Imagine-IoT/blob/main/1 Lora-nodes Atmel ATmega328P/98 Bootloader Imagine atmega328P",
          "email": "eversteeg@imaginebv.nl",
          "platforms":[
             {
