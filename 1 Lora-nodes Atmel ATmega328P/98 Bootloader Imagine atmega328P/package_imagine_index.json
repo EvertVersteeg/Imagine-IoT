@@ -3,7 +3,7 @@
       {
          "name": "ImagineNode",
          "maintainer": "Imagine Solutions BV",
-         "websiteURL": "https://github.com/EvertVersteeg/Imagine-IoT/",
+         "websiteURL": "https://github.com/EvertVersteeg/Imagine-IoT/blob/main/1 Lora-nodes Atmel ATmega328P/98 Bootloader Imagine atmega328P",
          "email": "eversteeg@imaginebv.nl",
          "platforms":[
             {
@@ -11,7 +11,7 @@
                "architecture": "avr",
                "version": "1.0.0",
                "category": "Contributed",
-               "url": "https://github.com/EvertVersteeg/Imagine-IoT/1 Lora-nodes Atmel ATmega328P/98 Bootloader Imagine atmega328P/ImagineNode.zip",
+               "url": "https://github.com/EvertVersteeg/Imagine-IoT/blob/main/1 Lora-nodes Atmel ATmega328P/98 Bootloader Imagine atmega328P/ImagineNode.zip",
                "archiveFileName": "ImagineNode.zip",
                "checksum": "SHA-256:FE4B441037C7AFCF95AB9E4ADDC9BE91635C61CE4567A8C9BF0BFEB7CDE72EF3",
                "size": "5099",
