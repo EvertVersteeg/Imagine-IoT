@@ -10,6 +10,9 @@ Imagine-IoT! maker files repo!
 
 ## 2 Nordic nRF52840 Boards
 * RAK WisBlock LPWAN Module (RAK4631) (Arduino-IDE)
+* RAK Wishblock OTAA (TTN V3)
+* RAK Wishblock BME680 (OLED)
+* RAK Wishblock SHTC3
 * TTN Payload decoder (for WisBlock)
 
 ## 3 ATtiny84 Boards
