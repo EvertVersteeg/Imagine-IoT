@@ -14,7 +14,7 @@ Imagine-IoT! maker files repo!
 * This type of flashing is identified as GpFI(2) in maritime lighthouse lights.
 * Onboard LED: PA5
 * External LED: PA5
-* Clocks to default 80MHz
+* Clocks to default 80MHz with internal 8MHz crystal
 * 
 * Description:
 * 

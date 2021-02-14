@@ -340,51 +340,50 @@ Disassembly of section .text:
  80004c6:	bf00      	nop
 
 080004c8 <SystemClock_Config>:
- 80004c8:	b530      	push	{r4, r5, lr}
- 80004ca:	b0b9      	sub	sp, #228	; 0xe4
- 80004cc:	2224      	movs	r2, #36	; 0x24
- 80004ce:	2100      	movs	r1, #0
- 80004d0:	a806      	add	r0, sp, #24
- 80004d2:	f001 fc5d 	bl	8001d90 <memset>
- 80004d6:	2214      	movs	r2, #20
- 80004d8:	2100      	movs	r1, #0
- 80004da:	4668      	mov	r0, sp
- 80004dc:	f001 fc58 	bl	8001d90 <memset>
- 80004e0:	2288      	movs	r2, #136	; 0x88
+ 80004c8:	b570      	push	{r4, r5, r6, lr}
+ 80004ca:	b0b8      	sub	sp, #224	; 0xe0
+ 80004cc:	2614      	movs	r6, #20
+ 80004ce:	2220      	movs	r2, #32
+ 80004d0:	2100      	movs	r1, #0
+ 80004d2:	a807      	add	r0, sp, #28
+ 80004d4:	f001 fc5c 	bl	8001d90 <memset>
+ 80004d8:	4632      	mov	r2, r6
+ 80004da:	2100      	movs	r1, #0
+ 80004dc:	4668      	mov	r0, sp
+ 80004de:	f001 fc57 	bl	8001d90 <memset>
  80004e2:	2100      	movs	r1, #0
- 80004e4:	a816      	add	r0, sp, #88	; 0x58
- 80004e6:	f001 fc53 	bl	8001d90 <memset>
- 80004ea:	f44f 7280 	mov.w	r2, #256	; 0x100
- 80004ee:	2310      	movs	r3, #16
- 80004f0:	e9cd 2308 	strd	r2, r3, [sp, #32]
- 80004f4:	2101      	movs	r1, #1
- 80004f6:	230a      	movs	r3, #10
- 80004f8:	2402      	movs	r4, #2
- 80004fa:	e9cd 1311 	strd	r1, r3, [sp, #68]	; 0x44
- 80004fe:	a805      	add	r0, sp, #20
- 8000500:	2307      	movs	r3, #7
- 8000502:	e9cd 3413 	strd	r3, r4, [sp, #76]	; 0x4c
- 8000506:	9405      	str	r4, [sp, #20]
- 8000508:	e9cd 440f 	strd	r4, r4, [sp, #60]	; 0x3c
- 800050c:	9415      	str	r4, [sp, #84]	; 0x54
+ 80004e4:	2288      	movs	r2, #136	; 0x88
+ 80004e6:	a816      	add	r0, sp, #88	; 0x58
+ 80004e8:	f001 fc52 	bl	8001d90 <memset>
+ 80004ec:	f44f 3280 	mov.w	r2, #65536	; 0x10000
+ 80004f0:	2301      	movs	r3, #1
+ 80004f2:	e9cd 3205 	strd	r3, r2, [sp, #20]
+ 80004f6:	2502      	movs	r5, #2
+ 80004f8:	2403      	movs	r4, #3
+ 80004fa:	e9cd 3611 	strd	r3, r6, [sp, #68]	; 0x44
+ 80004fe:	eb0d 0006 	add.w	r0, sp, r6
+ 8000502:	2307      	movs	r3, #7
+ 8000504:	e9cd 540f 	strd	r5, r4, [sp, #60]	; 0x3c
+ 8000508:	e9cd 3513 	strd	r3, r5, [sp, #76]	; 0x4c
+ 800050c:	9515      	str	r5, [sp, #84]	; 0x54
  800050e:	f000 fbb9 	bl	8000c84 <HAL_RCC_OscConfig>
- 8000512:	2303      	movs	r3, #3
- 8000514:	200f      	movs	r0, #15
- 8000516:	e9cd 0300 	strd	r0, r3, [sp]
- 800051a:	2500      	movs	r5, #0
- 800051c:	2104      	movs	r1, #4
- 800051e:	4668      	mov	r0, sp
- 8000520:	e9cd 5502 	strd	r5, r5, [sp, #8]
- 8000524:	9504      	str	r5, [sp, #16]
- 8000526:	f000 fe33 	bl	8001190 <HAL_RCC_ClockConfig>
- 800052a:	a816      	add	r0, sp, #88	; 0x58
- 800052c:	9416      	str	r4, [sp, #88]	; 0x58
- 800052e:	9525      	str	r5, [sp, #148]	; 0x94
- 8000530:	f000 ffee 	bl	8001510 <HAL_RCCEx_PeriphCLKConfig>
- 8000534:	f44f 7000 	mov.w	r0, #512	; 0x200
- 8000538:	f000 fade 	bl	8000af8 <HAL_PWREx_ControlVoltageScaling>
- 800053c:	b039      	add	sp, #228	; 0xe4
- 800053e:	bd30      	pop	{r4, r5, pc}
+ 8000512:	230f      	movs	r3, #15
+ 8000514:	e9cd 3400 	strd	r3, r4, [sp]
+ 8000518:	2104      	movs	r1, #4
+ 800051a:	2400      	movs	r4, #0
+ 800051c:	4668      	mov	r0, sp
+ 800051e:	e9cd 4402 	strd	r4, r4, [sp, #8]
+ 8000522:	9404      	str	r4, [sp, #16]
+ 8000524:	f000 fe34 	bl	8001190 <HAL_RCC_ClockConfig>
+ 8000528:	a816      	add	r0, sp, #88	; 0x58
+ 800052a:	9516      	str	r5, [sp, #88]	; 0x58
+ 800052c:	9425      	str	r4, [sp, #148]	; 0x94
+ 800052e:	f000 ffef 	bl	8001510 <HAL_RCCEx_PeriphCLKConfig>
+ 8000532:	f44f 7000 	mov.w	r0, #512	; 0x200
+ 8000536:	f000 fadf 	bl	8000af8 <HAL_PWREx_ControlVoltageScaling>
+ 800053a:	b038      	add	sp, #224	; 0xe0
+ 800053c:	bd70      	pop	{r4, r5, r6, pc}
+	...
 
 08000540 <main>:
  8000540:	b500      	push	{lr}

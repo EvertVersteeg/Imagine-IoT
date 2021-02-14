@@ -967,8 +967,9 @@ LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x00000000080004c4                __aeabi_ldiv0
  *(.text*)
  .text.SystemClock_Config
-                0x00000000080004c8       0x78 Core/Src/main.o
+                0x00000000080004c8       0x76 Core/Src/main.o
                 0x00000000080004c8                SystemClock_Config
+ *fill*         0x000000000800053e        0x2 
  .text.startup.main
                 0x0000000008000540      0x124 Core/Src/main.o
                 0x0000000008000540                main
