@@ -636,3 +636,39 @@
 2021-02-14 16:50:27,909 [INFO] ApiDb:230 - User favorites MCUs=[]
 2021-02-14 16:50:27,915 [INFO] ApiDb:226 - Save user favorites file C:\Users\evers/.stm32cubeide/favorites.boards.txt: 1 item(s)
 2021-02-14 16:50:27,916 [INFO] ApiDb:230 - User favorites Boards=[NUCLEO-L476RG]
+2021-02-14 16:55:09,730 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 489617664 Bytes (1017118720)
+2021-02-14 16:55:12,774 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 503287696 Bytes (1017118720)
+2021-02-14 16:55:15,801 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 675292600 Bytes (1017118720)
+2021-02-14 16:55:16,106 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2021-02-14 16:55:16,106 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2021-02-14 16:55:16,107 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2021-02-14 16:55:16,107 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USART
+2021-02-14 16:55:16,107 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2021-02-14 16:55:16,108 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\
+2021-02-14 16:55:16,359 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\MXTmpFiles\license.tmp_save
+2021-02-14 16:55:16,450 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\MXTmpFiles\license.tmp
+2021-02-14 16:55:16,509 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\MXTmpFiles\gpio.tmp_save
+2021-02-14 16:55:16,589 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\MXTmpFiles\gpio.tmp
+2021-02-14 16:55:16,720 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-14 16:55:16,733 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Src\stm32l4xx_it.c_save
+2021-02-14 16:55:16,903 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Src\stm32l4xx_it.c
+2021-02-14 16:55:16,914 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Inc\stm32l4xx_it.h_save
+2021-02-14 16:55:16,984 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Inc\stm32l4xx_it.h
+2021-02-14 16:55:16,999 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Src\stm32l4xx_hal_msp.c_save
+2021-02-14 16:55:17,108 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Src\stm32l4xx_hal_msp.c
+2021-02-14 16:55:17,119 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\MXTmpFiles\system.tmp_save
+2021-02-14 16:55:17,188 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\MXTmpFiles\system.tmp
+2021-02-14 16:55:17,198 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-02-14 16:55:17,286 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Inc\stm32l4xx_hal_conf.h
+2021-02-14 16:55:17,309 [WARN] IPConfigManager:2884 - IP not found : gpio
+2021-02-14 16:55:17,310 [WARN] CodeGenerator:2866 - IP not found : gpio
+2021-02-14 16:55:17,318 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Inc\main.h_save
+2021-02-14 16:55:17,379 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Inc\main.h
+2021-02-14 16:55:17,389 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Src\main.c_save
+2021-02-14 16:55:17,496 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\2b Alt_Flash_LEDs (STM32CubeIDE)\AlternateLEDs\Core\Src\main.c
+2021-02-14 16:55:18,180 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 140mS.
+2021-02-14 16:55:18,187 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2021-02-14 16:55:18,509 [INFO] ConfigFileManager:1183 - The Die is : DIE415
+2021-02-14 16:55:19,927 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 1740mS.
+2021-02-14 16:55:19,929 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
+2021-02-14 16:55:19,934 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
