@@ -831,3 +831,39 @@
 2021-02-14 15:55:13,754 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 1711mS.
 2021-02-14 15:55:13,755 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
 2021-02-14 15:55:13,760 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2021-02-14 16:24:41,668 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 657939104 Bytes (1073741824)
+2021-02-14 16:24:43,115 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 671044264 Bytes (1073741824)
+2021-02-14 16:24:45,346 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 699882144 Bytes (1073741824)
+2021-02-14 16:24:45,523 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2021-02-14 16:24:45,524 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2021-02-14 16:24:45,524 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2021-02-14 16:24:45,524 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USART
+2021-02-14 16:24:45,524 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2021-02-14 16:24:45,525 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\
+2021-02-14 16:24:45,671 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\MXTmpFiles\license.tmp_save
+2021-02-14 16:24:45,711 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\MXTmpFiles\license.tmp
+2021-02-14 16:24:45,734 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\MXTmpFiles\gpio.tmp_save
+2021-02-14 16:24:45,782 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\MXTmpFiles\gpio.tmp
+2021-02-14 16:24:45,924 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-14 16:24:45,932 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Src\stm32l4xx_it.c_save
+2021-02-14 16:24:45,998 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Src\stm32l4xx_it.c
+2021-02-14 16:24:46,005 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Inc\stm32l4xx_it.h_save
+2021-02-14 16:24:46,066 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Inc\stm32l4xx_it.h
+2021-02-14 16:24:46,092 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Src\stm32l4xx_hal_msp.c_save
+2021-02-14 16:24:46,180 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Src\stm32l4xx_hal_msp.c
+2021-02-14 16:24:46,189 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\MXTmpFiles\system.tmp_save
+2021-02-14 16:24:46,228 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\MXTmpFiles\system.tmp
+2021-02-14 16:24:46,235 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-02-14 16:24:46,293 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Inc\stm32l4xx_hal_conf.h
+2021-02-14 16:24:46,316 [WARN] IPConfigManager:2884 - IP not found : gpio
+2021-02-14 16:24:46,316 [WARN] CodeGenerator:2866 - IP not found : gpio
+2021-02-14 16:24:46,321 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Inc\main.h_save
+2021-02-14 16:24:46,372 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Inc\main.h
+2021-02-14 16:24:46,382 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Src\main.c_save
+2021-02-14 16:24:46,967 [INFO] CodeEngine:206 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\1c Lighthouse flashing LED (STM32CubeIDE)\FlashLED\Core\Src\main.c
+2021-02-14 16:24:47,602 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 116mS.
+2021-02-14 16:24:47,605 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2021-02-14 16:24:47,880 [INFO] ConfigFileManager:1183 - The Die is : DIE415
+2021-02-14 16:24:49,171 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 1566mS.
+2021-02-14 16:24:49,173 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
+2021-02-14 16:24:49,176 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
