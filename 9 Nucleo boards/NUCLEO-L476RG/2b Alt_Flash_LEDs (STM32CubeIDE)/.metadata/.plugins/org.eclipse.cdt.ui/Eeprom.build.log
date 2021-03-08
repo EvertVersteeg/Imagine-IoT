@@ -1,0 +1,10 @@
+18:56:04 **** Incremental Build of configuration Debug for project Eeprom ****
+make -j8 all 
+arm-none-eabi-size   Eeprom.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     24	   1776	  17004	   426c	Eeprom.elf
+Finished building: default.size.stdout
+ 
+
+18:56:04 Build Finished. 0 errors, 0 warnings. (took 365ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Eeprom&apos;" deleteContents="false" description="Delete resource &apos;Eeprom&apos;" element1="/Eeprom" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1615045002509"/>
+</session>
