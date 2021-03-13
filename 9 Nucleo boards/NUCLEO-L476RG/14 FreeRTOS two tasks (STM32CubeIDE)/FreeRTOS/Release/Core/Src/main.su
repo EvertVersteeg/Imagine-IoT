@@ -1,0 +1,12 @@
+debug.h:16:6:UART_SEND_NL	0	static
+debug.h:22:6:UART_SEND_CHR	24	static
+debug.h:29:6:UART_SEND_INT	32	static
+debug.h:38:6:UART_SEND_FLT	32	static
+debug.h:47:6:UART_SEND_TXT	24	static
+main.c:295:6:StartBlink01	8	static
+main.c:315:6:StartBlink02	8	static
+debug.h:54:6:UART_SEND_Any	32	static
+main.c:166:6:SystemClock_Config	232	static,ignoring_inline_asm
+main.c:84:5:main	56	static,ignoring_inline_asm
+main.c:336:6:HAL_TIM_PeriodElapsedCallback	0	static
+main.c:353:6:Error_Handler	0	static,ignoring_inline_asm

@@ -1,0 +1,902 @@
+2021-03-13 14:25:16,370 [INFO] Activator:170 - 
+
+
+2021-03-13 14:25:16,372 [INFO] Activator:171 - !SESSION log4j initialized
+2021-03-13 14:25:26,401 [INFO] McuFinderGlobals:39 - Set McuFinder mode to 2 (CubeIDE integrated)
+2021-03-13 14:25:26,567 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602
+2021-03-13 14:25:26,579 [INFO] DbMcusXml:74 - Set database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/mcu/
+2021-03-13 14:25:26,583 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/boardmanager/
+2021-03-13 14:25:26,584 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-13 14:25:26,584 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-13 14:25:26,586 [INFO] DbExamples:333 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-13 14:25:26,595 [INFO] DbMcusAds:85 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,596 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,598 [INFO] DbMcusJson:65 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,599 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,600 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,603 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-03-13 14:25:26,605 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,699 [INFO] RulesReader:52 - Compatibility file has been processed (237 Rules)
+2021-03-13 14:25:26,784 [INFO] MicroXplorer:622 - Detected Java Version = 11.0.9.1
+2021-03-13 14:25:26,785 [INFO] DbMcusXml:74 - Set database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/mcu/
+2021-03-13 14:25:26,785 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/boardmanager/
+2021-03-13 14:25:26,786 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-13 14:25:26,786 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-13 14:25:26,786 [INFO] DbExamples:333 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-13 14:25:26,786 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,786 [INFO] DbMcusAds:85 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,786 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,786 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,786 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,787 [INFO] DbMcusJson:65 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,787 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,787 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,787 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,787 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,787 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,787 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,787 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-03-13 14:25:26,788 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,788 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,851 [INFO] MainPanel:204 - HeapMemory: 268435456
+2021-03-13 14:25:26,925 [INFO] DbMcusXml:74 - Set database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/mcu/
+2021-03-13 14:25:26,926 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/boardmanager/
+2021-03-13 14:25:26,926 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-13 14:25:26,926 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-13 14:25:26,926 [INFO] DbExamples:333 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-13 14:25:26,927 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,927 [INFO] DbMcusAds:85 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,927 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,927 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,927 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,927 [INFO] DbMcusJson:65 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,927 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,927 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,927 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,927 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,927 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,928 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,928 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-03-13 14:25:26,928 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-03-13 14:25:26,928 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-13 14:25:26,947 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602
+2021-03-13 14:25:26,948 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2021-03-13 14:25:26,949 [INFO] PluginManage:292 - Check plugin analytics
+2021-03-13 14:25:27,121 [INFO] AnalyticsPlugin:233 - Accepted Software Licenses: STM32CubeMX.6.0.1,STM32CubeMX.6.1.1,STM32CubeMX.6.1.2
+2021-03-13 14:25:27,121 [INFO] AnalyticsPlugin:235 - Accepted CMSIS Pack Licenses: 
+2021-03-13 14:25:27,122 [INFO] AnalyticsPlugin:237 - Accepted Firmware Licenses: 
+2021-03-13 14:25:27,122 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2021-03-13 14:25:27,122 [INFO] PluginManage:292 - Check plugin clock
+2021-03-13 14:25:27,137 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2021-03-13 14:25:27,137 [INFO] PluginManage:292 - Check plugin ddr
+2021-03-13 14:25:27,139 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2021-03-13 14:25:27,139 [INFO] PluginManage:292 - Check plugin filemanager
+2021-03-13 14:25:27,259 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2021-03-13 14:25:27,259 [INFO] PluginManage:292 - Check plugin ipmanager
+2021-03-13 14:25:27,268 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2021-03-13 14:25:27,268 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2021-03-13 14:25:27,280 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2021-03-13 14:25:27,280 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2021-03-13 14:25:27,305 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2021-03-13 14:25:27,305 [INFO] PluginManage:292 - Check plugin power
+2021-03-13 14:25:27,317 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2021-03-13 14:25:27,318 [INFO] PluginManage:292 - Check plugin projectmanager
+2021-03-13 14:25:27,332 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2021-03-13 14:25:27,332 [INFO] PluginManage:292 - Check plugin thirdparty
+2021-03-13 14:25:27,455 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2021-03-13 14:25:27,455 [INFO] PluginManage:292 - Check plugin tools
+2021-03-13 14:25:27,456 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-03-13 14:25:27,457 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-03-13 14:25:27,457 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [1/15]
+2021-03-13 14:25:27,459 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2021-03-13 14:25:27,459 [INFO] PluginManage:292 - Check plugin tutovideos
+2021-03-13 14:25:27,660 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2021-03-13 14:25:27,661 [INFO] PluginManage:292 - Check plugin updater
+2021-03-13 14:25:27,672 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2021-03-13 14:25:27,673 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2021-03-13 14:25:27,838 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-13 14:25:27,926 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,926 [INFO] PluginManager:203 - loadIPPluginJar : add adc
+2021-03-13 14:25:27,929 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,929 [INFO] PluginManager:203 - loadIPPluginJar : add aes
+2021-03-13 14:25:27,933 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,933 [INFO] PluginManager:203 - loadIPPluginJar : add can
+2021-03-13 14:25:27,935 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,935 [INFO] PluginManager:203 - loadIPPluginJar : add comp
+2021-03-13 14:25:27,938 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,939 [INFO] PluginManager:203 - loadIPPluginJar : add cryp
+2021-03-13 14:25:27,941 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,942 [INFO] PluginManager:203 - loadIPPluginJar : add dfsdm
+2021-03-13 14:25:27,947 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,948 [INFO] PluginManager:203 - loadIPPluginJar : add dma
+2021-03-13 14:25:27,950 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,950 [INFO] PluginManager:203 - loadIPPluginJar : add fatfs
+2021-03-13 14:25:27,955 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,955 [INFO] PluginManager:203 - loadIPPluginJar : add fmc
+2021-03-13 14:25:27,962 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,962 [INFO] PluginManager:203 - loadIPPluginJar : add freertos
+2021-03-13 14:25:27,964 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,965 [INFO] PluginManager:203 - loadIPPluginJar : add genericplugin
+2021-03-13 14:25:27,967 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,967 [INFO] PluginManager:203 - loadIPPluginJar : add gfxmmu
+2021-03-13 14:25:27,973 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,973 [INFO] PluginManager:203 - loadIPPluginJar : add gic
+2021-03-13 14:25:27,978 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,978 [INFO] PluginManager:203 - loadIPPluginJar : add gpio
+2021-03-13 14:25:27,981 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,981 [INFO] PluginManager:203 - loadIPPluginJar : add gtzc
+2021-03-13 14:25:27,984 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,984 [INFO] PluginManager:203 - loadIPPluginJar : add hash
+2021-03-13 14:25:27,987 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,988 [INFO] PluginManager:203 - loadIPPluginJar : add i2c
+2021-03-13 14:25:27,991 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,991 [INFO] PluginManager:203 - loadIPPluginJar : add i2s
+2021-03-13 14:25:27,994 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,994 [INFO] PluginManager:203 - loadIPPluginJar : add ipddr
+2021-03-13 14:25:27,998 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:27,998 [INFO] PluginManager:203 - loadIPPluginJar : add lorawan
+2021-03-13 14:25:28,000 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,000 [INFO] PluginManager:203 - loadIPPluginJar : add ltdc
+2021-03-13 14:25:28,004 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,004 [INFO] PluginManager:203 - loadIPPluginJar : add mdma
+2021-03-13 14:25:28,009 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,009 [INFO] PluginManager:203 - loadIPPluginJar : add nvic
+2021-03-13 14:25:28,012 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,013 [INFO] PluginManager:203 - loadIPPluginJar : add opamp
+2021-03-13 14:25:28,016 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,016 [INFO] PluginManager:203 - loadIPPluginJar : add openamp
+2021-03-13 14:25:28,019 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,019 [INFO] PluginManager:203 - loadIPPluginJar : add pdm2pcm
+2021-03-13 14:25:28,026 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,028 [INFO] PluginManager:203 - loadIPPluginJar : add plateformsettings
+2021-03-13 14:25:28,031 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,031 [INFO] PluginManager:203 - loadIPPluginJar : add quadspi
+2021-03-13 14:25:28,035 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,035 [INFO] PluginManager:203 - loadIPPluginJar : add resmgrutility
+2021-03-13 14:25:28,039 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,039 [INFO] PluginManager:203 - loadIPPluginJar : add sai
+2021-03-13 14:25:28,042 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,042 [INFO] PluginManager:203 - loadIPPluginJar : add spi
+2021-03-13 14:25:28,047 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,047 [INFO] PluginManager:203 - loadIPPluginJar : add stm32_wpan
+2021-03-13 14:25:28,049 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,050 [INFO] PluginManager:203 - loadIPPluginJar : add tim
+2021-03-13 14:25:28,053 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,053 [INFO] PluginManager:203 - loadIPPluginJar : add touchsensing
+2021-03-13 14:25:28,056 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,056 [INFO] PluginManager:203 - loadIPPluginJar : add tracer_emb
+2021-03-13 14:25:28,058 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,058 [INFO] PluginManager:203 - loadIPPluginJar : add ts
+2021-03-13 14:25:28,060 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,061 [INFO] PluginManager:203 - loadIPPluginJar : add tsc
+2021-03-13 14:25:28,063 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,063 [INFO] PluginManager:203 - loadIPPluginJar : add ucpd
+2021-03-13 14:25:28,066 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:25:28,066 [INFO] PluginManager:203 - loadIPPluginJar : add usart
+2021-03-13 14:25:28,411 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:28,519 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:28,523 [INFO] DbMcusAds:132 - JSON generation date=Thu Feb 11 15:55:24 CET 2021 (1613055324029)
+2021-03-13 14:25:28,523 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:28,566 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-03-13 14:25:28,757 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:28,759 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:28,759 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:28,759 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-03-13 14:25:28,761 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:28,804 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:28,805 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-03-13 14:25:30,458 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [2/15]
+2021-03-13 14:25:33,460 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:33,461 [ERROR] AbstractThirdPartyUpdaterManager:153 - class java.lang.Integer cannot be cast to class java.util.List (java.lang.Integer and java.util.List are in module java.base of loader 'bootstrap')
+2021-03-13 14:25:33,461 [INFO] ThirdParty:900 - Integrity check success = false
+2021-03-13 14:25:33,462 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-03-13 14:25:33,463 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-03-13 14:25:33,463 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-03-13 14:25:33,468 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-03-13 14:25:33,480 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-13 14:25:33,482 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-13 14:25:33,512 [INFO] Updater:1002 - Updater Version found : 6.2.0
+2021-03-13 14:25:33,536 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602
+2021-03-13 14:25:33,549 [INFO] MainUpdater:4847 - Software Update Detected: STM32CubeMX
+2021-03-13 14:25:33,554 [ERROR] MainUpdater:4853 - Failed to launch self-upgrade
+2021-03-13 14:25:33,671 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-13 14:25:33,672 [INFO] MainUpdater:255 - Updater Check For Update Now.
+2021-03-13 14:25:33,673 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-13 14:25:33,725 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2021-03-13 14:25:33,796 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-13 14:25:34,148 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\evers\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-03-13 14:25:34,155 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-03-13 14:25:34,158 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-03-13 14:25:34,160 [INFO] DbMcusXml:100 - Load MCU database from C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/mcu/families.xml
+2021-03-13 14:25:34,929 [INFO] DbMcusJson:94 - JSON generation date=Mon Feb 08 14:35:07 CET 2021 (1612791307)
+2021-03-13 14:25:35,600 [INFO] DbMcus:175 - Found 1906 MCUs (1866 are supported by CubeMX, 1866 are visible in CubeMX)
+2021-03-13 14:25:35,609 [INFO] ApiDb:251 - Load user favorites file C:\Users\evers/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-03-13 14:25:35,609 [INFO] ApiDb:255 - User favorites MCUs=[]
+2021-03-13 14:25:35,610 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2021-03-13 14:25:36,074 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-03-13 14:25:36,493 [INFO] DbBoardsPdsc:90 - Found 24 items
+2021-03-13 14:25:36,496 [INFO] DbBoardsPdsc:90 - Found 9 items
+2021-03-13 14:25:36,500 [INFO] DbBoardsPdsc:90 - Found 33 items
+2021-03-13 14:25:36,502 [INFO] DbBoardsPdsc:90 - Found 1 items
+2021-03-13 14:25:36,508 [INFO] DbBoardsPdsc:90 - Found 46 items
+2021-03-13 14:25:36,515 [INFO] DbBoardsPdsc:90 - Found 41 items
+2021-03-13 14:25:36,517 [INFO] DbBoardsPdsc:90 - Found 2 items
+2021-03-13 14:25:36,519 [INFO] DbBoardsPdsc:90 - Found 5 items
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Three user LEDs, n=1
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=One reset and three user push-buttons, n=1
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Arduino Uno V3 expansion connector, n=1
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=ST morpho extension pin headers for full access to all STM32WB I/Os, n=1
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Integrated PCB antenna and SMA connector footprint, n=1
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Flexible power-supply options: ST-LINK, USB VBUS, or external sources, n=1
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=On-board footprint to mount a CR2032 battery socket, n=1
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=On-board ST-LINK/V2-1 debugger/programmer with USB re-enumeration capability: mass storage, Virtual COM port, and debug port, n=1
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Comprehensive free software libraries and examples available with the STM32CubeWB MCU Package, n=1
+2021-03-13 14:25:36,522 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Support of a wide choice of Integrated Development Environments (IDEs) including IAR Embedded Workbench, MDK-ARM, STM32CubeIDE, and Mbed Studio, n=1
+2021-03-13 14:25:36,524 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2021-03-13 14:25:36,525 [WARN] DbBoardsPdsc:254 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2021-03-13 14:25:36,525 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Time-of-Flight and gesture-detection sensor, n=1
+2021-03-13 14:25:36,525 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=3 push-buttons (2 users and 1 reset) and 1 touch key button, n=1
+2021-03-13 14:25:36,525 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Flexible power-supply options: ST-LINK/V2-1 USB connector, 5 V delivered by ARDUINO® or external connector, USB charger, or USB power, n=1
+2021-03-13 14:25:36,525 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=On-board ST-LINK/V2-1 debugger/programmer with USB re-enumeration capability: Virtual COM port and debug port, n=1
+2021-03-13 14:25:36,525 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Comprehensive free software libraries and examples available with the STM32CubeWB MCU Package, n=1
+2021-03-13 14:25:36,525 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Support of a wide choice of Integrated Development Environments (IDEs) including IAR Embedded Workbench®, MDK-ARM, and STM32CubeIDE, n=1
+2021-03-13 14:25:36,526 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2021-03-13 14:25:36,526 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2021-03-13 14:25:36,527 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2021-03-13 14:25:36,542 [INFO] DbBoardsJson:87 - JSON generation date=Thu Feb 04 17:53:45 CET 2021 (1612457625)
+2021-03-13 14:25:36,548 [INFO] DbBoards:117 - Found 161 boards (158 are supported by CubeMX)
+2021-03-13 14:25:36,558 [INFO] DbBoardsDocs:143 - JSON generation date=Mon Feb 08 14:35:07 CET 2021 (1612791307)
+2021-03-13 14:25:36,577 [INFO] DbBoardsDocs:79 - Found 193 boards documents
+2021-03-13 14:25:36,578 [WARN] DbBoards:127 - board B-L462E-CELL1 has no document id list !
+2021-03-13 14:25:36,578 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2021-03-13 14:25:36,579 [WARN] DbBoards:127 - board NUCLEO-G0B1RE has no document id list !
+2021-03-13 14:25:36,579 [WARN] DbBoards:127 - board NUCLEO-H743ZI2 has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board NUCLEO-L4A6ZG has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board NUCLEO-WB15CC has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board NUCLEO-WB55RG has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board NUCLEO-WL55JC2 has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2021-03-13 14:25:36,580 [WARN] DbBoards:127 - board STEVAL-STWINKT1B has no document id list !
+2021-03-13 14:25:36,581 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2021-03-13 14:25:36,581 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2021-03-13 14:25:36,582 [WARN] DbBoards:127 - board STM32G0C1E-EV has no document id list !
+2021-03-13 14:25:36,582 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2021-03-13 14:25:36,582 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2021-03-13 14:25:36,582 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2021-03-13 14:25:36,582 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2021-03-13 14:25:36,582 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2021-03-13 14:25:36,583 [WARN] DbBoards:127 - board STM32MP157A-DK1 has no document id list !
+2021-03-13 14:25:36,583 [WARN] DbBoards:127 - board STM32MP157F-DK2 has no document id list !
+2021-03-13 14:25:36,583 [WARN] DbBoards:127 - board STM32MP157F-EV1 has no document id list !
+2021-03-13 14:25:36,583 [WARN] DbBoards:127 - board STM32WB5MM-DK has no document id list !
+2021-03-13 14:25:38,227 [INFO] ApiDb:251 - Load user favorites file C:\Users\evers/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2021-03-13 14:25:38,227 [INFO] ApiDb:255 - User favorites Boards=[NUCLEO-L476RG]
+2021-03-13 14:25:38,227 [INFO] DbBoards:206 - Set 1 / 1 favorites Boards
+2021-03-13 14:25:40,322 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://sw-center.st.com:443: The target server failed to respond
+2021-03-13 14:25:40,324 [INFO] RetryExec:113 - Retrying request to {s}->https://sw-center.st.com:443
+2021-03-13 14:25:41,472 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://sw-center.st.com:443: The target server failed to respond
+2021-03-13 14:25:41,473 [INFO] RetryExec:113 - Retrying request to {s}->https://sw-center.st.com:443
+2021-03-13 14:25:41,949 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:41,949 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:42,640 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:42,640 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:43,008 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:43,009 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:43,387 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:43,388 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:43,804 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:43,804 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:44,149 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:44,150 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:44,565 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:44,565 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:45,040 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:45,041 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:45,481 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:45,481 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:45,922 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:45,923 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:46,358 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:46,358 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:46,765 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:46,766 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:47,134 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:47,135 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:25:47,523 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 14:25:47,523 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 14:26:00,554 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-03-13 14:26:00,607 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-03-13 14:26:26,746 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-13 14:26:26,746 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-13 14:26:26,787 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-03-13 14:26:26,788 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-13 14:26:26,788 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-03-13 14:26:26,788 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-03-13 14:26:26,788 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-03-13 14:26:26,793 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-13 14:26:26,794 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 435689048 Bytes (502267904)
+2021-03-13 14:26:26,796 [INFO] OpenFileManager:303 - Change cursor
+2021-03-13 14:26:26,810 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-03-13 14:26:26,811 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-03-13 14:26:26,939 [WARN] PackLoader:226 - Cannot read IP mode file for RoweBots.I-CUBE-UNISONRTOS.5.5.0-4
+2021-03-13 14:26:26,966 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0
+2021-03-13 14:26:27,049 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.8.2.0
+2021-03-13 14:26:27,259 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.2
+2021-03-13 14:26:27,269 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.2.0
+2021-03-13 14:26:27,282 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.4.0.0
+2021-03-13 14:26:27,309 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.1.0.0
+2021-03-13 14:26:27,321 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.2.0
+2021-03-13 14:26:27,326 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.5.2.0
+2021-03-13 14:26:27,330 [WARN] PackLoader:226 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.4.7.0
+2021-03-13 14:26:27,333 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.16.1
+2021-03-13 14:26:27,334 [INFO] ThirdParty:900 - Integrity check success = true
+2021-03-13 14:26:27,334 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-03-13 14:26:27,334 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-03-13 14:26:29,869 [INFO] Context:587 - Trying to add GPIOservice into a context  which must be forbidden
+2021-03-13 14:26:30,470 [INFO] Rule:214 - rule Rename Enabled to IBEACON is applicable
+2021-03-13 14:26:30,470 [INFO] Rule:214 - rule GTZC_S instance for project manager is applicable
+2021-03-13 14:26:30,470 [INFO] Rule:214 - rule GTZC_S instance for context M0+ is applicable
+2021-03-13 14:26:30,470 [INFO] Rule:214 - rule GTZC_NS instance for context M4 is applicable
+2021-03-13 14:26:30,470 [INFO] Rule:214 - rule GTZC_S instance value for IP GTZC is applicable
+2021-03-13 14:26:30,470 [INFO] Rule:214 - rule GTZC_S instance for mcu.IP is applicable
+2021-03-13 14:26:30,470 [INFO] Rule:214 - rule GTZC_S instance for mcu.Pin is applicable
+2021-03-13 14:26:30,470 [INFO] Rule:214 - rule GTZC_S instance for VP is applicable
+2021-03-13 14:26:30,470 [INFO] Rule:214 - rule GTZC_S instance for signal is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule GTZC_S instance for mcu is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule GTZC_S instance for mcu.Pin is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule GTZC_S instance value for IP GTZC is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule GTZC_S instance for project manager is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule GTZC_S instance for context M33S is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule GTZC_S instance for VP is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule GTZC_S instance for signal is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule SPDIFRX instance for mcu is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule Rename Tracer Mode is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule SPDIFRX instance value for IP SPDIFRX is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule SPDIFRX instance for signal is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule SPDIFRX instance for project manager is applicable
+2021-03-13 14:26:30,471 [INFO] Rule:214 - rule SPDIFRX instance for project manager is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule ADC Scan  fix with FW F7 is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule ADC Scan  fix with FW F7 is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule Add RTC Activate Clock Source is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule Add RTC Activate Calendar 1 is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule Add RTC Activate Calendar 2 is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule Add RTC Activate Calendar 3 is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule UART/USART TX Mode is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule UART/USART RX Mode is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule UART/USART RX TX Mode is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule UART/USART PARITY NONE is applicable
+2021-03-13 14:26:30,472 [INFO] Rule:214 - rule UART/USART PARITY EVEN is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule UART/USART PARITY ODD is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule USART StopBits 1 is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule USART StopBits 2 is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule USART StopBits 1.5 is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule USART StopBits 0.5 is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule UART/USART WORD LENGTH 7 is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule UART/USART WORD LENGTH 8 is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule UART/USART WORD LENGTH 9 is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule Rename FMC NAND NCE signal is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule Rename FMC NAND INT signal is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigConv L4 family is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigInjecConv L4 family is applicable
+2021-03-13 14:26:30,473 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigConv F3 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigInjecConv F3 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigConv Goldfish serie is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigInjecConv Goldfish serie is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigConv L0 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigConv F0 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigConvn L1 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigInjecConv L1 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigConv F1 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigInjecConv F1 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigConv F7 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigInjecConv F7 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigConv F4 and F2 family is applicable
+2021-03-13 14:26:30,474 [INFO] Rule:214 - rule Change Default Value for ADC ExternalTrigInjecConv F4 and F2 family is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule ADC SamplingTime fix with FW L0  is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule ADC SamplingTime fix with FW L0  is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule ADC SamplingTime fix with FW L0 is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule ADC SamplingTime fix with FW L0 is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule ADC SamplingTime fix with FW L0  is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule ADC SamplingTime fix with FW L0 is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule Rename USB_OE Signal is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule Rename Activate_OE Mode is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule Rename DIE462/DIE415 pin PC14/OSC32_IN -> PC14-OSC32_IN (PC14) is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule Rename DIE462/DIE415 pin PC15/OSC32_OUT -> PC15-OSC32_OUT (PC15) is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule Rename DIE462/DIE415 pin PH0/OSC_IN -> PH0-OSC_IN (PH0) is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule Rename DIE462/DIE415 pin PH1/OSC_OUT -> PH1-OSC_OUT (PH1) is applicable
+2021-03-13 14:26:30,475 [INFO] Rule:214 - rule Rename DIE462 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DIE415 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DIE462 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DIE415 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DIE462/DIE415 pin PA15 -> PA15 (JTDI) is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DIE462 pin PB3 -> PB3 (JTD0/TRACESWO) is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DIE415 pin PB3 -> PB3 (JTD0-TRACESWO) is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DIE462/DIE415 pin PB4 -> PB4 (NJTRST) is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DIE462 pin PH3/BOOT0 -> PH3-BOOT0 (BOOT0) is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename CRYP DataEncryptionTypesList to Algorithm is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename AES DataEncryptionTypesList to Algorithm is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename TDESECB to CRYP_TDES_ECB is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename TDESCBC to CRYP_TDES_CBC is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DESECB to CRYP_DES_ECB is applicable
+2021-03-13 14:26:30,476 [INFO] Rule:214 - rule Rename DESCBC to CRYP_DES_CBC is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename AESECB to CRYP_AES_ECB is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename AESCBC to CRYP_AES_CBC is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename AESCTR to CRYP_AES_CTR is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename AESGCM to CRYP_AES_GCM is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename AESCCM to CRYP_AES_CCM is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename CAN TimeSeg1 to BS1 is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename CAN TimeSeg2 to BS2 is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename CAN SyncJumpWidth to SJW is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule TimeTriggeredMode to TTCM is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename CAN AutoBusOff to ABOM is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename CAN AutoWakeUp to AWUM is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename CAN AutoRetransmission to NART is applicable
+2021-03-13 14:26:30,477 [INFO] Rule:214 - rule Rename CAN ReceiveFifoLocked to RFLM is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule Rename CAN TransmitFifoPriority to TXFP is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule Rename HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGH in HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGHZ is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule Rename TIMER TIM_CLEARINPUTSOURCE_OCREFCLR in  TIMER TIM_CLEARINPUTSOURCE_NONE for F7 family is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN_R1 - Rename FDCAN mode Master into Classic is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN_R2 - Rename FDCAN mode Slave into Classic is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN1_R3 - if PA10.Mode=FullDuplex, add Pin PA12 is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN1_R3 - if PA9.Mode=FullDuplex, add Pin PA11 is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN1_R3 - Alternatepin_1 - if PE1.Mode=FullDuplex, add Pin PB9 is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN1_R3 - Alternatepin_1 - if PE0.Mode=FullDuplex, add Pin PB8 is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN1_R3 - Alternatepin_2 - if PD5.Mode=FullDuplex, add Pin PD1 is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN1_R3 - Alternatepin_2 - if PD4.Mode=FullDuplex, add Pin PD0 is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA10 is applicable
+2021-03-13 14:26:30,478 [INFO] Rule:214 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA9 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE1 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE0 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD5 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD4 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN2_R3 - if PD10.Mode=FullDuplex, add Pin PB13 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN2_R3 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN2_R3 - Alternatepin_1 - if PB7.Mode=FullDuplex, add Pin PB6 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN2_R3 - Alternatepin_1 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD10 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD9 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PB7 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD6 is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule USART TxPinLevelInvertParam Mode is applicable
+2021-03-13 14:26:30,479 [INFO] Rule:214 - rule USART RxPinLevelInvertParam Mode is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule USART DataInvertParam Mode is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule USART SwapParam Mode is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule USART OverrunDisableParam Mode is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule USART DMADisableonRxErrorParam Mode is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule USART MSBFirstParam Mode is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule Update MwName for USB_DEVICE is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule Change PWR_Regulator_Voltage_Scale Default Value for RCC  H7 family is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule UART/USART IPParameter rename Prescaler parameter to ClockPrescaler is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule UART/USART Prescaler rename Prescaler parameter to ClockPrescaler is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule TIM1CLockSelection is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule TIM15CLockSelection is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule align RCC SDMMC3CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,480 [INFO] Rule:214 - rule align RCC SDMMC12CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC SPI6CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC LPTIM23CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC LPTIM1CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC USART1CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC USART24CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC USART6CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC UART78CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC USART35CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC I2C46CLockSelection BCLK value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,481 [INFO] Rule:214 - rule align RCC I2C12CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule align RCC I2C35CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule align RCC LPTIM45CLockSelection default value on MP1 is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Rename DCMI PIXCK signal is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change Default Value for I2C46CLockSelection MP1 family is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change Default Value for UART for G4, G0 and WB families is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change Default Value for USART for G4, G0 and WB families is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change Default Value for USART for G4 family is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change USART1CLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change USART2CLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change USART3CLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change UART4CLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change UART5CLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,482 [INFO] Rule:214 - rule Change LPUART1CLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change LPTIM1CLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change LPTIM2CLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change RCC_MCO1Source refparam name for MP1 is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change LSCOSource1 refparam name for MP1 is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change SMPSCLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change LPTIM3CLockSelection refparam name for MP1 is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change MPCBB* Default Template Mode to Parameters is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change MPCWM* or MPCBB* Secure Mode to Parameters is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change MPCWM* or MPCBB* No Secure Mode to Parameters is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change TZSC IP Secure Mode to Parameters is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change TZSC IP No Secure Mode to Parameters is applicable
+2021-03-13 14:26:30,483 [INFO] Rule:214 - rule Change TZSC IP Privilege Mode to Parameters is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Change TZSC IP No Privilege Mode to Parameters is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Change TZIC IT Secure Mode to Parameters is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Change TZIC IT No Secure Mode to Parameters is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Add MPCBB1_NonSecureArea_Start_Address value with referenced to MPCBB1_NonSecureArea_Start value is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Add MPCBB2_NonSecureArea_Start_Address value with referenced to MPCBB2_NonSecureArea_Start value is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Add MPCWM1_NonSecureArea*_Start_Address value with referenced to MPCWM1_NonSecureArea*_Start value is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Add MPCWM2_NonSecureArea*_Start_Address value with referenced to MPCWM2_NonSecureArea*_Start value is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Add MPCWM3_NonSecureArea_Start_Address value with referenced to MPCWM3_NonSecureArea_Start value is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Change Default Value for PLL1UserDefinedConfig is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Change GPIO_PuPd Default Value for USART in async mode is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule Change SMPSDivider Default Value is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule OPAMP is applicable
+2021-03-13 14:26:30,484 [INFO] Rule:214 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32L5 is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule USB device lib V2.5.3 for L0 rename USBD_SUPPORT_USER_STRING parameter to USBD_SUPPORT_USER_STRING_DESC4 is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule I2SCLockSelection clock entry align is applicable
+2021-03-13 14:26:30,485 [INFO] Rule:214 - rule Assign TIMx context if used as SYS timebase is applicable
+2021-03-13 14:26:30,499 [INFO] DbConfProperties:294 - Apply Compatibility (46/202 Rules)
+2021-03-13 14:26:30,522 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2021-03-13 14:26:30,627 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-13 14:26:30,627 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-13 14:26:30,628 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-13 14:26:30,632 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,633 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,634 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,635 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,635 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,635 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-13 14:26:30,640 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-13 14:26:30,641 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-13 14:26:30,641 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-13 14:26:30,776 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-13 14:26:30,777 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-13 14:26:30,777 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-13 14:26:30,784 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-03-13 14:26:30,785 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-03-13 14:26:30,785 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-03-13 14:26:30,785 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-03-13 14:26:30,785 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-03-13 14:26:30,786 [WARN] ApiManager:294 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-13 14:26:30,786 [WARN] ApiManager:294 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-13 14:26:30,786 [WARN] ApiManager:294 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-13 14:26:30,787 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.2: no header file found
+2021-03-13 14:26:30,788 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.2.0: no header file found
+2021-03-13 14:26:31,114 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-03-13 14:26:31,117 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RNGFreq_Value) has invalid value (64000000)
+2021-03-13 14:26:31,117 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDMMCFreq_Value) has invalid value (64000000)
+2021-03-13 14:26:31,117 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (64000000)
+2021-03-13 14:26:31,431 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 423954520 Bytes (548405248)
+2021-03-13 14:26:31,438 [WARN] ThirdParty:762 - waiting for thirdparty lock release [change project]
+2021-03-13 14:26:31,438 [INFO] ThirdParty:764 - entering critical section [change project]
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.0.0
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.0.0
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.0.0
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-03-13 14:26:31,439 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.0
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.2
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 4.7.0
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.1
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-03-13 14:26:31,440 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.0
+2021-03-13 14:26:31,440 [INFO] ThirdParty:770 - exiting critical section [change project]
+2021-03-13 14:26:31,794 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-13 14:26:31,796 [INFO] PinOutPanel:1435 - setPackage(STM32L476RGTx,LQFP64)
+2021-03-13 14:26:32,528 [INFO] UtilMem:74 - Before build in PCC Used Memory: 453455136 Bytes (548405248)
+2021-03-13 14:26:32,958 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/evers/.stm32cubemx/plugins/power
+2021-03-13 14:26:32,991 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/evers/.stm32cubemx/plugins/power
+2021-03-13 14:26:33,081 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/evers/.stm32cubemx/plugins/power
+2021-03-13 14:26:33,104 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/evers/.stm32cubemx/plugins/power
+2021-03-13 14:26:33,302 [INFO] UtilMem:74 - After build in PCC Used Memory: 469919360 Bytes (548405248)
+2021-03-13 14:26:33,325 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,325 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,325 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,325 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,326 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,326 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,326 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,326 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,326 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,326 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,326 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,327 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,327 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,327 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,327 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,327 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,328 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,328 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,328 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,328 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,329 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,329 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,329 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,330 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,330 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,340 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,340 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,341 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,341 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,342 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,342 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,342 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,343 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,343 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,344 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,344 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,345 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,345 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,345 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,346 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,346 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,348 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,348 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,348 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,349 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,349 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,350 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,350 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,351 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,352 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,352 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,353 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,353 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,354 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,355 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,356 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,357 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-13 14:26:33,394 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2021-03-13 14:26:33,480 [INFO] OpenFileManager:323 - Restore cursor
+2021-03-13 14:26:33,817 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 437095632 Bytes (548405248)
+2021-03-13 14:26:33,903 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 450727120 Bytes (548405248)
+2021-03-13 14:26:34,299 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-03-13 14:26:34,299 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-03-13 14:26:34,299 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-03-13 14:26:34,299 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-03-13 14:26:34,300 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-03-13 14:26:34,302 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\
+2021-03-13 14:26:34,741 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\license.tmp_save
+2021-03-13 14:26:35,065 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\license.tmp
+2021-03-13 14:26:35,196 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\gpio.tmp_save
+2021-03-13 14:26:35,289 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\gpio.tmp
+2021-03-13 14:26:35,655 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-13 14:26:35,675 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_it.c_save
+2021-03-13 14:26:35,785 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_it.c
+2021-03-13 14:26:35,795 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_it.h_save
+2021-03-13 14:26:35,853 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_it.h
+2021-03-13 14:26:35,873 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_msp.c_save
+2021-03-13 14:26:35,974 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_msp.c
+2021-03-13 14:26:35,980 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\system.tmp_save
+2021-03-13 14:26:36,027 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\system.tmp
+2021-03-13 14:26:36,039 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-03-13 14:26:36,111 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_hal_conf.h
+2021-03-13 14:26:36,169 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\main.h_save
+2021-03-13 14:26:36,227 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\main.h
+2021-03-13 14:26:36,235 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\main.c_save
+2021-03-13 14:26:36,350 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\main.c
+2021-03-13 14:26:37,383 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 185mS.
+2021-03-13 14:26:37,391 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-03-13 14:26:37,982 [INFO] ConfigFileManager:1242 - The Die is : DIE415
+2021-03-13 14:26:38,000 [INFO] ApiDbMcu:458 - Load IP Config File for FATFS
+2021-03-13 14:26:38,025 [INFO] ApiDbMcu:458 - Load IP Config File for FREERTOS
+2021-03-13 14:26:38,148 [INFO] ApiDbMcu:458 - Load IP Config File for TOUCHSENSING
+2021-03-13 14:26:38,192 [INFO] ApiDbMcu:458 - Load IP Config File for USB_DEVICE
+2021-03-13 14:26:38,203 [INFO] ApiDbMcu:458 - Load IP Config File for USB_HOST
+2021-03-13 14:26:42,548 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 5157mS.
+2021-03-13 14:26:42,549 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-13 14:26:42,553 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-13 14:26:43,432 [INFO] ApiDb:276 - Save user favorites file C:\Users\evers/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-03-13 14:26:43,433 [INFO] ApiDb:280 - User favorites MCUs=[]
+2021-03-13 14:26:43,436 [INFO] ApiDb:276 - Save user favorites file C:\Users\evers/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2021-03-13 14:26:43,437 [INFO] ApiDb:280 - User favorites Boards=[NUCLEO-L476RG]
+2021-03-13 14:27:02,956 [INFO] RtosManager:784 - Current active RTOS is FREERTOS [Cortex-M4NS]
+2021-03-13 14:27:03,030 [WARN] FreeRTOS:529 - Case being investigated as it may cause exception (when called to early by set config state
+2021-03-13 14:27:03,244 [ERROR] RtosPanel:542 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2021-03-13 14:27:03,337 [ERROR] RtosPanel:542 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2021-03-13 14:27:14,389 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-13 14:27:14,389 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-13 14:27:14,390 [WARN] TasksAndQueuesTab:760 - max value is: 750.0
+2021-03-13 14:27:31,050 [INFO] EditThreadDialog:688 - RAM SIZE (in KB): 128
+2021-03-13 14:27:31,050 [INFO] EditThreadDialog:690 - RAM SIZE (in words): 32768
+2021-03-13 14:28:11,128 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-13 14:28:11,129 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-13 14:28:11,129 [WARN] TasksAndQueuesTab:760 - max value is: 750.0
+2021-03-13 14:28:11,129 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-13 14:28:11,129 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-13 14:28:11,129 [WARN] TasksAndQueuesTab:760 - max value is: 750.0
+2021-03-13 14:28:11,292 [ERROR] RtosPanel:542 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2021-03-13 14:28:14,888 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-13 14:28:14,888 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-13 14:28:14,888 [WARN] TasksAndQueuesTab:760 - max value is: 750.0
+2021-03-13 14:28:14,888 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-13 14:28:14,889 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-13 14:28:14,889 [WARN] TasksAndQueuesTab:760 - max value is: 750.0
+2021-03-13 14:28:38,085 [INFO] EditThreadDialog:688 - RAM SIZE (in KB): 128
+2021-03-13 14:28:38,085 [INFO] EditThreadDialog:690 - RAM SIZE (in words): 32768
+2021-03-13 14:29:18,814 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-13 14:29:18,815 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-13 14:29:18,815 [WARN] TasksAndQueuesTab:760 - max value is: 750.0
+2021-03-13 14:29:18,815 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-13 14:29:18,815 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-13 14:29:18,815 [WARN] TasksAndQueuesTab:760 - max value is: 750.0
+2021-03-13 14:29:21,099 [INFO] EditThreadDialog:688 - RAM SIZE (in KB): 128
+2021-03-13 14:29:21,099 [INFO] EditThreadDialog:690 - RAM SIZE (in words): 32768
+2021-03-13 14:29:35,287 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-13 14:29:35,287 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-13 14:29:35,287 [WARN] TasksAndQueuesTab:760 - max value is: 750.0
+2021-03-13 14:29:35,287 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-13 14:29:35,288 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-13 14:29:35,288 [WARN] TasksAndQueuesTab:760 - max value is: 750.0
+2021-03-13 14:29:42,479 [INFO] EditThreadDialog:688 - RAM SIZE (in KB): 128
+2021-03-13 14:29:42,479 [INFO] EditThreadDialog:690 - RAM SIZE (in words): 32768
+2021-03-13 14:29:45,943 [INFO] EditThreadDialog:688 - RAM SIZE (in KB): 128
+2021-03-13 14:29:45,943 [INFO] EditThreadDialog:690 - RAM SIZE (in words): 32768
+2021-03-13 14:30:26,378 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 613260624 Bytes (891289600)
+2021-03-13 14:30:29,237 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 634343960 Bytes (891289600)
+2021-03-13 14:30:35,513 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 763729232 Bytes (891289600)
+2021-03-13 14:30:35,999 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: FREERTOS
+2021-03-13 14:30:35,999 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-03-13 14:30:35,999 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-03-13 14:30:35,999 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-03-13 14:30:35,999 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-03-13 14:30:35,999 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-03-13 14:30:36,001 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\
+2021-03-13 14:30:36,422 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\license.tmp_save
+2021-03-13 14:30:36,536 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\license.tmp
+2021-03-13 14:30:36,591 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\gpio.tmp_save
+2021-03-13 14:30:36,679 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\gpio.tmp
+2021-03-13 14:30:36,961 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-13 14:30:36,975 [INFO] Middleware:1263 - No code input for Bsp Dependency
+2021-03-13 14:30:36,989 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_inc.tmp_save
+2021-03-13 14:30:37,045 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_inc.tmp
+2021-03-13 14:30:37,049 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_kernelInit.tmp_save
+2021-03-13 14:30:37,128 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_kernelInit.tmp
+2021-03-13 14:30:37,133 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_kernelStart.tmp_save
+2021-03-13 14:30:37,185 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_kernelStart.tmp
+2021-03-13 14:30:37,190 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_typedefs.tmp_save
+2021-03-13 14:30:37,238 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_typedefs.tmp
+2021-03-13 14:30:37,243 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_vars.tmp_save
+2021-03-13 14:30:37,294 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_vars.tmp
+2021-03-13 14:30:37,299 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_pfp.tmp_save
+2021-03-13 14:30:37,345 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_pfp.tmp
+2021-03-13 14:30:37,350 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_obj_creat.tmp_save
+2021-03-13 14:30:37,401 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_obj_creat.tmp
+2021-03-13 14:30:37,405 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_default_thread.tmp_save
+2021-03-13 14:30:37,454 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_default_thread.tmp
+2021-03-13 14:30:37,459 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_threads.tmp_save
+2021-03-13 14:30:37,508 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_threads.tmp
+2021-03-13 14:30:37,512 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\FreeRTOSConfig.h_save
+2021-03-13 14:30:37,592 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\FreeRTOSConfig.h
+2021-03-13 14:30:37,601 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\freertos.c_save
+2021-03-13 14:30:37,655 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\freertos.c
+2021-03-13 14:30:37,657 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-13 14:30:37,671 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_it.c_save
+2021-03-13 14:30:37,744 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_it.c
+2021-03-13 14:30:37,750 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_it.h_save
+2021-03-13 14:30:37,805 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_it.h
+2021-03-13 14:30:37,820 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_msp.c_save
+2021-03-13 14:30:37,904 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_msp.c
+2021-03-13 14:30:37,908 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\system.tmp_save
+2021-03-13 14:30:37,972 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\system.tmp
+2021-03-13 14:30:37,976 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_timebase_tim.c_save
+2021-03-13 14:30:38,031 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_timebase_tim.c
+2021-03-13 14:30:38,045 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-03-13 14:30:38,105 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_hal_conf.h
+2021-03-13 14:30:38,154 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\main.h_save
+2021-03-13 14:30:38,212 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\main.h
+2021-03-13 14:30:38,219 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\main.c_save
+2021-03-13 14:30:38,332 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\main.c
+2021-03-13 14:30:39,319 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 217mS.
+2021-03-13 14:30:39,326 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-03-13 14:30:39,878 [INFO] ConfigFileManager:1242 - The Die is : DIE415
+2021-03-13 14:30:42,040 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 2714mS.
+2021-03-13 14:30:42,041 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-13 14:30:42,048 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-13 15:41:24,746 [INFO] DbMcusDocs:143 - JSON generation date=Mon Feb 08 14:35:07 CET 2021 (1612791307)
+2021-03-13 15:41:25,023 [INFO] DbMcusDocs:79 - Found 617 MCUs documents
+2021-03-13 15:41:47,416 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 574618168 Bytes (943718400)
+2021-03-13 15:41:48,974 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 598213176 Bytes (943718400)
+2021-03-13 15:41:49,198 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 624949816 Bytes (943718400)
+2021-03-13 15:41:49,559 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: FREERTOS
+2021-03-13 15:41:49,559 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-03-13 15:41:49,559 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-03-13 15:41:49,559 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-03-13 15:41:49,560 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-03-13 15:41:49,560 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-03-13 15:41:49,561 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\
+2021-03-13 15:41:49,903 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\license.tmp_save
+2021-03-13 15:41:49,989 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\license.tmp
+2021-03-13 15:41:50,041 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\gpio.tmp_save
+2021-03-13 15:41:50,096 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\gpio.tmp
+2021-03-13 15:41:50,339 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-13 15:41:50,350 [INFO] Middleware:1263 - No code input for Bsp Dependency
+2021-03-13 15:41:50,359 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_inc.tmp_save
+2021-03-13 15:41:50,409 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_inc.tmp
+2021-03-13 15:41:50,413 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_kernelInit.tmp_save
+2021-03-13 15:41:50,463 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_kernelInit.tmp
+2021-03-13 15:41:50,467 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_kernelStart.tmp_save
+2021-03-13 15:41:50,515 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_kernelStart.tmp
+2021-03-13 15:41:50,520 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_typedefs.tmp_save
+2021-03-13 15:41:50,569 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_typedefs.tmp
+2021-03-13 15:41:50,574 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_vars.tmp_save
+2021-03-13 15:41:50,623 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_vars.tmp
+2021-03-13 15:41:50,628 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_pfp.tmp_save
+2021-03-13 15:41:50,672 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_pfp.tmp
+2021-03-13 15:41:50,676 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_obj_creat.tmp_save
+2021-03-13 15:41:50,778 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_obj_creat.tmp
+2021-03-13 15:41:50,785 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_default_thread.tmp_save
+2021-03-13 15:41:50,884 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_default_thread.tmp
+2021-03-13 15:41:50,891 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_threads.tmp_save
+2021-03-13 15:41:50,937 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\rtos_threads.tmp
+2021-03-13 15:41:50,943 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\FreeRTOSConfig.h_save
+2021-03-13 15:41:51,023 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\FreeRTOSConfig.h
+2021-03-13 15:41:51,035 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\freertos.c_save
+2021-03-13 15:41:51,100 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\freertos.c
+2021-03-13 15:41:51,102 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-13 15:41:51,121 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_it.c_save
+2021-03-13 15:41:51,190 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_it.c
+2021-03-13 15:41:51,196 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_it.h_save
+2021-03-13 15:41:51,250 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_it.h
+2021-03-13 15:41:51,269 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_msp.c_save
+2021-03-13 15:41:51,349 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_msp.c
+2021-03-13 15:41:51,357 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\system.tmp_save
+2021-03-13 15:41:51,401 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\MXTmpFiles\system.tmp
+2021-03-13 15:41:51,407 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_timebase_tim.c_save
+2021-03-13 15:41:51,463 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\stm32l4xx_hal_timebase_tim.c
+2021-03-13 15:41:51,479 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-03-13 15:41:51,539 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\stm32l4xx_hal_conf.h
+2021-03-13 15:41:51,593 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\main.h_save
+2021-03-13 15:41:51,650 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Inc\main.h
+2021-03-13 15:41:51,664 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\main.c_save
+2021-03-13 15:41:51,781 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\14 FreeRTOS two tasks (STM32CubeIDE)\FreeRTOS\Core\Src\main.c
+2021-03-13 15:41:52,865 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 280mS.
+2021-03-13 15:41:52,872 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-03-13 15:41:53,204 [INFO] ConfigFileManager:1242 - The Die is : DIE415
+2021-03-13 15:41:55,883 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 3011mS.
+2021-03-13 15:41:55,884 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 1mS.
+2021-03-13 15:41:55,899 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 1mS.

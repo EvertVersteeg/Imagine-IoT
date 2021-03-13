@@ -1,10 +1,10 @@
 core_cm4.h:2059:26:ITM_SendChar	16	static,ignoring_inline_asm
-debug.h:12:6:UART_SEND_NL	16	static
-debug.h:18:6:UART_SEND_CHR	24	static
-debug.h:25:6:UART_SEND_INT	40	static
-debug.h:34:6:UART_SEND_FLT	40	static
-debug.h:43:6:UART_SEND_TXT	24	static
-debug.h:50:6:UART_SEND_Any	40	static
+debug.h:16:6:UART_SEND_NL	16	static
+debug.h:22:6:UART_SEND_CHR	24	static
+debug.h:29:6:UART_SEND_INT	40	static
+debug.h:38:6:UART_SEND_FLT	40	static
+debug.h:47:6:UART_SEND_TXT	24	static
+debug.h:54:6:UART_SEND_Any	40	static
 main.c:71:5:main	32	static
 main.c:129:6:SystemClock_Config	232	static
 main.c:184:13:MX_USART2_UART_Init	8	static

@@ -1261,7 +1261,7 @@ __STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)
 	if(m==1) HAL_UART_Transmit(huart, (uint8_t*)"\n\r", 2, HAL_MAX_DELAY);
 }
 
-// SEND TEXT CALL => UART_SEND_NL(&huart2, "Test, 0);
+// SEND TEXT CALL => UART_SEND_TXT(&huart2, "Test", 0);
 void UART_SEND_TXT(UART_HandleTypeDef *huart, char buffer[], int m)
 {
  8000ef0:	b580      	push	{r7, lr}

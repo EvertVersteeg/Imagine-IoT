@@ -8,6 +8,10 @@
 #ifndef SRC_DEBUG_H_
 #define SRC_DEBUG_H_
 #include "stdio.h"
+#include "string.h"
+#include "stdlib.h"
+
+
 // SEND NEW LINE (CR/LF) CALL => UART_SEND_NL(&huart2);
 void UART_SEND_NL(UART_HandleTypeDef *huart)
 {
@@ -21,7 +25,7 @@ void UART_SEND_CHR(UART_HandleTypeDef *huart, char c, int m)
 	if(m==1) HAL_UART_Transmit(huart, (uint8_t*)"\n\r", 2, HAL_MAX_DELAY);
 }
 
-// SEND Integer Number CALL => UART_SEND_NL(&huart2, Count, 0);
+// SEND Integer Number CALL => UART_SEND_INT(&huart2, Count, 0);
 void UART_SEND_INT(UART_HandleTypeDef *huart, int i, int m)
 {
 	char buffer[10];
@@ -30,7 +34,7 @@ void UART_SEND_INT(UART_HandleTypeDef *huart, int i, int m)
 	if(m==1) HAL_UART_Transmit(huart, (uint8_t*)"\n\r", 2, HAL_MAX_DELAY);
 }
 
-// SEND Floating point Number CALL => UART_SEND_NL(&huart2, q, 0);
+// SEND Floating point Number CALL => UART_SEND_FLT(&huart2, q, 0);
 void UART_SEND_FLT(UART_HandleTypeDef *huart, double p, int m)
 {
 	char buffer[10];
@@ -39,14 +43,14 @@ void UART_SEND_FLT(UART_HandleTypeDef *huart, double p, int m)
 	if(m==1) HAL_UART_Transmit(huart, (uint8_t*)"\n\r", 2, HAL_MAX_DELAY);
 }
 
-// SEND TEXT CALL => UART_SEND_NL(&huart2, "Test, 0);
+// SEND TEXT CALL => UART_SEND_TXT(&huart2, "Test", 0);
 void UART_SEND_TXT(UART_HandleTypeDef *huart, char buffer[], int m)
 {
 	HAL_UART_Transmit(huart, (uint8_t*) buffer, strlen(buffer), HAL_MAX_DELAY);
 	if(m==1) HAL_UART_Transmit(huart, (uint8_t*)"\n\r", 2, HAL_MAX_DELAY);
 }
 
-// SEND Floating point Number CALL => UART_SEND_NL(&huart2, p, "%5.2f", 0);
+// SEND Floating point Number CALL => UART_SEND_Any(&huart2, p, "%5.2f", 0);
 void UART_SEND_Any(UART_HandleTypeDef *huart, float p, char *mode, int m)
 {
 	char buffer[10];
