@@ -28,15 +28,17 @@ Imagine-IoT! maker files repo!
 
 ## 9 NUCLEO Boards
 ### NUCLEO-L476RG
-* Blinky (IAR / MBED-OS)
-* Alternating Flashing LEDs (IAR)
-* Rotating LEDs (IAR)
+* Blinky (IAR / MBED-OS / CubeIDE)
+* Alternating Flashing LEDs (IAR / CubeIDE)
+* Rotating LEDs (IAR / CubeIDE)
 * Binary Counter with LEDs (IAR)
 * Random Flashing LEDs (IAR)
 * Push button and LEDs (IAR)
 * 7 Segment LED counter (IAR)
 * Two-Digit Multiplexed 7 Segment LED (IAR)
 * LCD Displaying Text (IAR)
+* Debug header file (CubeIDE)
+* I2C Eeprom (CubeIDE)
 
 ### NUCLEO-L053R8
 * Blinky (IAR)
