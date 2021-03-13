@@ -1,6 +1,6 @@
 # Imagine-IoT
 
-#### Debug:
+#### FreeRTOS:
 * NUCLEO-L476RG
 * Toolchain: CubeIDE
 * CUBE MX: Default board settings (80MHZ)
