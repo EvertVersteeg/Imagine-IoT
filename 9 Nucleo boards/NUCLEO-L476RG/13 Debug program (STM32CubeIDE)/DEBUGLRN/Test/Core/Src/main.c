@@ -25,6 +25,8 @@
 /* USER CODE BEGIN Includes */
 #include "string.h"
 #include "stdlib.h"
+#include "stdio.h"
+#include "debug.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,10 +60,7 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void UART_SEND(UART_HandleTypeDef *huart, char buffer[])
-{
-	HAL_UART_Transmit(huart, (uint8_t*) buffer, strlen(buffer), HAL_MAX_DELAY);
-}
+
 
 /* USER CODE END 0 */
 
@@ -98,7 +97,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-  UART_SEND(&huart2, "Main program started \r\n");
+  UART_SEND_TXT(&huart2, "Main program started \r\n",0);
 
   /* USER CODE END 2 */
 
@@ -109,7 +108,7 @@ int main(void)
     /* USER CODE END WHILE */
 	  itoa(Count, buffer, 10);
 	  strcat(buffer, CRLF);
-	  UART_SEND(&huart2, buffer);
+	  UART_SEND_TXT(&huart2, buffer, 0);
 	  Count++;
 	  HAL_GPIO_WritePin(GPIOA, LED, GPIO_PIN_SET);
 	  ITM_SendChar('I');

@@ -1169,3 +1169,41 @@
 
 
 2021-03-10 10:45:30,162 [INFO] Activator:171 - !SESSION log4j initialized
+2021-03-13 11:23:34,164 [INFO] Activator:170 - 
+
+
+2021-03-13 11:23:34,165 [INFO] Activator:171 - !SESSION log4j initialized
+2021-03-13 11:24:01,079 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://sw-center.st.com:443: The target server failed to respond
+2021-03-13 11:24:01,082 [INFO] RetryExec:113 - Retrying request to {s}->https://sw-center.st.com:443
+2021-03-13 11:24:02,158 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://sw-center.st.com:443: The target server failed to respond
+2021-03-13 11:24:02,158 [INFO] RetryExec:113 - Retrying request to {s}->https://sw-center.st.com:443
+2021-03-13 11:24:02,640 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:02,641 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:03,289 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:03,290 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:03,673 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:03,673 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:04,058 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:04,059 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:04,467 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:04,467 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:04,855 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:04,855 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:05,215 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:05,215 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:05,618 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:05,618 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:05,999 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:05,999 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:07,813 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:07,814 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:08,261 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:08,262 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:08,635 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:08,635 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 11:24:08,980 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://sw-center.st.com:80: The target server failed to respond
+2021-03-13 11:24:08,981 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2021-03-13 13:38:46,314 [INFO] Activator:170 - 
+
+
+2021-03-13 13:38:46,316 [INFO] Activator:171 - !SESSION log4j initialized
