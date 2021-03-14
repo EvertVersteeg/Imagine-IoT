@@ -1,11 +1,11 @@
 stm32l4xx_hal_uart.c:3445:13:UART_EndRxTransfer	0	static
-stm32l4xx_hal_uart.c:3844:13:UART_TxISR_16BIT	0	static
 stm32l4xx_hal_uart.c:3811:13:UART_TxISR_8BIT	0	static
+stm32l4xx_hal_uart.c:3844:13:UART_TxISR_16BIT	0	static
 stm32l4xx_hal_uart.c:674:13:HAL_UART_MspInit	0	static
 stm32l4xx_hal_uart.c:689:13:HAL_UART_MspDeInit	0	static
 stm32l4xx_hal_uart.c:629:19:HAL_UART_DeInit	16	static
 stm32l4xx_hal_uart.c:1226:19:HAL_UART_Transmit_IT	0	static
-stm32l4xx_hal_uart.c:1317:19:HAL_UART_Receive_IT	0	static
+stm32l4xx_hal_uart.c:1317:19:HAL_UART_Receive_IT	8	static
 stm32l4xx_hal_uart.c:1415:19:HAL_UART_Transmit_DMA	24	static
 stm32l4xx_hal_uart.c:1491:19:HAL_UART_Receive_DMA	24	static
 stm32l4xx_hal_uart.c:1562:19:HAL_UART_DMAPause	8	static
@@ -52,7 +52,7 @@ stm32l4xx_hal_uart.c:3237:6:UART_AdvFeatureConfig	8	static
 stm32l4xx_hal_uart.c:3361:19:UART_WaitOnFlagUntilTimeout	24	static
 stm32l4xx_hal_uart.c:1052:19:HAL_UART_Transmit	40	static
 stm32l4xx_hal_uart.c:1141:19:HAL_UART_Receive	40	static
-stm32l4xx_hal_uart.c:3311:19:UART_CheckIdleState	24	static
+stm32l4xx_hal_uart.c:3311:19:UART_CheckIdleState	32	static
 stm32l4xx_hal_uart.c:312:19:HAL_UART_Init	8	static
 stm32l4xx_hal_uart.c:385:19:HAL_HalfDuplex_Init	8	static
 stm32l4xx_hal_uart.c:458:19:HAL_LIN_Init	16	static

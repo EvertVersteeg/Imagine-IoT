@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "string.h"
+#include "debug.h"
 
 #define LED GPIO_PIN_5
 char I2C_ADDRESS = 0xA0;
@@ -96,11 +97,10 @@ int main(void)
   /* USER CODE BEGIN 1 */
 	int count = 0, i = 0;
 	// data to store (write message)
-	//char wmsg[] = { '1','2', '3', '4', '5'};
-	char wmsg[] = { 1,2,3, 2, 5};
+	char wmsg[] = { '1','2', 'a', '4', '5'};
 	uint8_t len = strlen(wmsg)-1;
 	// empty read message
-	char rmsg[10];
+	char rmsg[5];
 
   /* USER CODE END 1 */
 
@@ -125,15 +125,17 @@ int main(void)
   MX_USART2_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+
   WRITE(0x0000, (uint8_t*)wmsg, len);
+  UART_SEND_Any(&huart2, 1, wmsg, 0);
   HAL_Delay(5000);
   READ(0x0000, (uint8_t*)rmsg, len);
 
   count = 10*(rmsg[0]-'0') + rmsg[1]-'0';
   for(i = 0; i <count; i++)
   {
-  	HAL_GPIO_TogglePin(GPIOA, LED);
-  	HAL_Delay(1000);
+	  HAL_GPIO_TogglePin(GPIOA, LED);
+	  HAL_Delay(1000);
   }
 
 
@@ -267,7 +269,7 @@ static void MX_USART2_UART_Init(void)
 
   /* USER CODE END USART2_Init 1 */
   huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
+  huart2.Init.BaudRate = 9600;
   huart2.Init.WordLength = UART_WORDLENGTH_8B;
   huart2.Init.StopBits = UART_STOPBITS_1;
   huart2.Init.Parity = UART_PARITY_NONE;
