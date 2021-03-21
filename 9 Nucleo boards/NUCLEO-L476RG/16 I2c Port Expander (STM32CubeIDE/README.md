@@ -1,7 +1,7 @@
 # Imagine-IoT
 
-#### Eeprom:
-* NUCLEO-L476RG
+#### Port Expander, MCP23017, 28 pins, I2C, 16 bit, IO expander:
+* NUCLEO-L476RG, DIP switches, LED matrix (8x8)
 * Toolchain: STM32 Cube IDE
 * CUBE MX: Default board settings (80MHZ)
 * Options => Debugger => ST-Link
@@ -11,4 +11,4 @@
 * I2C speed: 100kHz
 * I2C mode: Standard
 * I2C bus clock: 80MHz
-* I2C address eeprom: 0xA0
+* I2C address IO expander: 0x40

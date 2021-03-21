@@ -1,0 +1,9 @@
+Led Matrix 8x8 met 5mm pitch tussen de LED's. De led kleur is rood.
+
+Specificaties:
+
+16 pins aansluiting
+Afmetingen: 60.2x60.2mm
+Spanning: 1.9-2.3 V
+Stroom:  20 mA
+Pinout is aangeven in de afbeeldingen.
