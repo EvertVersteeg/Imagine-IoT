@@ -1,0 +1,4 @@
+main.c:65:6:SEND	24	static
+main.c:156:6:SystemClock_Config	232	static,ignoring_inline_asm
+main.c:78:5:main	48	static,ignoring_inline_asm
+main.c:329:6:Error_Handler	0	static,ignoring_inline_asm
