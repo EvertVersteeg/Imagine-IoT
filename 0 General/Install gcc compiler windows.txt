@@ -1,0 +1,17 @@
+Website to download MinGW - minimalist GNU for windows: https://sourceforge.net/projects/mingw/
+
+Default location: C:\MinGW
+
+Open commandpromt en type gcc => error (no gcc found)
+
+Open configuratoion screen => Systeem => geavanceerde systeeminstellingen =>
+Omgevingsvariaabelen => PATH => bewerken
+Add:
+C:\MinGW\bin
+
+And:
+C:\MinGW\msys\1.0\bin
+
+OK => OK => OK
+
+Open commandpromt again (close first) and type gcc => error => no input files
