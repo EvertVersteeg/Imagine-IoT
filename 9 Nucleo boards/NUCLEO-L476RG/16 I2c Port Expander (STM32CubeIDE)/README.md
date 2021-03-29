@@ -1,7 +1,7 @@
 # Imagine-IoT
 
 #### Port Expander, MCP23017, 28 pins, I2C, 16 bit, IO expander:
-* NUCLEO-L476RG, DIP switches, LED matrix (8x8)
+* NUCLEO-L476RG, LED matrix (8x8) on MCP_GPIOA
 * Toolchain: STM32 Cube IDE
 * CUBE MX: Default board settings (80MHZ)
 * Options => Debugger => ST-Link

@@ -1,0 +1,34 @@
+Insert the code in syscalls.c after de includes section
+
+In this file search for the write funcion:
+
+__attribute__((weak)) int _write....
+
+Vervang de regel: 
+
+__io_putchar(*ptr++);
+
+Met:
+
+ITM_SendChar(*ptr++);
+
+rechter muis op project => debug as => debug configuration
+
+dubbelklik op STM32 Cortex-M...
+
+Onder tab debugger:
+Keuze voor ST-LINK (ST-LINK GDB server)
+
+Interface : SWD
+
+Serial wire viewer (SWV) Enable aanklikken, core clock: 16MHz, SWO clock: 2000kHz (default)
+klik apply and close
+
+rechter muis op project => debug as => STM32 MCU C/C++ App
+
+Open window to show printf:
+
+Tab windows => SHOW VIEW => SWV => SWV ITM Data console
+In niuwe window klik op maintenance icon => kies poort 0 (meest rechtse) => OK
+Klik op start trace
+Run de code

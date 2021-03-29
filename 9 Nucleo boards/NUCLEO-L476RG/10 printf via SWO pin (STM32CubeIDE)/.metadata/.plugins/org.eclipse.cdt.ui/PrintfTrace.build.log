@@ -1,0 +1,10 @@
+11:34:21 **** Build of configuration Debug for project PrintfTrace ****
+make -j8 all 
+arm-none-eabi-size   PrintfTrace.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15528	    472	   1592	  17592	   44b8	PrintfTrace.elf
+Finished building: default.size.stdout
+ 
+
+11:34:21 Build Finished. 0 errors, 0 warnings. (took 399ms)
+

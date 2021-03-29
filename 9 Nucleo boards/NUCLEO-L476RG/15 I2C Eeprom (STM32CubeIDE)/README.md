@@ -1,6 +1,6 @@
 # Imagine-IoT
 
-#### Eeprom:
+#### Eeprom Atmel AT24C256 Two Wire Serial EEPROM:
 * NUCLEO-L476RG
 * Toolchain: STM32 Cube IDE
 * CUBE MX: Default board settings (80MHZ)
