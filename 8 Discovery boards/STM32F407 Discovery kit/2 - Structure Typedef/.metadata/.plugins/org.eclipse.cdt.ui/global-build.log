@@ -1,0 +1,24 @@
+17:56:37 **** Incremental Build of configuration Debug for project TypedefStructure ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TypedefStructure.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\8 Discovery boards\STM32F407 Discovery kit\Structure Typedef\TypedefStructure\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TypedefStructure.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TypedefStructure.elf
+ 
+arm-none-eabi-objdump -h -S  TypedefStructure.elf  > "TypedefStructure.list"
+arm-none-eabi-objcopy  -O binary  TypedefStructure.elf  "TypedefStructure.bin"
+arm-none-eabi-size   TypedefStructure.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5264	    108	   1604	   6976	   1b40	TypedefStructure.elf
+Finished building: default.size.stdout
+ 
+Finished building: TypedefStructure.list
+Finished building: TypedefStructure.bin
+ 
+ 
+17:56:47 **** Incremental Build of configuration Debug for project TypedefStructure ****
+make -j8 all 
+arm-none-eabi-size   TypedefStructure.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5264	    108	   1604	   6976	   1b40	TypedefStructure.elf
+Finished building: default.size.stdout
+ 

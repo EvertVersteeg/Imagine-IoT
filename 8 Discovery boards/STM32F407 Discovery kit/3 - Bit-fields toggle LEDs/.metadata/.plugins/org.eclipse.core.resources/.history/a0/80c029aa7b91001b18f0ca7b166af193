@@ -1,0 +1,16 @@
+/*
+ * main.h
+ *
+ *  Created on: Mar 30, 2021
+ *      Author: evers
+ */
+
+#ifndef MAIN_H_
+#define MAIN_H_
+
+typedef struct
+{
+	uint32_t gpioa_en	:1;
+}RCC_AHB1ENR_t;
+
+#endif /* MAIN_H_ */
