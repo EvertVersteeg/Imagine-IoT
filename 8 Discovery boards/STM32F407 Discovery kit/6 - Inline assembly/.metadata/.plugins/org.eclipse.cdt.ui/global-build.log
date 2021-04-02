@@ -1,0 +1,17 @@
+16:14:25 **** Incremental Build of configuration Debug for project InlineAssembly ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "InlineAssembly.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\8 Discovery boards\STM32F407 Discovery kit\6 - Inline assembly\InlineAssembly\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="InlineAssembly.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: InlineAssembly.elf
+ 
+arm-none-eabi-objdump -h -S  InlineAssembly.elf  > "InlineAssembly.list"
+arm-none-eabi-objcopy  -O binary  InlineAssembly.elf  "InlineAssembly.bin"
+arm-none-eabi-size   InlineAssembly.elf 
+   text	   data	    bss	    dec	    hex	filename
+    712	      8	   1568	   2288	    8f0	InlineAssembly.elf
+Finished building: default.size.stdout
+Finished building: InlineAssembly.list
+Finished building: InlineAssembly.bin
+ 
+ 
+ 
