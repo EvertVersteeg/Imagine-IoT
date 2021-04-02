@@ -38,7 +38,7 @@ int main(void)
 
     // Move a value of a "C variable => val " in een register (R0)
     int val = 11;
-
+    uint32_t control_reg;
 
     __asm volatile ("MOV R0,%0": : "r"(val):);
     // ipv variabele een vast getal met immediate value (constant in rante 0 .. 255
@@ -47,21 +47,6 @@ int main(void)
     __asm volatile ("MOV R0,%0": : "r"(0x50):); // compiler maakt van 0x50 => #80  (=5*16)
 
     // Move inhoud CONTROL register (special register) to variable control_reg
-    uint32_t control_reg;
-    __asm volatile ("MRS %0,CONTROL":"=r"(control_reg)::);
-
-    // Copy content of "C" variable var 1 to var 2
-    int var1 = 10;
-    int var2;
-    __asm volatile ("MOV %0,%1": "=r"(var2): "r"(var1));
-
-    // Copy the contents of a pointer into another variable
-    int p1, *p2;
-    p2 = (int*)0x20000008;
-
-    __asm volatile("LDR %0,[%1]": "=r"(p1) : "r"(p2) :);
-
-
 
 
 
