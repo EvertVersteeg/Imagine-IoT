@@ -1,0 +1,9 @@
+Nieuw programma aanmaken zonder cube MX
+
+Onder debug as => debug configurations => tab debugger => Serial Wire Viewer (SWV) => enable
+
+In debug mode => onder window => show view => SWV => SWV ITM data console
+Activate trace channel (0)
+Start trace
+
+Print f komt in de dataconsole onder port 0
