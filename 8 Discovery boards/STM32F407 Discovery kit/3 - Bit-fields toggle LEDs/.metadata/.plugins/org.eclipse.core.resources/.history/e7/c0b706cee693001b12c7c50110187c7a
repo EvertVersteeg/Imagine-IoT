@@ -34,14 +34,14 @@ int main(void)
 
 		//introduce small human observable delay
 		//This loop executes for 300K times
-		for(uint32_t i=0 ; i < DELAY_COUNT ; i++ ){
+		for(uint32_t i=0 ; i < 300000 ; i++ ){
 			;
 		}
 
 		//Reset 12th bit of the output data register to make I/O pin-12 as LOW
 		pPortDOutReg->pin_12  = PIN_STATE_LOW;
 
-		for(uint32_t i=0 ; i < DELAY_COUNT ; i++ ){
+		for(uint32_t i=0 ; i < 300000 ; i++ ){
 			;
 		}
 	}
