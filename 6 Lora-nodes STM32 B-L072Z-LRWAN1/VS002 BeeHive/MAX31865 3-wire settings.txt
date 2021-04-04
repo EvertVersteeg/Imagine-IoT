@@ -1,0 +1,15 @@
+3-Wire Sensors
+Connect the three wires to the three right-most contacts. 
+Use a multimeter to determine which wires connect together directly (2 ohms or so between them) 
+and which connect through the RTD. Chances are the wires that connect together are the same color. 
+The two wires that are connected together should go in the right-most blocks (labeled F+ and RTD+). 
+It doesn't matter which of the matched pair is on the outside or inside. 
+The third wire that is on the other side of the RTD connects to the left (marked F- or RTD-). 
+It doesn't matter which slot it's in!
+You will have to cut the thin trace in between the 2-way jumper on the right side of the board, 
+and then solder closed the blob on the right side.
+
+Then next to the terminal block on the left, solder closed that jumper as well. 
+Alternatively you can put a piece of wire into the terminal blocks to 'short' them
+
+https://learn.adafruit.com/adafruit-max31865-rtd-pt100-amplifier/rtd-wiring-config
