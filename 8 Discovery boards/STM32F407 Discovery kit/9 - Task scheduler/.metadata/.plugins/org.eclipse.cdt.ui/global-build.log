@@ -1,0 +1,24 @@
+17:23:43 **** Incremental Build of configuration Debug for project task_scheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -o "task_scheduler.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\8 Discovery boards\STM32F407 Discovery kit\9 - Task scheduler\task_scheduler\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="task_scheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: task_scheduler.elf
+ 
+arm-none-eabi-objdump -h -S  task_scheduler.elf  > "task_scheduler.list"
+arm-none-eabi-objcopy  -O binary  task_scheduler.elf  "task_scheduler.bin"
+arm-none-eabi-size   task_scheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4456	    124	   1612	   6192	   1830	task_scheduler.elf
+Finished building: default.size.stdout
+Finished building: task_scheduler.bin
+Finished building: task_scheduler.list
+ 
+ 
+ 
+17:23:46 **** Incremental Build of configuration Debug for project task_scheduler ****
+make -j8 all 
+arm-none-eabi-size   task_scheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4456	    124	   1612	   6192	   1830	task_scheduler.elf
+Finished building: default.size.stdout
+ 
