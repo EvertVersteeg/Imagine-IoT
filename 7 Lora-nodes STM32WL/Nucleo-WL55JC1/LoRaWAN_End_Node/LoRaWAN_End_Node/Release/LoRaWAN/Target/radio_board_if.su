@@ -1,0 +1,7 @@
+radio_board_if.c:57:9:RBI_Init	48	static
+radio_board_if.c:104:9:RBI_DeInit	16	static
+radio_board_if.c:138:9:RBI_ConfigRFSwitch	8	static
+radio_board_if.c:198:9:RBI_GetTxConfig	0	static
+radio_board_if.c:221:9:RBI_GetWakeUpTime	0	static
+radio_board_if.c:244:9:RBI_IsTCXO	0	static
+radio_board_if.c:267:9:RBI_IsDCDC	0	static

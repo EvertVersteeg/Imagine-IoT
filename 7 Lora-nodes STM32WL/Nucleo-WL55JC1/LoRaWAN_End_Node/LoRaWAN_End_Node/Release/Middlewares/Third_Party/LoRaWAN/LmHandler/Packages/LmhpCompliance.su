@@ -1,0 +1,10 @@
+LmhpCompliance.c:194:13:LmhpComplianceInit	8	static
+LmhpCompliance.c:210:13:LmhpComplianceIsInitialized	0	static
+LmhpCompliance.c:215:13:LmhpComplianceIsRunning	0	static
+LmhpCompliance.c:510:13:LmhpComplianceProcess	0	static
+LmhpCompliance.c:256:31:LmhpComplianceTxProcess	32	static
+LmhpCompliance.c:515:13:OnComplianceTxNextPacketTimerEvent	0	static
+LmhpCompliance.c:225:13:LmhpComplianceOnMcpsConfirm	0	static
+LmhpCompliance.c:241:13:LmhpComplianceOnMlmeConfirm	0	static
+LmhpCompliance.c:301:13:LmhpComplianceOnMcpsIndication	64	static
+LmhpCompliance.c:188:15:LmphCompliancePackageFactory	0	static

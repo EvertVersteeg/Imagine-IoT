@@ -1,0 +1,867 @@
+2021-04-30 10:29:02,935 [INFO] Activator:170 - 
+
+
+2021-04-30 10:29:02,937 [INFO] Activator:171 - !SESSION log4j initialized
+2021-04-30 10:29:06,961 [INFO] McuFinderGlobals:39 - Set McuFinder mode to 2 (CubeIDE integrated)
+2021-04-30 10:29:07,065 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236
+2021-04-30 10:29:07,073 [INFO] DbMcusXml:74 - Set database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/mcu/
+2021-04-30 10:29:07,076 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/boardmanager/
+2021-04-30 10:29:07,079 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-04-30 10:29:07,080 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-04-30 10:29:07,082 [INFO] DbExamples:333 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-04-30 10:29:07,091 [INFO] DbMcusAds:85 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,092 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,093 [INFO] DbMcusJson:65 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,094 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,095 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,098 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-04-30 10:29:07,100 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,189 [INFO] RulesReader:52 - Compatibility file has been processed (237 Rules)
+2021-04-30 10:29:07,270 [INFO] MicroXplorer:622 - Detected Java Version = 11.0.9.1
+2021-04-30 10:29:07,271 [INFO] DbMcusXml:74 - Set database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/mcu/
+2021-04-30 10:29:07,271 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/boardmanager/
+2021-04-30 10:29:07,271 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-04-30 10:29:07,271 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-04-30 10:29:07,271 [INFO] DbExamples:333 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-04-30 10:29:07,271 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,271 [INFO] DbMcusAds:85 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,272 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,272 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,272 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,272 [INFO] DbMcusJson:65 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,272 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,272 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,272 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,273 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,273 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,273 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,273 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-04-30 10:29:07,273 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,273 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,330 [INFO] MainPanel:204 - HeapMemory: 268435456
+2021-04-30 10:29:07,382 [INFO] DbMcusXml:74 - Set database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/mcu/
+2021-04-30 10:29:07,383 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/boardmanager/
+2021-04-30 10:29:07,383 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-04-30 10:29:07,383 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-04-30 10:29:07,383 [INFO] DbExamples:333 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-04-30 10:29:07,383 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,384 [INFO] DbMcusAds:85 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,384 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,384 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,384 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,384 [INFO] DbMcusJson:65 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,384 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,384 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,384 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,384 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,384 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,385 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,385 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-04-30 10:29:07,385 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\evers\.stmcufinder\plugins\mcufinder/ => C:\Users\evers\.stmcufinder\plugins\mcufinder
+2021-04-30 10:29:07,385 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\evers\.stmcufinder\plugins\mcufinder//mcu/
+2021-04-30 10:29:07,405 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236
+2021-04-30 10:29:07,406 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2021-04-30 10:29:07,407 [INFO] PluginManage:292 - Check plugin analytics
+2021-04-30 10:29:07,548 [INFO] AnalyticsPlugin:233 - Accepted Software Licenses: STM32CubeMX.6.0.1,STM32CubeMX.6.1.1,STM32CubeMX.6.1.2,STM32CubeMX.6.2.0
+2021-04-30 10:29:07,549 [INFO] AnalyticsPlugin:235 - Accepted CMSIS Pack Licenses: 
+2021-04-30 10:29:07,549 [INFO] AnalyticsPlugin:237 - Accepted Firmware Licenses: 
+2021-04-30 10:29:07,550 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2021-04-30 10:29:07,550 [INFO] PluginManage:292 - Check plugin clock
+2021-04-30 10:29:07,561 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2021-04-30 10:29:07,562 [INFO] PluginManage:292 - Check plugin ddr
+2021-04-30 10:29:07,564 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2021-04-30 10:29:07,564 [INFO] PluginManage:292 - Check plugin filemanager
+2021-04-30 10:29:07,671 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2021-04-30 10:29:07,671 [INFO] PluginManage:292 - Check plugin ipmanager
+2021-04-30 10:29:07,679 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2021-04-30 10:29:07,679 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2021-04-30 10:29:07,687 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2021-04-30 10:29:07,687 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2021-04-30 10:29:07,711 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2021-04-30 10:29:07,711 [INFO] PluginManage:292 - Check plugin power
+2021-04-30 10:29:07,720 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2021-04-30 10:29:07,720 [INFO] PluginManage:292 - Check plugin projectmanager
+2021-04-30 10:29:07,737 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2021-04-30 10:29:07,737 [INFO] PluginManage:292 - Check plugin thirdparty
+2021-04-30 10:29:07,840 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2021-04-30 10:29:07,841 [INFO] PluginManage:292 - Check plugin tools
+2021-04-30 10:29:07,841 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-04-30 10:29:07,842 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-04-30 10:29:07,842 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [1/15]
+2021-04-30 10:29:07,844 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2021-04-30 10:29:07,844 [INFO] PluginManage:292 - Check plugin tutovideos
+2021-04-30 10:29:08,015 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2021-04-30 10:29:08,016 [INFO] PluginManage:292 - Check plugin updater
+2021-04-30 10:29:08,026 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2021-04-30 10:29:08,027 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2021-04-30 10:29:08,215 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-04-30 10:29:08,295 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,296 [INFO] PluginManager:203 - loadIPPluginJar : add adc
+2021-04-30 10:29:08,298 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,298 [INFO] PluginManager:203 - loadIPPluginJar : add aes
+2021-04-30 10:29:08,300 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,300 [INFO] PluginManager:203 - loadIPPluginJar : add can
+2021-04-30 10:29:08,302 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,303 [INFO] PluginManager:203 - loadIPPluginJar : add comp
+2021-04-30 10:29:08,305 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,305 [INFO] PluginManager:203 - loadIPPluginJar : add cryp
+2021-04-30 10:29:08,307 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,307 [INFO] PluginManager:203 - loadIPPluginJar : add dfsdm
+2021-04-30 10:29:08,312 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,312 [INFO] PluginManager:203 - loadIPPluginJar : add dma
+2021-04-30 10:29:08,314 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,314 [INFO] PluginManager:203 - loadIPPluginJar : add fatfs
+2021-04-30 10:29:08,318 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,318 [INFO] PluginManager:203 - loadIPPluginJar : add fmc
+2021-04-30 10:29:08,323 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,323 [INFO] PluginManager:203 - loadIPPluginJar : add freertos
+2021-04-30 10:29:08,324 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,324 [INFO] PluginManager:203 - loadIPPluginJar : add genericplugin
+2021-04-30 10:29:08,326 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,326 [INFO] PluginManager:203 - loadIPPluginJar : add gfxmmu
+2021-04-30 10:29:08,331 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,331 [INFO] PluginManager:203 - loadIPPluginJar : add gic
+2021-04-30 10:29:08,335 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,335 [INFO] PluginManager:203 - loadIPPluginJar : add gpio
+2021-04-30 10:29:08,337 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,337 [INFO] PluginManager:203 - loadIPPluginJar : add gtzc
+2021-04-30 10:29:08,339 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,339 [INFO] PluginManager:203 - loadIPPluginJar : add hash
+2021-04-30 10:29:08,341 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,342 [INFO] PluginManager:203 - loadIPPluginJar : add i2c
+2021-04-30 10:29:08,344 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,344 [INFO] PluginManager:203 - loadIPPluginJar : add i2s
+2021-04-30 10:29:08,346 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,347 [INFO] PluginManager:203 - loadIPPluginJar : add ipddr
+2021-04-30 10:29:08,349 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,349 [INFO] PluginManager:203 - loadIPPluginJar : add lorawan
+2021-04-30 10:29:08,350 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,350 [INFO] PluginManager:203 - loadIPPluginJar : add ltdc
+2021-04-30 10:29:08,354 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,354 [INFO] PluginManager:203 - loadIPPluginJar : add mdma
+2021-04-30 10:29:08,357 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,357 [INFO] PluginManager:203 - loadIPPluginJar : add nvic
+2021-04-30 10:29:08,359 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,360 [INFO] PluginManager:203 - loadIPPluginJar : add opamp
+2021-04-30 10:29:08,362 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,362 [INFO] PluginManager:203 - loadIPPluginJar : add openamp
+2021-04-30 10:29:08,364 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,364 [INFO] PluginManager:203 - loadIPPluginJar : add pdm2pcm
+2021-04-30 10:29:08,371 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,373 [INFO] PluginManager:203 - loadIPPluginJar : add plateformsettings
+2021-04-30 10:29:08,375 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,375 [INFO] PluginManager:203 - loadIPPluginJar : add quadspi
+2021-04-30 10:29:08,378 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,378 [INFO] PluginManager:203 - loadIPPluginJar : add resmgrutility
+2021-04-30 10:29:08,380 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,381 [INFO] PluginManager:203 - loadIPPluginJar : add sai
+2021-04-30 10:29:08,383 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,383 [INFO] PluginManager:203 - loadIPPluginJar : add spi
+2021-04-30 10:29:08,385 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,386 [INFO] PluginManager:203 - loadIPPluginJar : add stm32_wpan
+2021-04-30 10:29:08,388 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,388 [INFO] PluginManager:203 - loadIPPluginJar : add tim
+2021-04-30 10:29:08,391 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,391 [INFO] PluginManager:203 - loadIPPluginJar : add touchsensing
+2021-04-30 10:29:08,392 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,392 [INFO] PluginManager:203 - loadIPPluginJar : add tracer_emb
+2021-04-30 10:29:08,395 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,395 [INFO] PluginManager:203 - loadIPPluginJar : add ts
+2021-04-30 10:29:08,396 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,396 [INFO] PluginManager:203 - loadIPPluginJar : add tsc
+2021-04-30 10:29:08,398 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,399 [INFO] PluginManager:203 - loadIPPluginJar : add ucpd
+2021-04-30 10:29:08,401 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:08,401 [INFO] PluginManager:203 - loadIPPluginJar : add usart
+2021-04-30 10:29:08,810 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:08,915 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:08,918 [INFO] DbMcusAds:132 - JSON generation date=Tue Apr 20 12:17:47 CEST 2021 (1618913867047)
+2021-04-30 10:29:08,919 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:08,950 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-04-30 10:29:09,139 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:09,141 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:09,141 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:09,141 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-04-30 10:29:09,142 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:09,187 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:09,188 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-04-30 10:29:10,853 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [2/15]
+2021-04-30 10:29:13,864 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:13,865 [ERROR] AbstractThirdPartyUpdaterManager:153 - class java.lang.Integer cannot be cast to class java.util.List (java.lang.Integer and java.util.List are in module java.base of loader 'bootstrap')
+2021-04-30 10:29:13,866 [INFO] ThirdParty:900 - Integrity check success = false
+2021-04-30 10:29:13,868 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-04-30 10:29:13,868 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-04-30 10:29:13,869 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-04-30 10:29:13,874 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-04-30 10:29:13,890 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-04-30 10:29:13,892 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-04-30 10:29:13,912 [ERROR] Updater:1065 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2021-04-30 10:29:13,918 [INFO] Updater:1002 - Updater Version found : 6.2.1
+2021-04-30 10:29:13,939 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236
+2021-04-30 10:29:13,978 [INFO] MainUpdater:479 - Copy updater definitions from MX database
+2021-04-30 10:29:14,037 [INFO] MainUpdater:2661 - connection check result : 10
+2021-04-30 10:29:14,037 [INFO] MainUpdater:3349 - Updater definition file requires update
+2021-04-30 10:29:14,040 [INFO] MainUpdater:255 - Updater Check For Update Now.
+2021-04-30 10:29:14,041 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.21
+2021-04-30 10:29:14,078 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2021-04-30 10:29:14,151 [INFO] FileExtend:225 - Unzip File : updaters.zip
+2021-04-30 10:29:14,152 [INFO] FileExtend:240 - Standard Zip Deflate
+2021-04-30 10:29:14,445 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2021-04-30 10:29:14,502 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2021-04-30 10:29:14,571 [INFO] LoadServerUpdatesThread:329 - End of LoadServerUpdate Thread
+2021-04-30 10:29:14,601 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2021-04-30 10:29:14,621 [INFO] MainUpdater:2661 - connection check result : 10
+2021-04-30 10:29:14,973 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\evers\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-04-30 10:29:14,978 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-04-30 10:29:14,983 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-04-30 10:29:14,987 [INFO] DbMcusXml:100 - Load MCU database from C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/mcu/families.xml
+2021-04-30 10:29:15,618 [INFO] DbMcusJson:94 - JSON generation date=Mon Feb 08 14:35:07 CET 2021 (1612791307)
+2021-04-30 10:29:16,367 [INFO] DbMcus:175 - Found 1906 MCUs (1866 are supported by CubeMX, 1866 are visible in CubeMX)
+2021-04-30 10:29:16,368 [INFO] ApiDb:251 - Load user favorites file C:\Users\evers/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-04-30 10:29:16,368 [INFO] ApiDb:255 - User favorites MCUs=[]
+2021-04-30 10:29:16,368 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2021-04-30 10:29:16,849 [INFO] DetailPanel:310 - Set advertising image to C:/Users/evers/STM32Cube/Repository/\en.PROMOTION_STM32U5_MCU_FINDER.jpg
+2021-04-30 10:29:17,217 [INFO] DbBoardsPdsc:90 - Found 24 items
+2021-04-30 10:29:17,219 [INFO] DbBoardsPdsc:90 - Found 9 items
+2021-04-30 10:29:17,223 [INFO] DbBoardsPdsc:90 - Found 33 items
+2021-04-30 10:29:17,224 [INFO] DbBoardsPdsc:90 - Found 1 items
+2021-04-30 10:29:17,230 [INFO] DbBoardsPdsc:90 - Found 46 items
+2021-04-30 10:29:17,237 [INFO] DbBoardsPdsc:90 - Found 41 items
+2021-04-30 10:29:17,238 [INFO] DbBoardsPdsc:90 - Found 2 items
+2021-04-30 10:29:17,240 [INFO] DbBoardsPdsc:90 - Found 5 items
+2021-04-30 10:29:17,242 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Three user LEDs, n=1
+2021-04-30 10:29:17,242 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=One reset and three user push-buttons, n=1
+2021-04-30 10:29:17,243 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Arduino Uno V3 expansion connector, n=1
+2021-04-30 10:29:17,243 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=ST morpho extension pin headers for full access to all STM32WB I/Os, n=1
+2021-04-30 10:29:17,243 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Integrated PCB antenna and SMA connector footprint, n=1
+2021-04-30 10:29:17,243 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Flexible power-supply options: ST-LINK, USB VBUS, or external sources, n=1
+2021-04-30 10:29:17,243 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=On-board footprint to mount a CR2032 battery socket, n=1
+2021-04-30 10:29:17,243 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=On-board ST-LINK/V2-1 debugger/programmer with USB re-enumeration capability: mass storage, Virtual COM port, and debug port, n=1
+2021-04-30 10:29:17,243 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Comprehensive free software libraries and examples available with the STM32CubeWB MCU Package, n=1
+2021-04-30 10:29:17,243 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Support of a wide choice of Integrated Development Environments (IDEs) including IAR Embedded Workbench, MDK-ARM, STM32CubeIDE, and Mbed Studio, n=1
+2021-04-30 10:29:17,245 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2021-04-30 10:29:17,245 [WARN] DbBoardsPdsc:254 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2021-04-30 10:29:17,245 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Time-of-Flight and gesture-detection sensor, n=1
+2021-04-30 10:29:17,245 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=3 push-buttons (2 users and 1 reset) and 1 touch key button, n=1
+2021-04-30 10:29:17,245 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Flexible power-supply options: ST-LINK/V2-1 USB connector, 5 V delivered by ARDUINO® or external connector, USB charger, or USB power, n=1
+2021-04-30 10:29:17,245 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=On-board ST-LINK/V2-1 debugger/programmer with USB re-enumeration capability: Virtual COM port and debug port, n=1
+2021-04-30 10:29:17,245 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Comprehensive free software libraries and examples available with the STM32CubeWB MCU Package, n=1
+2021-04-30 10:29:17,245 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Support of a wide choice of Integrated Development Environments (IDEs) including IAR Embedded Workbench®, MDK-ARM, and STM32CubeIDE, n=1
+2021-04-30 10:29:17,247 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2021-04-30 10:29:17,247 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2021-04-30 10:29:17,247 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2021-04-30 10:29:17,262 [INFO] DbBoardsJson:87 - JSON generation date=Thu Feb 04 17:53:45 CET 2021 (1612457625)
+2021-04-30 10:29:17,267 [INFO] DbBoards:117 - Found 161 boards (158 are supported by CubeMX)
+2021-04-30 10:29:17,277 [INFO] DbBoardsDocs:143 - JSON generation date=Mon Feb 08 14:35:07 CET 2021 (1612791307)
+2021-04-30 10:29:17,295 [INFO] DbBoardsDocs:79 - Found 193 boards documents
+2021-04-30 10:29:17,296 [WARN] DbBoards:127 - board B-L462E-CELL1 has no document id list !
+2021-04-30 10:29:17,296 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2021-04-30 10:29:17,297 [WARN] DbBoards:127 - board NUCLEO-G0B1RE has no document id list !
+2021-04-30 10:29:17,297 [WARN] DbBoards:127 - board NUCLEO-H743ZI2 has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board NUCLEO-L4A6ZG has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board NUCLEO-WB15CC has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board NUCLEO-WB55RG has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board NUCLEO-WL55JC2 has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2021-04-30 10:29:17,298 [WARN] DbBoards:127 - board STEVAL-STWINKT1B has no document id list !
+2021-04-30 10:29:17,299 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2021-04-30 10:29:17,299 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2021-04-30 10:29:17,300 [WARN] DbBoards:127 - board STM32G0C1E-EV has no document id list !
+2021-04-30 10:29:17,300 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2021-04-30 10:29:17,300 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2021-04-30 10:29:17,300 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2021-04-30 10:29:17,300 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2021-04-30 10:29:17,300 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2021-04-30 10:29:17,301 [WARN] DbBoards:127 - board STM32MP157A-DK1 has no document id list !
+2021-04-30 10:29:17,301 [WARN] DbBoards:127 - board STM32MP157F-DK2 has no document id list !
+2021-04-30 10:29:17,301 [WARN] DbBoards:127 - board STM32MP157F-EV1 has no document id list !
+2021-04-30 10:29:17,301 [WARN] DbBoards:127 - board STM32WB5MM-DK has no document id list !
+2021-04-30 10:29:18,779 [INFO] ApiDb:251 - Load user favorites file C:\Users\evers/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2021-04-30 10:29:18,779 [INFO] ApiDb:255 - User favorites Boards=[NUCLEO-L476RG]
+2021-04-30 10:29:18,780 [INFO] DbBoards:206 - Set 1 / 1 favorites Boards
+2021-04-30 10:29:30,518 [INFO] MainUpdater:2661 - connection check result : 10
+2021-04-30 10:29:30,519 [INFO] MainUpdater:2661 - connection check result : 10
+2021-04-30 10:29:30,570 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-04-30 10:29:30,570 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.21
+2021-04-30 10:29:30,570 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-04-30 10:29:30,570 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-04-30 10:29:30,571 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-04-30 10:29:30,581 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-04-30 10:29:30,583 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 298399152 Bytes (804257792)
+2021-04-30 10:29:30,586 [INFO] OpenFileManager:303 - Change cursor
+2021-04-30 10:29:30,606 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-04-30 10:29:30,608 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-04-30 10:29:30,796 [WARN] PackLoader:226 - Cannot read IP mode file for RoweBots.I-CUBE-UNISONRTOS.5.5.0-4
+2021-04-30 10:29:30,824 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0
+2021-04-30 10:29:30,881 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.8.2.0
+2021-04-30 10:29:31,006 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.3.0.0
+2021-04-30 10:29:31,011 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.2
+2021-04-30 10:29:31,016 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.2.0
+2021-04-30 10:29:31,026 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.4.0.0
+2021-04-30 10:29:31,033 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.1.0.0
+2021-04-30 10:29:31,055 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.1.0.0
+2021-04-30 10:29:31,091 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.8.3.0
+2021-04-30 10:29:31,214 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.1.0.0
+2021-04-30 10:29:31,217 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.6.0.0
+2021-04-30 10:29:31,223 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.2.0
+2021-04-30 10:29:31,228 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.5.2.0
+2021-04-30 10:29:31,232 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.1.0
+2021-04-30 10:29:31,235 [WARN] PackLoader:226 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.4.7.0
+2021-04-30 10:29:31,239 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.16.1
+2021-04-30 10:29:31,239 [INFO] ThirdParty:900 - Integrity check success = true
+2021-04-30 10:29:31,239 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-04-30 10:29:31,240 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-04-30 10:29:32,664 [INFO] Rule:214 - rule GTZC_S instance for mcu is applicable
+2021-04-30 10:29:32,664 [INFO] Rule:214 - rule GTZC_S instance for mcu.Pin is applicable
+2021-04-30 10:29:32,664 [INFO] Rule:214 - rule GTZC_S instance value for IP GTZC is applicable
+2021-04-30 10:29:32,664 [INFO] Rule:214 - rule GTZC_S instance for project manager is applicable
+2021-04-30 10:29:32,664 [INFO] Rule:214 - rule GTZC_S instance for context M33S is applicable
+2021-04-30 10:29:32,664 [INFO] Rule:214 - rule GTZC_S instance for VP is applicable
+2021-04-30 10:29:32,665 [INFO] Rule:214 - rule GTZC_S instance for signal is applicable
+2021-04-30 10:29:32,665 [INFO] DbConfProperties:294 - Apply Compatibility (0/7 Rules)
+2021-04-30 10:29:32,742 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-04-30 10:29:32,743 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-04-30 10:29:32,743 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-04-30 10:29:32,747 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,747 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,747 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,747 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,747 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,747 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,747 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,748 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,748 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,748 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,748 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,748 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,748 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,748 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,748 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,749 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,750 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,750 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-04-30 10:29:32,757 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-04-30 10:29:32,758 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-04-30 10:29:32,758 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-04-30 10:29:32,908 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-04-30 10:29:32,908 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-04-30 10:29:32,908 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-04-30 10:29:32,915 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-04-30 10:29:32,915 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-04-30 10:29:33,039 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.3.0: no header file found
+2021-04-30 10:29:33,039 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.3.0: no header file found
+2021-04-30 10:29:33,039 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.3.0: no header file found
+2021-04-30 10:29:33,047 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-04-30 10:29:33,048 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-04-30 10:29:33,048 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-04-30 10:29:33,048 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-04-30 10:29:33,048 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-04-30 10:29:33,049 [WARN] ApiManager:294 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-04-30 10:29:33,049 [WARN] ApiManager:294 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-04-30 10:29:33,049 [WARN] ApiManager:294 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-04-30 10:29:33,050 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.1.0: no header file found
+2021-04-30 10:29:33,051 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.2: no header file found
+2021-04-30 10:29:33,052 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.2.0: no header file found
+2021-04-30 10:29:33,601 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC) : Invalid parameter (SelectedChannel)
+2021-04-30 10:29:33,602 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC) : Parameter (NbrOfConversion) has invalid value (1)
+2021-04-30 10:29:33,602 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,602 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Request) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,603 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,603 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,603 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,603 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,603 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SignalID) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Polarity) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (RequestNumber) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncSignalID) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncPolarity) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncEnable) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (EventEnable) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncRequestNumber) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,605 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel_PRIV_NPRIV) has Id (USART2_TX) currently not set
+2021-04-30 10:29:33,608 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-04-30 10:29:33,609 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,610 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,610 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,610 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,610 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,610 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,611 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,611 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,611 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,611 [WARN] IP:2088 - Hours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,611 [WARN] IP:2088 - Minutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,611 [WARN] IP:2088 - Seconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,612 [WARN] IP:2088 - TimeFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,612 [WARN] IP:2088 - DayLightSaving not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,612 [WARN] IP:2088 - StoreOperation not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,612 [WARN] IP:2088 - WeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,612 [WARN] IP:2088 - Month not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,612 [WARN] IP:2088 - Date not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,612 [WARN] IP:2088 - Year not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,612 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,613 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,613 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,613 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,613 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,613 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,613 [WARN] IP:2088 - Hours_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,614 [WARN] IP:2088 - Minutes_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,614 [WARN] IP:2088 - Seconds_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,614 [WARN] IP:2088 - AlarmMaskDateWeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,614 [WARN] IP:2088 - AlarmMaskHours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,614 [WARN] IP:2088 - AlarmMaskMinutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,614 [WARN] IP:2088 - AlarmMaskSeconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,614 [WARN] IP:2088 - AlarmDateWeekDaySel not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,615 [WARN] IP:2088 - AlarmDateWeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,615 [WARN] IP:2088 - AlarmDateWeekDayARG not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,615 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,615 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,615 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,615 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,615 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,615 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,616 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,616 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,616 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,616 [WARN] IP:2088 - Hours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,616 [WARN] IP:2088 - Minutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,617 [WARN] IP:2088 - Seconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,617 [WARN] IP:2088 - TimeFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,617 [WARN] IP:2088 - DayLightSaving not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,617 [WARN] IP:2088 - StoreOperation not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,617 [WARN] IP:2088 - WeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,617 [WARN] IP:2088 - Month not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,617 [WARN] IP:2088 - Date not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,618 [WARN] IP:2088 - Year not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:33,803 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 650661376 Bytes (804257792)
+2021-04-30 10:29:33,805 [WARN] ThirdParty:762 - waiting for thirdparty lock release [change project]
+2021-04-30 10:29:33,806 [INFO] ThirdParty:764 - entering critical section [change project]
+2021-04-30 10:29:33,806 [INFO] ThirdParty:952 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2021-04-30 10:29:33,806 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.0.0
+2021-04-30 10:29:33,806 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-04-30 10:29:33,806 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-04-30 10:29:33,806 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-04-30 10:29:33,806 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-04-30 10:29:33,806 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.0.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 1.0.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.0.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.3.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 6.0.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2021-04-30 10:29:33,807 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-04-30 10:29:33,808 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-04-30 10:29:33,808 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-04-30 10:29:33,808 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.2
+2021-04-30 10:29:33,808 [INFO] ThirdParty:952 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 4.7.0
+2021-04-30 10:29:33,808 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.1
+2021-04-30 10:29:33,808 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-04-30 10:29:33,808 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-04-30 10:29:33,808 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-04-30 10:29:33,808 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.0
+2021-04-30 10:29:33,808 [INFO] ThirdParty:770 - exiting critical section [change project]
+2021-04-30 10:29:34,098 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-04-30 10:29:34,099 [INFO] PinOutPanel:1435 - setPackage(STM32WL55JCIx,UFBGA73)
+2021-04-30 10:29:34,518 [INFO] UtilMem:74 - Before build in PCC Used Memory: 455094528 Bytes (804257792)
+2021-04-30 10:29:35,009 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/evers/.stm32cubemx/plugins/power
+2021-04-30 10:29:35,045 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/evers/.stm32cubemx/plugins/power
+2021-04-30 10:29:35,150 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/evers/.stm32cubemx/plugins/power
+2021-04-30 10:29:35,155 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/evers/.stm32cubemx/plugins/power
+2021-04-30 10:29:35,292 [INFO] UtilMem:74 - After build in PCC Used Memory: 429644288 Bytes (804257792)
+2021-04-30 10:29:35,346 [INFO] ApiDbMcu:458 - Load IP Config File for LoRaWAN
+2021-04-30 10:29:35,346 [INFO] Middleware:501 - instanceName : LORAWAN bspName : RF SW CTRL 1 check condition success for : SEM_RADIO_BOARD_INTERFACE_FOR_LORA
+2021-04-30 10:29:35,346 [INFO] Middleware:501 - instanceName : LORAWAN bspName : RF SW CTRL 2 check condition success for : SEM_RADIO_BOARD_INTERFACE_FOR_LORA
+2021-04-30 10:29:35,346 [INFO] Middleware:501 - instanceName : LORAWAN bspName : RF SW CTRL 3 check condition success for : SEM_RADIO_BOARD_INTERFACE_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : LED 1 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : LED 2 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : LED 3 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 1 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 1 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 2 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 2 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 3 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 3 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,347 [INFO] Middleware:496 - instanceName : LORAWAN bspName : USART check condition failed for : SEM_LORA_AT_SLAVE
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : USART check condition success for : SEM_LORA_END_NODE
+2021-04-30 10:29:35,347 [INFO] Middleware:501 - instanceName : LORAWAN bspName : ADC check condition success for : SEM_LORA_AT_SLAVE | SEM_LORA_END_NODE
+2021-04-30 10:29:35,348 [INFO] Middleware:501 - instanceName : LORAWAN bspName : RTC check condition success for : !SEM_LORA_USER_APPLICATION
+2021-04-30 10:29:35,348 [INFO] Middleware:501 - instanceName : LORAWAN bspName : Debug Line 1 check condition success for : SEM_DEBUG_LINE_FOR_LORA
+2021-04-30 10:29:35,348 [INFO] Middleware:501 - instanceName : LORAWAN bspName : Debug Line 2 check condition success for : SEM_DEBUG_LINE_FOR_LORA
+2021-04-30 10:29:35,348 [INFO] Middleware:501 - instanceName : LORAWAN bspName : Debug Line 3 check condition success for : SEM_DEBUG_LINE_FOR_LORA
+2021-04-30 10:29:35,348 [INFO] Middleware:501 - instanceName : LORAWAN bspName : Debug Line 4 check condition success for : SEM_DEBUG_LINE_FOR_LORA
+2021-04-30 10:29:35,380 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,380 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,380 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,380 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,381 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,381 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,381 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,381 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,381 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,382 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,382 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,382 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,382 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,382 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,382 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,383 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,383 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,383 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,383 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,384 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,384 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,384 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,385 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,385 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,385 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,386 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,386 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,387 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,387 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,388 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,388 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,389 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,389 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,390 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,390 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,391 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,391 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,392 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,392 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,393 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,393 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,394 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,394 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,394 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,395 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,396 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,396 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,397 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,397 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,398 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-04-30 10:29:35,431 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2021-04-30 10:29:35,534 [INFO] OpenFileManager:323 - Restore cursor
+2021-04-30 10:29:35,646 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,647 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,647 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,647 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,647 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,647 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,648 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,648 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,648 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,648 [WARN] IP:2088 - Hours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,648 [WARN] IP:2088 - Minutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,648 [WARN] IP:2088 - Seconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,649 [WARN] IP:2088 - TimeFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,649 [WARN] IP:2088 - DayLightSaving not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,649 [WARN] IP:2088 - StoreOperation not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,649 [WARN] IP:2088 - WeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,649 [WARN] IP:2088 - Month not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,649 [WARN] IP:2088 - Date not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,649 [WARN] IP:2088 - Year not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,650 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,650 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,650 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,650 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,650 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,650 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,651 [WARN] IP:2088 - Hours_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,651 [WARN] IP:2088 - Minutes_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,651 [WARN] IP:2088 - Seconds_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,651 [WARN] IP:2088 - AlarmMaskDateWeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,651 [WARN] IP:2088 - AlarmMaskHours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,651 [WARN] IP:2088 - AlarmMaskMinutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,651 [WARN] IP:2088 - AlarmMaskSeconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,652 [WARN] IP:2088 - AlarmDateWeekDaySel not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,652 [WARN] IP:2088 - AlarmDateWeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,652 [WARN] IP:2088 - AlarmDateWeekDayARG not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,652 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,652 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,653 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,653 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,653 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,653 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,653 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,654 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,654 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,654 [WARN] IP:2088 - Hours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,654 [WARN] IP:2088 - Minutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,654 [WARN] IP:2088 - Seconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,654 [WARN] IP:2088 - TimeFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,654 [WARN] IP:2088 - DayLightSaving not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,654 [WARN] IP:2088 - StoreOperation not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,655 [WARN] IP:2088 - WeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,655 [WARN] IP:2088 - Month not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,655 [WARN] IP:2088 - Date not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,655 [WARN] IP:2088 - Year not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,655 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,655 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,655 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,656 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,656 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,656 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,656 [WARN] IP:2088 - Hours_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,656 [WARN] IP:2088 - Minutes_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,656 [WARN] IP:2088 - Seconds_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,657 [WARN] IP:2088 - AlarmMaskDateWeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,657 [WARN] IP:2088 - AlarmMaskHours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,657 [WARN] IP:2088 - AlarmMaskMinutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,657 [WARN] IP:2088 - AlarmMaskSeconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,657 [WARN] IP:2088 - AlarmDateWeekDaySel not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,657 [WARN] IP:2088 - AlarmDateWeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,657 [WARN] IP:2088 - AlarmDateWeekDayARG not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:35,683 [INFO] Middleware:501 - instanceName : LORAWAN bspName : RF SW CTRL 1 check condition success for : SEM_RADIO_BOARD_INTERFACE_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : RF SW CTRL 2 check condition success for : SEM_RADIO_BOARD_INTERFACE_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : RF SW CTRL 3 check condition success for : SEM_RADIO_BOARD_INTERFACE_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : LED 1 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : LED 2 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : LED 3 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 1 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 1 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 2 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 2 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 3 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:501 - instanceName : LORAWAN bspName : BUTTON 3 check condition success for : SEM_BOARD_RESOURCES_M0PLUS_FOR_LORA | SEM_BOARD_RESOURCES_M4_FOR_LORA | SEM_BOARD_RESOURCES_BOTH_FOR_LORA
+2021-04-30 10:29:35,684 [INFO] Middleware:496 - instanceName : LORAWAN bspName : USART check condition failed for : SEM_LORA_AT_SLAVE
+2021-04-30 10:29:35,685 [INFO] Middleware:501 - instanceName : LORAWAN bspName : USART check condition success for : SEM_LORA_END_NODE
+2021-04-30 10:29:35,685 [INFO] Middleware:501 - instanceName : LORAWAN bspName : ADC check condition success for : SEM_LORA_AT_SLAVE | SEM_LORA_END_NODE
+2021-04-30 10:29:35,685 [INFO] Middleware:501 - instanceName : LORAWAN bspName : RTC check condition success for : !SEM_LORA_USER_APPLICATION
+2021-04-30 10:29:35,685 [INFO] Middleware:501 - instanceName : LORAWAN bspName : Debug Line 1 check condition success for : SEM_DEBUG_LINE_FOR_LORA
+2021-04-30 10:29:35,685 [INFO] Middleware:501 - instanceName : LORAWAN bspName : Debug Line 2 check condition success for : SEM_DEBUG_LINE_FOR_LORA
+2021-04-30 10:29:35,686 [INFO] Middleware:501 - instanceName : LORAWAN bspName : Debug Line 3 check condition success for : SEM_DEBUG_LINE_FOR_LORA
+2021-04-30 10:29:35,686 [INFO] Middleware:501 - instanceName : LORAWAN bspName : Debug Line 4 check condition success for : SEM_DEBUG_LINE_FOR_LORA
+2021-04-30 10:29:36,135 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 394036864 Bytes (804257792)
+2021-04-30 10:29:36,271 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 433828352 Bytes (804257792)
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SEQUENCER
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADV_TRACE
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SUBGHZ
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TINY_LPM
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RTC
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: MISC
+2021-04-30 10:29:36,708 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-04-30 10:29:36,709 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: LoRaWAN
+2021-04-30 10:29:36,709 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: DMA
+2021-04-30 10:29:36,709 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIMER
+2021-04-30 10:29:36,709 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-04-30 10:29:36,711 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\
+2021-04-30 10:29:36,757 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,758 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,758 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,758 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,758 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,758 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,759 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,759 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,759 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,759 [WARN] IP:2088 - Hours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,759 [WARN] IP:2088 - Minutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,760 [WARN] IP:2088 - Seconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,760 [WARN] IP:2088 - TimeFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,760 [WARN] IP:2088 - DayLightSaving not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,760 [WARN] IP:2088 - StoreOperation not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,760 [WARN] IP:2088 - WeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,760 [WARN] IP:2088 - Month not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,760 [WARN] IP:2088 - Date not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,760 [WARN] IP:2088 - Year not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,761 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,761 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,761 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,761 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,761 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,762 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,763 [WARN] IP:2088 - Hours_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,763 [WARN] IP:2088 - Minutes_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,763 [WARN] IP:2088 - Seconds_A not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,763 [WARN] IP:2088 - AlarmMaskDateWeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,764 [WARN] IP:2088 - AlarmMaskHours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,764 [WARN] IP:2088 - AlarmMaskMinutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,764 [WARN] IP:2088 - AlarmMaskSeconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,764 [WARN] IP:2088 - AlarmDateWeekDaySel not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,764 [WARN] IP:2088 - AlarmDateWeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:36,764 [WARN] IP:2088 - AlarmDateWeekDayARG not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:37,357 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\MXTmpFiles\license.tmp_save
+2021-04-30 10:29:37,695 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\MXTmpFiles\license.tmp
+2021-04-30 10:29:37,972 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig Hard_code is not available in your config.xml file
+2021-04-30 10:29:38,650 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,651 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,651 [WARN] IP:2088 - OutPut1 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,651 [WARN] IP:2088 - OutPut2 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,651 [WARN] IP:2088 - OutPut3 not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,651 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,652 [WARN] IP:2088 - HourFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,652 [WARN] IP:2088 - SynchPrediv not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,652 [WARN] IP:2088 - BinMixBcdU not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,652 [WARN] IP:2088 - Hours not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,652 [WARN] IP:2088 - Minutes not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,652 [WARN] IP:2088 - Seconds not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,653 [WARN] IP:2088 - TimeFormat not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,653 [WARN] IP:2088 - DayLightSaving not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,653 [WARN] IP:2088 - StoreOperation not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,653 [WARN] IP:2088 - WeekDay not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,653 [WARN] IP:2088 - Month not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,653 [WARN] IP:2088 - Date not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:38,653 [WARN] IP:2088 - Year not found: check if there is a RefParameter without a condition.
+2021-04-30 10:29:39,809 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-04-30 10:29:39,820 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\adc.c_save
+2021-04-30 10:29:40,036 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\adc.c
+2021-04-30 10:29:40,041 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\adc.h_save
+2021-04-30 10:29:40,107 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\adc.h
+2021-04-30 10:29:40,109 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-04-30 10:29:40,178 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\dma.c_save
+2021-04-30 10:29:40,244 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\dma.c
+2021-04-30 10:29:40,248 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\dma.h_save
+2021-04-30 10:29:40,307 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\dma.h
+2021-04-30 10:29:40,309 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-04-30 10:29:40,331 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\platform.h_save
+2021-04-30 10:29:40,387 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\platform.h
+2021-04-30 10:29:40,391 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\stm32_lpm_if.h_save
+2021-04-30 10:29:40,442 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\stm32_lpm_if.h
+2021-04-30 10:29:40,448 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\sys_app.h_save
+2021-04-30 10:29:40,499 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\sys_app.h
+2021-04-30 10:29:40,503 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\sys_conf.h_save
+2021-04-30 10:29:40,556 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\sys_conf.h
+2021-04-30 10:29:40,560 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\sys_sensors.h_save
+2021-04-30 10:29:40,611 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\sys_sensors.h
+2021-04-30 10:29:40,615 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\utilities_conf.h_save
+2021-04-30 10:29:40,667 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\utilities_conf.h
+2021-04-30 10:29:40,670 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\utilities_def.h_save
+2021-04-30 10:29:40,721 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\utilities_def.h
+2021-04-30 10:29:40,725 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\stm32wlxx_nucleo_conf.h_save
+2021-04-30 10:29:40,795 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\stm32wlxx_nucleo_conf.h
+2021-04-30 10:29:40,800 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\stm32_lpm_if.c_save
+2021-04-30 10:29:40,873 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\stm32_lpm_if.c
+2021-04-30 10:29:40,878 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\sys_app.c_save
+2021-04-30 10:29:40,957 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\sys_app.c
+2021-04-30 10:29:40,963 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\sys_sensors.c_save
+2021-04-30 10:29:41,062 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\sys_sensors.c
+2021-04-30 10:29:41,069 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\app_lorawan.c_save
+2021-04-30 10:29:41,159 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\app_lorawan.c
+2021-04-30 10:29:41,167 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\app_lorawan.h_save
+2021-04-30 10:29:41,262 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\app_lorawan.h
+2021-04-30 10:29:41,268 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\CayenneLpp.c_save
+2021-04-30 10:29:41,341 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\CayenneLpp.c
+2021-04-30 10:29:41,345 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\CayenneLpp.h_save
+2021-04-30 10:29:41,416 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\CayenneLpp.h
+2021-04-30 10:29:41,421 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\Commissioning.h_save
+2021-04-30 10:29:41,485 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\Commissioning.h
+2021-04-30 10:29:41,490 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\se-identity.h_save
+2021-04-30 10:29:41,574 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\se-identity.h
+2021-04-30 10:29:41,578 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_app.c_save
+2021-04-30 10:29:41,643 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_app.c
+2021-04-30 10:29:41,648 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_app.h_save
+2021-04-30 10:29:41,707 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_app.h
+2021-04-30 10:29:41,711 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_app_version.h_save
+2021-04-30 10:29:41,763 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_app_version.h
+2021-04-30 10:29:41,766 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_info.c_save
+2021-04-30 10:29:41,816 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_info.c
+2021-04-30 10:29:41,821 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_info.h_save
+2021-04-30 10:29:41,878 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\App\lora_info.h
+2021-04-30 10:29:41,884 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\lorawan_conf.h_save
+2021-04-30 10:29:41,964 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\lorawan_conf.h
+2021-04-30 10:29:41,969 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\mw_log_conf.h_save
+2021-04-30 10:29:42,025 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\mw_log_conf.h
+2021-04-30 10:29:42,030 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\radio_board_if.c_save
+2021-04-30 10:29:42,112 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\radio_board_if.c
+2021-04-30 10:29:42,117 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\radio_board_if.h_save
+2021-04-30 10:29:42,189 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\radio_board_if.h
+2021-04-30 10:29:42,194 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\radio_conf.h_save
+2021-04-30 10:29:42,272 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\radio_conf.h
+2021-04-30 10:29:42,277 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\systime.h_save
+2021-04-30 10:29:42,341 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\systime.h
+2021-04-30 10:29:42,355 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\timer.h_save
+2021-04-30 10:29:42,449 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\LoRaWAN\Target\timer.h
+2021-04-30 10:29:42,456 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\adc_if.c_save
+2021-04-30 10:29:42,552 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\adc_if.c
+2021-04-30 10:29:42,558 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\adc_if.h_save
+2021-04-30 10:29:42,648 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\adc_if.h
+2021-04-30 10:29:42,667 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\timer_if.h_save
+2021-04-30 10:29:42,751 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\timer_if.h
+2021-04-30 10:29:42,756 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\timer_if.c_save
+2021-04-30 10:29:42,843 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\timer_if.c
+2021-04-30 10:29:42,849 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\sys_debug.h_save
+2021-04-30 10:29:42,924 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\sys_debug.h
+2021-04-30 10:29:42,929 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\sys_debug.c_save
+2021-04-30 10:29:42,989 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\sys_debug.c
+2021-04-30 10:29:42,993 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\board_resources.c_save
+2021-04-30 10:29:43,052 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\board_resources.c
+2021-04-30 10:29:43,056 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\board_resources.h_save
+2021-04-30 10:29:43,127 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\board_resources.h
+2021-04-30 10:29:43,132 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\usart_if.h_save
+2021-04-30 10:29:43,180 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\usart_if.h
+2021-04-30 10:29:43,183 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\usart_if.c_save
+2021-04-30 10:29:43,235 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\usart_if.c
+2021-04-30 10:29:43,236 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-04-30 10:29:43,245 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\rtc.c_save
+2021-04-30 10:29:43,319 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\rtc.c
+2021-04-30 10:29:43,323 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\rtc.h_save
+2021-04-30 10:29:43,370 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\rtc.h
+2021-04-30 10:29:43,371 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-04-30 10:29:43,380 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\subghz.c_save
+2021-04-30 10:29:43,450 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\subghz.c
+2021-04-30 10:29:43,453 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\subghz.h_save
+2021-04-30 10:29:43,501 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\subghz.h
+2021-04-30 10:29:43,502 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-04-30 10:29:43,516 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\usart.c_save
+2021-04-30 10:29:43,599 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\usart.c
+2021-04-30 10:29:43,603 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\usart.h_save
+2021-04-30 10:29:43,655 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\usart.h
+2021-04-30 10:29:43,678 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\stm32wlxx_it.c_save
+2021-04-30 10:29:43,755 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\stm32wlxx_it.c
+2021-04-30 10:29:43,758 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\stm32wlxx_it.h_save
+2021-04-30 10:29:43,819 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\stm32wlxx_it.h
+2021-04-30 10:29:44,040 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\stm32wlxx_hal_msp.c_save
+2021-04-30 10:29:44,119 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\stm32wlxx_hal_msp.c
+2021-04-30 10:29:44,128 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\MXTmpFiles\system.tmp_save
+2021-04-30 10:29:44,177 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\MXTmpFiles\system.tmp
+2021-04-30 10:29:44,187 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\stm32wlxx_hal_conf.h_save
+2021-04-30 10:29:44,237 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\stm32wlxx_hal_conf.h
+2021-04-30 10:29:44,281 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\main.h_save
+2021-04-30 10:29:44,357 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Inc\main.h
+2021-04-30 10:29:44,361 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\main.c_save
+2021-04-30 10:29:44,437 [INFO] CodeEngine:247 - Generated code: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\7 Lora-nodes STM32WL\Nucleo-WL55JC1\LoRaWAN_End_Node\LoRaWAN_End_Node\Core\Src\main.c
+2021-04-30 10:29:45,922 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 474mS.
+2021-04-30 10:29:45,953 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-04-30 10:29:46,547 [INFO] ConfigFileManager:1242 - The Die is : DIE497
+2021-04-30 10:29:46,561 [INFO] ApiDbMcu:458 - Load IP Config File for FATFS
+2021-04-30 10:29:46,603 [INFO] ApiDbMcu:458 - Load IP Config File for FREERTOS
+2021-04-30 10:29:46,615 [INFO] ApiDbMcu:458 - Load IP Config File for KMS
+2021-04-30 10:29:46,642 [INFO] ApiDbMcu:458 - Load IP Config File for Sigfox
+2021-04-30 10:29:46,662 [INFO] ApiDbMcu:458 - Load IP Config File for SubGHz_Phy
+2021-04-30 10:29:51,293 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 5340mS.
+2021-04-30 10:29:51,295 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-04-30 10:29:51,314 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 1mS.
+2021-04-30 10:29:52,629 [INFO] ApiDb:276 - Save user favorites file C:\Users\evers/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-04-30 10:29:52,629 [INFO] ApiDb:280 - User favorites MCUs=[]

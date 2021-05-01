@@ -1,0 +1,3 @@
+NvmCtxMgmt.c:140:6:NvmCtxMgmtEvent	0	static
+NvmCtxMgmt.c:188:20:NvmCtxMgmtStore	0	static
+NvmCtxMgmt.c:279:20:NvmCtxMgmtRestore	0	static

@@ -1,0 +1,14 @@
+stm32wlxx_ll_bus.h:449:22:LL_AHB2_GRP1_EnableClock	8	static
+sys_app.c:341:13:tiny_snprintf_like.constprop	16	static
+sys_app.c:266:13:TimestampNow	32	static
+sys_app.c:96:6:SystemApp_Init	32	static
+sys_app.c:145:6:UTIL_SEQ_Idle	0	static
+sys_app.c:156:9:GetBatteryLevel	16	static
+sys_app.c:190:10:GetTemperatureLevel	8	static
+sys_app.c:201:6:GetUniqueId	16	static
+sys_app.c:241:10:GetDevAddr	8	static
+sys_app.c:319:6:UTIL_ADV_TRACE_PreSendHook	0	static
+sys_app.c:330:6:UTIL_ADV_TRACE_PostSendHook	0	static
+sys_app.c:366:19:HAL_InitTick	0	static
+sys_app.c:383:10:HAL_GetTick	0	static
+sys_app.c:400:6:HAL_Delay	8	static
