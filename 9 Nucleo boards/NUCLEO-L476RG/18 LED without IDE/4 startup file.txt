@@ -1,0 +1,20 @@
+Add startup file
+touch stm32_startup.c
+
+Vector table:
+82 IRQ's + 15 system exceptions + MSP => 98 word addressable memory (reference manual)
+=> 98x4 = 392 bytes
+
+
+Address 0x00000000 to 0x00000184
+
+Added a vector in a specific section
+
+Test:
+
+make
+arm-none-eabi-objdump.exe -h stm32_startup.o   // shows all sections
+arm-none-eabi-objdump.exe -d stm32_startup.o  // code in de sectie
+
+Added all default functions can be override in yhe program bij programmer.
+Used weak to do so.
