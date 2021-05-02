@@ -1,0 +1,23 @@
+Link ARM toolchain on Windows GNU compiler:
+https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
+
+GCC manual:\https://gcc.gnu.org/onlinedocs/gcc-9.3.0/gcc/
+
+Test:
+arm-none-eabi-gcc => fatal error no input files
+
+Compile to object file:
+arm-none-eabi-gcc -c main.c -o main.o => error architecture not specified
+
+Compile to object file for stm32 cortex m4 + thumb instruction set:
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb main.c -o main.o
+
+Compile to assemble file:
+arm-none-eabi-gcc -S -mcpu=cortex-m4 -mthumb main.c -o main.s (te openen in notepad++)
+
+
+cls => clear screen in cmd
+
+C:\MinGW\bin removed this is path to gcc and not arm-none-eabi-gcc
+
+cd \Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\18 LED without IDE
