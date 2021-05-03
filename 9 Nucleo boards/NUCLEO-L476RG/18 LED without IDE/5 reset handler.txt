@@ -1,0 +1,51 @@
+Aanmaken lonker script
+
+touch stm43_ls.ld
+
+Start with, de funcite die als eerste wordt afgehandeld na een reset is de reset handler
+ENTRY(Reset_Handler)
+
+Vervolgens aangeven hoeveel memory er is in het target (MEMORY command)
+
+Syntax:
+MEMORY
+{
+	name(attr) : ORIGIN = origin, LENGTH = len
+}
+
+Attribute characters:
+R	Read-only sections
+W	Read and Write sections
+X	Sections containing executable code
+A	Allocated sections
+I	Initialized sections
+L	Same as "I"
+!	Invert the sense of any of the following attributes
+
+FLASH => code memory ROM => rx (read and executable)
+SRAM => DATA memory RAM => rwx (read write and executable)
+
+SECTIONS command => locatie bijvoorbeeld .text region to specific place
+
+Syntax:
+/*Sections*/
+SECTIONS
+{
+	/* This section should include .text section of all input files */
+	.text:
+	{
+		//merge all .isr_vector section of all input files
+		//merge all .text section of all input files
+		//merge all .rodata section of all input files
+	}>(VMA)AT>(Ima)
+	
+	/* This section should include .data section of all input files*/
+	.data:
+	{
+		// here merge all .data section of all input files
+	}>(VMA)AT>(Ima)
+}
+
+Start linking:
+make clean
+
