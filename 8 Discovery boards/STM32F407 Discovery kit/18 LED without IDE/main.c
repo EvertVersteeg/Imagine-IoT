@@ -65,6 +65,8 @@ int main(void)
 	enable_processor_faults();
 
 	init_scheduler_stack(SCHED_STACK_START);
+	
+	//printf("Implementation of simple task sceduler /n");
 
 	init_tasks_stack();
 
@@ -389,20 +391,20 @@ void  SysTick_Handler(void)
 //2. implement the fault handlers
 void HardFault_Handler(void)
 {
-	printf("Exception : Hardfault\n");
+	//printf("Exception : Hardfault\n");
 	while(1);
 }
 
 
 void MemManage_Handler(void)
 {
-	printf("Exception : MemManage\n");
+	//printf("Exception : MemManage\n");
 	while(1);
 }
 
 void BusFault_Handler(void)
 {
-	printf("Exception : BusFault\n");
+	//printf("Exception : BusFault\n");
 	while(1);
 }
 

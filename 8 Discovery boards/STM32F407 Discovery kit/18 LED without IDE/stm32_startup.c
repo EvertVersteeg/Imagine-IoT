@@ -9,14 +9,12 @@
 extern uint32_t _etext;
 extern uint32_t _sdata;
 extern uint32_t _edata;
-extern uint32_t _la_data;
 
 extern uint32_t _sbss;
 extern uint32_t _ebss;
 
 //prototype of main
 int main(void);
-void __libc_init_array(void);
 
 /* function prototypes of STM32F407x system exception and IRQ handlers */
 
@@ -225,7 +223,7 @@ void Reset_Handler(void)
 	uint32_t size = (uint32_t)&_edata - (uint32_t)&_sdata;
 	
 	uint8_t *pDst = (uint8_t*)&_sdata;  // destination sram
-	uint8_t *pSrc = (uint8_t*)&_la_data;  // source flash
+	uint8_t *pSrc = (uint8_t*)&_etext;  // source flash
 	
 	for(uint32_t i = 0; i < size ; i++)
 	{
@@ -243,8 +241,7 @@ void Reset_Handler(void)
 	}
 	
 	// Call main
-	
-	__libc_init_array();
+
 	
 	main();
 }
