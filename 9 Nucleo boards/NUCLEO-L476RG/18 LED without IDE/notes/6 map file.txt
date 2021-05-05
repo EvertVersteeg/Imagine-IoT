@@ -1,1 +1,7 @@
 Analyse resource location in .elf file
+
+Toevoegen aan LDFLAGS => -Wl,-Map=final.map (+ aangeven dat dit een linker argument is)
+
+See all application symbols labels
+run:
+arm-none-eabi-nm.exe final.elf
