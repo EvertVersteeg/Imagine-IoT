@@ -1,0 +1,32 @@
+van .elf => target (download)
+
+OpenOCD (Open On Chip Debugger) on hosst
+To programm debug and analyze the application using GDB (GNU debugger)
+
+
+https://github.com/xpack-dev-tools/openocd-xpack/releases
+
+Use:
+
+make load
+
+in nieuw terminal:
+arm-none-eabi-gdb.exe
+
+=> gdb prompt
+
+target remote localhost:3333
+
+monitor reset init
+
+monitor flash write_image erase final.elf
+monitor reset halt
+monitor resume
+
+Read location 0x2000_0000 current task
+
+quit (gdb)monitor
+
+monitor bp 0x080001c6 2 hw
+
+monitor mdw 0x20000000 4
