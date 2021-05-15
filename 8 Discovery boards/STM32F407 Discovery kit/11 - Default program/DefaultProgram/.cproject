@@ -135,6 +135,8 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1550393620.1882263172" name="main.h" rcbsApplicability="disable" resourcePath="Src/main.h" toolsToInvoke=""/>
+                    					
                     <sourceEntries>
                         						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Startup"/>
@@ -282,6 +284,8 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1980613978.1139887638" name="main.h" rcbsApplicability="disable" resourcePath="Src/main.h" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						

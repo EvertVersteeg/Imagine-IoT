@@ -1,0 +1,52 @@
+/**
+ ******************************************************************************
+ * @file           : main.h
+ * @author         : E. Versteeg @ Imagine Solutions BV
+ * @brief          : Main header file
+ ******************************************************************************
+ */
+// LEDS:
+// LD1 COM default is red, turn on green of communications are in progress PC => board
+// LD2 PWR is red when powered
+// User LD3 orange LED is a user LED connected to the I/O PD13
+// User LD4 green LED is a user LED connected to the I/O PD12
+// User LD5 red LED is a user LED connected to the I/O PD14
+// User LD6 blue LED is a user LED connected to the I/O PD15
+// User LD7 green LED indicates when Vbus s present on CN5 and is connected to the I/O PA9
+// User LD8 red LED indicates overcurrent from Vbus of CN5 nd is connected to the IO PD5
+
+// Buttons:
+// B1 User and wake up on PA0, => EXTI0 position 6 / priority 13 in the vector table via register: SYSCFG_EXTICR1
+// B2 reset connected to NRST
+
+// GPIOA
+uint32_t volatile *pGPIOA_Mode_Reg				= (uint32_t*)(0x40020000 + 0x00);    // GPIOA => Mode register
+uint32_t volatile *pCLK_Ctrl_Reg				= (uint32_t*)(0x40023800 + 0x30);    // RCC => GPIOAEN peripheral clock register (RCC_AHB1ENR) (bit 0 = 1 => GPIOA enable
+
+// GPIOB
+// GPIOC
+// GPIOD
+// GPIOE
+// GPIOF
+// GPIOG
+// GPIOH
+// GPIOI
+
+// EXTI registers => User button
+uint32_t volatile *pEXTI_Pending_Reg			= (uint32_t*)(0x40013C00 + 0x14);    // EXTI => Pending register => Base address from the memory map + offset
+uint32_t volatile *pEXTI_Int_Mask_Reg			= (uint32_t*)(0x40013C00 + 0x00);    // EXTI => Interrupt mask register (EXTI_IMR)
+uint32_t volatile *pEXTI_Rising_Trig_Sel_Reg	= (uint32_t*)(0x40013C00 + 0x08);    // EXTI => Rising trigger delection register (EXTI_RTSR)
+
+// NVIC registers
+uint32_t volatile *pNVIC_IRQ_EN_Reg				= (uint32_t*)(0xE000E100);   		 // MVIC => IRQ enable register
+
+// RCC regiters
+uint32_t volatile *pCLK_Ctrl_Reg_Abp2			= (uint32_t*)(0x40023800 + 0x44);    // RCC => ABP2 peripheral clock enable register (RCC_ABP2ENR) (bit 14 = 1 => system configuration controller clock enable
+
+
+#include<stdint.h>
+#include<stdio.h>
+
+#if !defined(__SOFT_FP__) && defined(__ARM_FP)
+  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+#endif

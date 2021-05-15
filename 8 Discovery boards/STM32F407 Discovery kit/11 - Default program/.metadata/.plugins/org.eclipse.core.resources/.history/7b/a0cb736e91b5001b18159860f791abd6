@@ -1,0 +1,88 @@
+/**
+ ******************************************************************************
+ * @file           : main.c
+ * @author         : E. Versteeg @ Imagine Solutions BV
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2021 Imagine Solutions BV.
+ * All rights reserved.
+ *
+ * This software component is licensed by ST under BSD 3-Clause license,
+ * the "License"; You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at:
+ *                        opensource.org/licenses/BSD-3-Clause
+ *
+ ******************************************************************************
+ * Select "SWD" as interface under debug configuration => debugger tab.
+ * select under window (in debug mode) => Show View => SWV => SWV ITM Data Console
+ * Configure trace in the data console => select port 1 => start trace
+ **/
+
+#include "main.h"
+
+// Function declaration of the interrupt fault handlers
+void HardFault_Handler(void);
+void MemManage_Handler(void);
+void BusFault_Handler(void);
+void EXTI0_IRQHandler(void);
+// Button init IRQ enable
+void init_button(void);
+
+
+int main(void)
+{
+    init_button();
+	printf("Hello World\n");
+	/* Loop forever */
+	for(;;);
+}
+
+
+// Implementation of fault handlers
+void HardFault_Handler(void)
+{
+	printf("Exeption : Hardfault\n");
+	while(1);
+}
+
+void MemManage_Handler(void)
+{
+	printf("Exeption : MemManage\n");
+	while(1);
+}
+
+void BusFault_Handler(void)
+{
+	printf("Exeption : Busfault\n");
+	while(1);
+}
+// Implementation of wake up button
+
+void EXTI0_IRQHandler(void)
+{
+	printf("Interrupt : Wake up button pressed\n");
+
+	// Clearing of exti interrupt pending
+	*pEXTI_Pending_Reg |= (1 << 0);
+}
+
+
+void init_button(void)
+{
+	// GPIOA clock enable
+	*pCLK_Ctrl_Reg |= (1 << 0);   // Enable clock GPIOA
+
+	// syscfg clock enabl
+	*pCLK_Ctrl_Reg_Abp2 |= (1 << 14);
+
+	// Edge detection riding edge button setting
+	*pEXTI_Rising_Trig_Sel_Reg |= ( 1 << 0);
+
+	// EXTI interrupt enable
+	*pEXTI_Int_Mask_Reg |= (1 << 0);
+
+	// NVIC irq enable
+	*pNVIC_IRQ_EN_Reg |= (1 << 6);
+}

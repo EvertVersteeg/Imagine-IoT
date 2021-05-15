@@ -1,0 +1,25 @@
+/*
+ * init.c
+ *
+ *  Created on: May 15, 2021
+ *      Author: evers
+ */
+
+
+void init(void)
+{
+	// GPIOA clock enable
+	*pCLK_Ctrl_Reg |= (1 << 0);   // Enable clock GPIOA
+
+	// syscfg clock enabl
+	*pCLK_Ctrl_Reg_Abp2 |= (1 << 14);
+
+	// Edge detection riding edge button setting
+	*pEXTI_Rising_Trig_Sel_Reg |= ( 1 << 0);
+
+	// EXTI interrupt enable
+	*pEXTI_Int_Mask_Reg |= (1 << 0);
+
+	// NVIC irq enable, EXTI0 enable (IRQ 6)
+	*pNVIC_IRQ_EN_Reg |= (1 << 6);
+}
