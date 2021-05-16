@@ -1039,3 +1039,40 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-05-16 17:30:59.854
 !MESSAGE Indexed 'DefaultProgram' (3 sources, 57 headers) in 0,233 sec: 2.142 declarations; 2.986 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2021-05-16 21:11:16.835
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\8 Discovery boards\STM32F407 Discovery kit\11 - Default program\DefaultProgram\Debug\DefaultProgram.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:315)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:142)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:307)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2021-05-16 21:11:16.835
+!MESSAGE C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\8 Discovery boards\STM32F407 Discovery kit\11 - Default program\DefaultProgram\Debug\DefaultProgram.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\8 Discovery boards\STM32F407 Discovery kit\11 - Default program\DefaultProgram\Debug\DefaultProgram.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:315)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:142)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:307)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 21:12:56.025
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 58 headers) in 0,32 sec: 2.151 declarations; 3.009 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 21:14:57.809
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 58 headers) in 0,247 sec: 2.151 declarations; 3.009 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
