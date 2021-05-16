@@ -1,10 +1,20 @@
-17:54:08 **** Incremental Build of configuration Debug for project DefaultProgram ****
+17:31:33 **** Incremental Build of configuration Release for project DefaultProgram ****
 make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/evers/Documents/IMAGINE-IOT/Imagine-IoT/Imagine-IoT/8 Discovery boards/STM32F407 Discovery kit/11 - Default program/DefaultProgram/Drivers/Inc" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "DefaultProgram.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\8 Discovery boards\STM32F407 Discovery kit\11 - Default program\DefaultProgram\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DefaultProgram.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DefaultProgram.elf
+ 
+arm-none-eabi-objdump -h -S  DefaultProgram.elf  > "DefaultProgram.list"
+arm-none-eabi-objcopy  -O binary  DefaultProgram.elf  "DefaultProgram.bin"
 arm-none-eabi-size   DefaultProgram.elf 
    text	   data	    bss	    dec	    hex	filename
-   3988	    136	   1592	   5716	   1654	DefaultProgram.elf
+   3756	    140	   1596	   5492	   1574	DefaultProgram.elf
 Finished building: default.size.stdout
+Finished building: DefaultProgram.list
+Finished building: DefaultProgram.bin
+ 
+ 
  
 
-17:54:08 Build Finished. 0 errors, 0 warnings. (took 250ms)
+17:31:33 Build Finished. 0 errors, 0 warnings. (took 567ms)
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DefaultProgram/Drivers/Inc/stm32407xx.h&apos; to &apos;stm32f407xx.h&apos;" description="Rename resource &apos;stm32407xx.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/Inc/stm32407xx.h" name="stm32f407xx.h" stamp="1621179038236" updateReferences="true"/>
+</session>

@@ -997,3 +997,45 @@ java.lang.Exception: Resource '/DefaultProgram/Src/main.h' does not exist.
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-05-15 17:54:01.983
 !MESSAGE 21
+!SESSION 2021-05-16 17:03:38.512 -----------------------------------------------
+eclipse.buildId=Version 1.6.1
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-05-16 17:03:46.877
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-05-16 17:03:47.015
+!MESSAGE Log4j initialized with config file C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\8 Discovery boards\STM32F407 Discovery kit\11 - Default program\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-05-16 17:03:53.354
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-05-16 17:03:53.990
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 17:10:31.303
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 56 headers) in 0,487 sec: 2.142 declarations; 2.985 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 17:17:34.558
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 56 headers) in 0,375 sec: 2.142 declarations; 2.985 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 17:20:22.976
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 56 headers) in 0,296 sec: 2.142 declarations; 2.985 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 17:22:51.719
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 56 headers) in 0,296 sec: 2.142 declarations; 2.985 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 17:27:00.295
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 56 headers) in 0,257 sec: 2.142 declarations; 2.985 references; 1 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 17:29:46.738
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 56 headers) in 0,28 sec: 2.142 declarations; 2.985 references; 1 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 17:30:16.721
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 56 headers) in 0,252 sec: 2.142 declarations; 2.985 references; 1 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-05-16 17:30:59.854
+!MESSAGE Indexed 'DefaultProgram' (3 sources, 57 headers) in 0,233 sec: 2.142 declarations; 2.986 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,039%)
