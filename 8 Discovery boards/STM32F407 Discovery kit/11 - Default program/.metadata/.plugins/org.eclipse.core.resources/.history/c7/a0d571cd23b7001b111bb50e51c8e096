@@ -20,6 +20,7 @@
  * Configure trace in the data console => select port 1 => start trace
  **/
 
+#include "main.h"
 #include "stm32f407xx.h"
 
 // Function declaration

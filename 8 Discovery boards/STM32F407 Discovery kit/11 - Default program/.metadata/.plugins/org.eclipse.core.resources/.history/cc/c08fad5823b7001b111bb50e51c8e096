@@ -2,30 +2,13 @@
  * stm32407xx.h
  *
  *  Created on: 16 mei 2021
- *  Author: Evert Versteeg
- *  Imagine Solutions BV
+ *      Author: evers
  */
-
-
-// LEDS:
-// LD1 COM default is red, turn on green of communications are in progress PC => board
-// LD2 PWR is red when powered
-// User LD3 orange LED is a user LED connected to the I/O PD13
-// User LD4 green LED is a user LED connected to the I/O PD12
-// User LD5 red LED is a user LED connected to the I/O PD14
-// User LD6 blue LED is a user LED connected to the I/O PD15
-// User LD7 green LED indicates when Vbus s present on CN5 and is connected to the I/O PA9
-// User LD8 red LED indicates overcurrent from Vbus of CN5 nd is connected to the IO PD5
-
-#if !defined(__SOFT_FP__) && defined(__ARM_FP)
-  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-#endif
 
 #ifndef INC_STM32F407XX_H_
 #define INC_STM32F407XX_H_
 
 #include<stdint.h>
-#include<stdio.h>
 
 #define __vo volatile
 
@@ -40,7 +23,7 @@
 #define PERIPH_BASE						0x40000000U
 #define APB1PERIPH_BASE					PERIPH_BASE
 #define APB2PERIPH_BASE					0x40010000U
-#define AHB1PERIPH_BASE					0x40020000U			// AHB => High speed bus
+#define AHB1PERIPH_BASE					0x40020000U			// High speed bus
 #define AHB2PERIPH_BASE					0x50000000U
 
 //AHB1 Peripheral addresses
@@ -78,19 +61,19 @@
 /************************************peripheral register definition stuctures*************/
 typedef struct
 {
-	__vo uint32_t MODER;		// GPIO port mode register (GPIOx_MODER) 						OFFSET: 0x00
-	__vo uint32_t OTYPER;		// GPIO port output type register (GPIOx_OTYPER)  				OFFSET: 0x04
-	__vo uint32_t OSPEEDR;		// GPIO port output speed register (GPIOx_OSPEEDR) 				OFFSET: 0x08
-	__vo uint32_t PUPDR;		// GPIO port pull-up/pull-down register (GPIOx_PUPDR)			OFFSET: 0x0C
-	__vo uint32_t IDR;			// GPIO port input data register (GPIOx_IDR)					OFFSET: 0x10
-	__vo uint32_t ODR;			// GPIO port output data register (GPIOx_ODR)					OFFSET: 0x14
-	__vo uint32_t BSRR;			// GPIO port bit set/reset register (GPIOx_BSRR)				OFFSET: 0x18
-	__vo uint32_t LCKR;			// GPIO port configuration lock register (GPIOx_LCKR) 			OFFSET: 0x1C
+	__vo uint32_t MODER;			// GPIO port mode register (GPIOx_MODER) 					OFFSET: 0x00
+	__vo uint32_t OTYPER;		// GPIO port output type register (GPIOx_OTYPER)  			OFFSET: 0x04
+	__vo uint32_t OSPEEDR;		// GPIO port output speed register (GPIOx_OSPEEDR) 			OFFSET: 0x08
+	__vo uint32_t PUPDR;			// GPIO port pull-up/pull-down register (GPIOx_PUPDR)		OFFSET: 0x0C
+	__vo uint32_t IDR;			// GPIO port input data register (GPIOx_IDR)				OFFSET: 0x10
+	__vo uint32_t ODR;			// GPIO port output data register (GPIOx_ODR)				OFFSET: 0x14
+	__vo uint32_t BSRR;			// GPIO port bit set/reset register (GPIOx_BSRR)			OFFSET: 0x18
+	__vo uint32_t LCKR;			// GPIO port configuration lock register (GPIOx_LCKR) 		OFFSET: 0x1C
 	__vo uint32_t AFR[2];		// GPIO alternate function low register (AFR[0] = GPIOx_AFRL + GPIOx_AFR[1] = AFRH) OFFSET: 0x20 - 0x24
 }GPIO_RegDef_t;
 
 
-// peripheral definitions (Peripheral base addresses type casted to GPIO_RegDef_t)
+// peripheral definitions (Peripheral base addresses typecasted to xxx_RegDef_t)
 #define GPIOA							((GPIO_RegDef_t*)GPIOA_BASEADDR)
 #define GPIOB							((GPIO_RegDef_t*)GPIOB_BASEADDR)
 #define GPIOC							((GPIO_RegDef_t*)GPIOC_BASEADDR)

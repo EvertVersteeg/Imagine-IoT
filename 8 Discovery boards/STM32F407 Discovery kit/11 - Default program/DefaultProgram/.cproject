@@ -153,8 +153,6 @@
                     					
                     <fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1550393620.905476765" name="stm32407xx.h" rcbsApplicability="disable" resourcePath="Drivers/Inc/stm32f407xx.h" toolsToInvoke=""/>
                     					
-                    <fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1550393620.1882263172" name="main.h" rcbsApplicability="disable" resourcePath="Src/main.h" toolsToInvoke=""/>
-                    					
                     <sourceEntries>
                         						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
@@ -382,8 +380,6 @@
                     </folderInfo>
                     					
                     <fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1980613978.1391060476" name="stm32407xx.h" rcbsApplicability="disable" resourcePath="Drivers/Inc/stm32f407xx.h" toolsToInvoke=""/>
-                    					
-                    <fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1980613978.1139887638" name="main.h" rcbsApplicability="disable" resourcePath="Src/main.h" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						
