@@ -86,6 +86,91 @@ Discarded input sections
  .ARM.exidx     0x0000000000000000       0x10 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1c c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .group         0x0000000000000000        0xc Drivers/Src/stm32f407xx_gpio_driver.o
+ .text          0x0000000000000000        0x0 Drivers/Src/stm32f407xx_gpio_driver.o
+ .data          0x0000000000000000        0x0 Drivers/Src/stm32f407xx_gpio_driver.o
+ .bss           0x0000000000000000        0x0 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_info    0x0000000000000000      0x911 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_abbrev  0x0000000000000000      0x163 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_aranges
+                0x0000000000000000       0x18 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000      0x1e0 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000      0xaa8 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x8e Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x51 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000      0x103 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x6a Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000      0x1df Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x52 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x18 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x3c Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x34 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x16 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x97 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000      0x339 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0xfd Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x16 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x43 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x34 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x58 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x71 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000      0x12a Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x52 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0xd5 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x3d Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000       0x16 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000      0x145 Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_macro   0x0000000000000000      0x29a Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_line    0x0000000000000000      0x63b Drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_str     0x0000000000000000     0x91de Drivers/Src/stm32f407xx_gpio_driver.o
+ .comment       0x0000000000000000       0x54 Drivers/Src/stm32f407xx_gpio_driver.o
+ .ARM.attributes
+                0x0000000000000000       0x33 Drivers/Src/stm32f407xx_gpio_driver.o
  .group         0x0000000000000000        0xc Src/main.o
  .group         0x0000000000000000        0xc Src/main.o
  .group         0x0000000000000000        0xc Src/main.o
@@ -125,6 +210,42 @@ Discarded input sections
  .text          0x0000000000000000        0x0 Src/main.o
  .data          0x0000000000000000        0x0 Src/main.o
  .bss           0x0000000000000000        0x0 Src/main.o
+ .debug_macro   0x0000000000000000      0xaa8 Src/main.o
+ .debug_macro   0x0000000000000000       0x22 Src/main.o
+ .debug_macro   0x0000000000000000       0x8e Src/main.o
+ .debug_macro   0x0000000000000000       0x51 Src/main.o
+ .debug_macro   0x0000000000000000      0x103 Src/main.o
+ .debug_macro   0x0000000000000000       0x6a Src/main.o
+ .debug_macro   0x0000000000000000      0x1df Src/main.o
+ .debug_macro   0x0000000000000000       0x52 Src/main.o
+ .debug_macro   0x0000000000000000       0x18 Src/main.o
+ .debug_macro   0x0000000000000000       0x3c Src/main.o
+ .debug_macro   0x0000000000000000       0x34 Src/main.o
+ .debug_macro   0x0000000000000000       0x16 Src/main.o
+ .debug_macro   0x0000000000000000       0x97 Src/main.o
+ .debug_macro   0x0000000000000000      0x339 Src/main.o
+ .debug_macro   0x0000000000000000       0xfd Src/main.o
+ .debug_macro   0x0000000000000000       0x10 Src/main.o
+ .debug_macro   0x0000000000000000       0x16 Src/main.o
+ .debug_macro   0x0000000000000000       0x43 Src/main.o
+ .debug_macro   0x0000000000000000       0x34 Src/main.o
+ .debug_macro   0x0000000000000000       0x10 Src/main.o
+ .debug_macro   0x0000000000000000       0x58 Src/main.o
+ .debug_macro   0x0000000000000000       0x71 Src/main.o
+ .debug_macro   0x0000000000000000       0x1c Src/main.o
+ .debug_macro   0x0000000000000000      0x12a Src/main.o
+ .debug_macro   0x0000000000000000       0x10 Src/main.o
+ .debug_macro   0x0000000000000000       0x1c Src/main.o
+ .debug_macro   0x0000000000000000       0x52 Src/main.o
+ .debug_macro   0x0000000000000000       0x22 Src/main.o
+ .debug_macro   0x0000000000000000       0x10 Src/main.o
+ .debug_macro   0x0000000000000000       0x40 Src/main.o
+ .debug_macro   0x0000000000000000       0xd5 Src/main.o
+ .debug_macro   0x0000000000000000       0x1c Src/main.o
+ .debug_macro   0x0000000000000000       0x3d Src/main.o
+ .debug_macro   0x0000000000000000       0x16 Src/main.o
+ .debug_macro   0x0000000000000000      0x145 Src/main.o
+ .debug_macro   0x0000000000000000      0x29a Src/main.o
  .group         0x0000000000000000        0xc Src/syscalls.o
  .group         0x0000000000000000        0xc Src/syscalls.o
  .group         0x0000000000000000        0xc Src/syscalls.o
@@ -400,6 +521,7 @@ Linker script and memory map
 LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m/nofp/crti.o
 LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m/nofp/crtbegin.o
 LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+LOAD Drivers/Src/stm32f407xx_gpio_driver.o
 LOAD Src/main.o
 LOAD Src/syscalls.o
 LOAD Src/sysmem.o
@@ -946,82 +1068,46 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_ranges  0x00000000000000d8       0x10 Src/sysmem.o
  .debug_ranges  0x00000000000000e8       0x20 Startup/startup_stm32f407vgtx.o
 
-.debug_macro    0x0000000000000000     0x2d0b
+.debug_macro    0x0000000000000000     0x111e
  .debug_macro   0x0000000000000000      0x1d6 Src/main.o
- .debug_macro   0x00000000000001d6      0xaa8 Src/main.o
- .debug_macro   0x0000000000000c7e       0x22 Src/main.o
- .debug_macro   0x0000000000000ca0       0x8e Src/main.o
- .debug_macro   0x0000000000000d2e       0x51 Src/main.o
- .debug_macro   0x0000000000000d7f      0x103 Src/main.o
- .debug_macro   0x0000000000000e82       0x6a Src/main.o
- .debug_macro   0x0000000000000eec      0x1df Src/main.o
- .debug_macro   0x00000000000010cb       0x52 Src/main.o
- .debug_macro   0x000000000000111d       0x18 Src/main.o
- .debug_macro   0x0000000000001135       0x3c Src/main.o
- .debug_macro   0x0000000000001171       0x34 Src/main.o
- .debug_macro   0x00000000000011a5       0x16 Src/main.o
- .debug_macro   0x00000000000011bb       0x97 Src/main.o
- .debug_macro   0x0000000000001252      0x339 Src/main.o
- .debug_macro   0x000000000000158b       0xfd Src/main.o
- .debug_macro   0x0000000000001688       0x10 Src/main.o
- .debug_macro   0x0000000000001698       0x16 Src/main.o
- .debug_macro   0x00000000000016ae       0x43 Src/main.o
- .debug_macro   0x00000000000016f1       0x34 Src/main.o
- .debug_macro   0x0000000000001725       0x10 Src/main.o
- .debug_macro   0x0000000000001735       0x58 Src/main.o
- .debug_macro   0x000000000000178d       0x71 Src/main.o
- .debug_macro   0x00000000000017fe       0x1c Src/main.o
- .debug_macro   0x000000000000181a      0x12a Src/main.o
- .debug_macro   0x0000000000001944       0x10 Src/main.o
- .debug_macro   0x0000000000001954       0x1c Src/main.o
- .debug_macro   0x0000000000001970       0x52 Src/main.o
- .debug_macro   0x00000000000019c2       0x22 Src/main.o
- .debug_macro   0x00000000000019e4       0x10 Src/main.o
- .debug_macro   0x00000000000019f4       0x40 Src/main.o
- .debug_macro   0x0000000000001a34       0xd5 Src/main.o
- .debug_macro   0x0000000000001b09       0x1c Src/main.o
- .debug_macro   0x0000000000001b25       0x3d Src/main.o
- .debug_macro   0x0000000000001b62       0x16 Src/main.o
- .debug_macro   0x0000000000001b78      0x145 Src/main.o
- .debug_macro   0x0000000000001cbd      0x106 Src/main.o
- .debug_macro   0x0000000000001dc3      0x25e Src/syscalls.o
- .debug_macro   0x0000000000002021       0x4c Src/syscalls.o
- .debug_macro   0x000000000000206d       0x94 Src/syscalls.o
- .debug_macro   0x0000000000002101       0x57 Src/syscalls.o
- .debug_macro   0x0000000000002158      0x174 Src/syscalls.o
- .debug_macro   0x00000000000022cc       0x10 Src/syscalls.o
- .debug_macro   0x00000000000022dc       0x35 Src/syscalls.o
- .debug_macro   0x0000000000002311       0x10 Src/syscalls.o
- .debug_macro   0x0000000000002321       0x10 Src/syscalls.o
- .debug_macro   0x0000000000002331       0x35 Src/syscalls.o
- .debug_macro   0x0000000000002366      0x12c Src/syscalls.o
- .debug_macro   0x0000000000002492       0x16 Src/syscalls.o
- .debug_macro   0x00000000000024a8       0x16 Src/syscalls.o
- .debug_macro   0x00000000000024be       0x29 Src/syscalls.o
- .debug_macro   0x00000000000024e7       0x10 Src/syscalls.o
- .debug_macro   0x00000000000024f7      0x241 Src/syscalls.o
- .debug_macro   0x0000000000002738       0x1c Src/syscalls.o
- .debug_macro   0x0000000000002754       0x10 Src/syscalls.o
- .debug_macro   0x0000000000002764      0x189 Src/syscalls.o
- .debug_macro   0x00000000000028ed       0x16 Src/syscalls.o
- .debug_macro   0x0000000000002903       0xce Src/syscalls.o
- .debug_macro   0x00000000000029d1       0xff Src/sysmem.o
- .debug_macro   0x0000000000002ad0      0x23b Src/sysmem.o
+ .debug_macro   0x00000000000001d6      0x25e Src/syscalls.o
+ .debug_macro   0x0000000000000434       0x4c Src/syscalls.o
+ .debug_macro   0x0000000000000480       0x94 Src/syscalls.o
+ .debug_macro   0x0000000000000514       0x57 Src/syscalls.o
+ .debug_macro   0x000000000000056b      0x174 Src/syscalls.o
+ .debug_macro   0x00000000000006df       0x10 Src/syscalls.o
+ .debug_macro   0x00000000000006ef       0x35 Src/syscalls.o
+ .debug_macro   0x0000000000000724       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000734       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000744       0x35 Src/syscalls.o
+ .debug_macro   0x0000000000000779      0x12c Src/syscalls.o
+ .debug_macro   0x00000000000008a5       0x16 Src/syscalls.o
+ .debug_macro   0x00000000000008bb       0x16 Src/syscalls.o
+ .debug_macro   0x00000000000008d1       0x29 Src/syscalls.o
+ .debug_macro   0x00000000000008fa       0x10 Src/syscalls.o
+ .debug_macro   0x000000000000090a      0x241 Src/syscalls.o
+ .debug_macro   0x0000000000000b4b       0x1c Src/syscalls.o
+ .debug_macro   0x0000000000000b67       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000b77      0x189 Src/syscalls.o
+ .debug_macro   0x0000000000000d00       0x16 Src/syscalls.o
+ .debug_macro   0x0000000000000d16       0xce Src/syscalls.o
+ .debug_macro   0x0000000000000de4       0xff Src/sysmem.o
+ .debug_macro   0x0000000000000ee3      0x23b Src/sysmem.o
 
-.debug_line     0x0000000000000000     0x145e
- .debug_line    0x0000000000000000      0x6b5 Src/main.o
- .debug_line    0x00000000000006b5      0x832 Src/syscalls.o
- .debug_line    0x0000000000000ee7      0x4f3 Src/sysmem.o
- .debug_line    0x00000000000013da       0x84 Startup/startup_stm32f407vgtx.o
+.debug_line     0x0000000000000000     0x145d
+ .debug_line    0x0000000000000000      0x6b4 Src/main.o
+ .debug_line    0x00000000000006b4      0x832 Src/syscalls.o
+ .debug_line    0x0000000000000ee6      0x4f3 Src/sysmem.o
+ .debug_line    0x00000000000013d9       0x84 Startup/startup_stm32f407vgtx.o
 
-.debug_str      0x0000000000000000     0x9e70
- .debug_str     0x0000000000000000     0x85d6 Src/main.o
-                                       0x8856 (size before relaxing)
- .debug_str     0x00000000000085d6     0x1803 Src/syscalls.o
+.debug_str      0x0000000000000000     0xa8c5
+ .debug_str     0x0000000000000000     0x902b Src/main.o
+                                       0x92ab (size before relaxing)
+ .debug_str     0x000000000000902b     0x1803 Src/syscalls.o
                                        0x8fb5 (size before relaxing)
- .debug_str     0x0000000000009dd9       0x66 Src/sysmem.o
+ .debug_str     0x000000000000a82e       0x66 Src/sysmem.o
                                        0x62cd (size before relaxing)
- .debug_str     0x0000000000009e3f       0x31 Startup/startup_stm32f407vgtx.o
+ .debug_str     0x000000000000a894       0x31 Startup/startup_stm32f407vgtx.o
                                          0xc3 (size before relaxing)
 
 .comment        0x0000000000000000       0x53

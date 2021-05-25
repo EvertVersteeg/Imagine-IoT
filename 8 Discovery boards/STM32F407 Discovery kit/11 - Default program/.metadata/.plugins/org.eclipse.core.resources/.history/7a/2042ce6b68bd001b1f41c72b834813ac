@@ -1,0 +1,21 @@
+/*
+ * stm32f407xx_gpio_driver.h
+ *
+ *  Created on: 24 mei 2021
+ *      Author: evers
+ */
+
+#ifndef INC_STM32F407XX_GPIO_DRIVER_H_
+#define INC_STM32F407XX_GPIO_DRIVER_H_
+
+#include "stm32f407xx.h"
+
+// Handle structure for GPIO pin
+typedef struct
+{
+	// Pionter to hold the base address of the GPIO peripheral
+	GPIO_RegDef_t * pGPIOBaseAddr;
+}GPIO_Handle_t;
+
+
+#endif /* INC_STM32F407XX_GPIO_DRIVER_H_ */

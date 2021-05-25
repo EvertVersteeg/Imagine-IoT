@@ -1,0 +1,91 @@
+\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+
+
+\+: Main program body  
+
+
+{\ttfamily \#include \char`\"{}stm32f407xx.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{main_8c_a2bffc10d5bd4106753b7c30e86903bea}} 
+void {\bfseries Hard\+Fault\+\_\+\+Handler} (void)
+\item 
+\mbox{\label{main_8c_a3150f74512510287a942624aa9b44cc5}} 
+void {\bfseries Mem\+Manage\+\_\+\+Handler} (void)
+\item 
+\mbox{\label{main_8c_a850cefb17a977292ae5eb4cafa9976c3}} 
+void {\bfseries Bus\+Fault\+\_\+\+Handler} (void)
+\item 
+\mbox{\label{main_8c_a17e9789a29a87d2df54f12b94dd1a0b6}} 
+void {\bfseries EXTI0\+\_\+\+IRQHandler} (void)
+\item 
+void \textbf{ init} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the on-\/board user LEDs and a Push\+Button. \end{DoxyCompactList}\item 
+\mbox{\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+int {\bfseries main} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{main_8c_a17ed08782936fd12bb3a2e851937409a}} 
+uint32\+\_\+t volatile $\ast$ {\bfseries p\+EXTI\+\_\+\+Pending\+\_\+\+Reg} = (uint32\+\_\+t$\ast$)(0x40013\+C00 + 0x14)
+\item 
+\mbox{\label{main_8c_a971891ccab1dd77b663ac3a9cad70611}} 
+uint32\+\_\+t volatile $\ast$ {\bfseries p\+EXTI\+\_\+\+Int\+\_\+\+Mask\+\_\+\+Reg} = (uint32\+\_\+t$\ast$)(0x40013\+C00 + 0x00)
+\item 
+\mbox{\label{main_8c_ab64b0ac00548f5f7a9325afa6f90d835}} 
+uint32\+\_\+t volatile $\ast$ {\bfseries p\+EXTI\+\_\+\+Rising\+\_\+\+Trig\+\_\+\+Sel\+\_\+\+Reg} = (uint32\+\_\+t$\ast$)(0x40013\+C00 + 0x08)
+\item 
+\mbox{\label{main_8c_a7b9e3272fa0a7f5f9b2c4c78173ee25a}} 
+uint32\+\_\+t volatile $\ast$ {\bfseries p\+NVIC\+\_\+\+IRQ\+\_\+\+EN\+\_\+\+Reg} = (uint32\+\_\+t$\ast$)(0x\+E000\+E100)
+\item 
+\mbox{\label{main_8c_a07bc6383cf7aeb8ebca9837334389418}} 
+uint32\+\_\+t volatile $\ast$ {\bfseries p\+CLK\+\_\+\+Ctrl\+\_\+\+Reg} = (uint32\+\_\+t$\ast$)(0x40023800 + 0x30)
+\item 
+\mbox{\label{main_8c_a873ad12ca122ddb80b127624c2dbe2cc}} 
+uint32\+\_\+t volatile $\ast$ {\bfseries p\+CLK\+\_\+\+Ctrl\+\_\+\+Reg\+\_\+\+Abp2} = (uint32\+\_\+t$\ast$)(0x40023800 + 0x44)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Main program body 
+
+\begin{DoxyAuthor}{Author}
+\+: Evert Versteeg
+\end{DoxyAuthor}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2021 Imagine Solutions BV. All rights reserved.\end{center} }
+
+This software component is licensed by ST under BSD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+BSD-\/3-\/\+Clause 
+
+\doxysubsection{Function Documentation}
+\mbox{\label{main_8c_a2858154e2009b0e6e616f313177762bc}} 
+\index{main.c@{main.c}!init@{init}}
+\index{init@{init}!main.c@{main.c}}
+\doxysubsubsection{init()}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the on-\/board user LEDs and a Push\+Button. 
+
+\begin{DoxyVerb}User LEDS:
+- LD3, orange LED, connected to PD13;
+- LD4, green LED, connected PD12;
+- LD5, red LED, connected PD14;
+- LD6, blue LED, connected PD15.
+User Buttons:
+- User Push Button is connected to PD13.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em No} & arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No return value. 
+\end{DoxyReturn}

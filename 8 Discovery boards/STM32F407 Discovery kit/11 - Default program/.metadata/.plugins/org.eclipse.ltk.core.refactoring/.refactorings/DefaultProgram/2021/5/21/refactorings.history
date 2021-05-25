@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DefaultProgram/Drivers/Src/stm32f407xx_gpio.c&apos; to &apos;stm32f407xx_gpio_driver.c&apos;" description="Rename resource &apos;stm32f407xx_gpio.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/Src/stm32f407xx_gpio.c" name="stm32f407xx_gpio_driver.c" stamp="1621869899557" updateReferences="true"/>
+</session>
