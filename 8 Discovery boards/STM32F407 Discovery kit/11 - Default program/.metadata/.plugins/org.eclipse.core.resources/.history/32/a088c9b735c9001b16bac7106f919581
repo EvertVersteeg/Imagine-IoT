@@ -25,7 +25,7 @@
  *
  * @Note		- none
  */
-void GPIO_PeriClockControl(GPIO_RegDef_t *pGPIOx, uint8_t EnorDi)
+void GPIO_PeriClockControl(GPIO_RegDef_t *pGIOx, uint8_t EnorDi)
 {
 	if(EnorDi == ENABLE)
 	{

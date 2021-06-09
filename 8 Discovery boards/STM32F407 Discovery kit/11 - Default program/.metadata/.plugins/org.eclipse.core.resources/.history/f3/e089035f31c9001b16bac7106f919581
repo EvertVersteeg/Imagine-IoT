@@ -43,10 +43,10 @@ void GPIO_Init(GPIO_Handle_t *pGIOx);														// GPIO Init
 void GPIO_DeInit(GPIO_RegDef_t *pGPIOx);													// De Init
 uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber);					// Read from input pin
 uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx);										// Read from input port
-void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber, uint8_t Value);		// Write to output pin
-void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint8_t Value);							// Write to output port
-void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber);						// Toggle output pin
-void GPIO_IRQConfig(uint8_t IRQNumber, uint8_t IRQPriority, uint8_t EnorDi);				// IRQ Configuration and ISR handling
-void GPIO_IRQHandling(uint8_t PinNumber);													// IRQ Handling
+uint8_t GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t Value);		// Write to output pin
+void GPIO_WriteToOutputPort(void);			// Write to output port
+void GPIO_ToggleOutputPin(void);			// Toggle output pin
+void GPIO_IRQConfig(void);					// IRQ Configuration and ISR handling
+void GPIO_IRQHandling(void);				// IRQ Handling
 
 #endif /* INC_STM32F407XX_GPIO_DRIVER_H_ */
