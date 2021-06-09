@@ -38,15 +38,24 @@ typedef struct
 
 
 // ***** APIs suported by this driver
-void GPIO_PeriClockControl(void);			// Peripheral clock configuration
-void GPIO_Init(void);						// GPIO Init
-void GPIO_DeInit(void);						// De Init
-void GPIO_ReadFromInputPin(void);			// Read from input pin
-void GPIO_ReadFromInputPort(void);			// Read from input port
-void GPIO_WriteToOutputPin(void);			// Write to output pin
-void GPIO_WriteToOutputPort(void);			// Write to output port
-void GPIO_ToggleOutputPin(void);			// Toggle output pin
-void GPIO_IRQConfig(void);					// IRQ Configuration and ISR handling
-void GPIO_IRQHandling(void);				// IRQ Handling
+
+// Peripheral clock configuration
+void GPIO_PeriClockControl(void);
+
+// GPIO Init
+void GPIO_Init(void);
+
+// De Init
+void GPIO_DeInit(void);
+
+// Data read / write
+void GPIO_ReadFromInputPin(void);
+void GPIO_ReadFromInputPort(void);
+void GPIO_WriteToOutputPin(void);
+void GPIO_WriteToOutputPort(void);
+void GPIO_ToggleOutputPin(void);
+// IRQ Configuration and ISR handling
+void GPIO_IRQConfig(void);
+void GPIO_IRQHandling(void);
 
 #endif /* INC_STM32F407XX_GPIO_DRIVER_H_ */
