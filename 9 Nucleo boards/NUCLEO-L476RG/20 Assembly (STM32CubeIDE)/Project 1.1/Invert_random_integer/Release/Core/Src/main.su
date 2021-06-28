@@ -1,0 +1,4 @@
+main.c:124:6:SystemClock_Config	232	static,ignoring_inline_asm
+main.c:245:6:disp_data	72	static
+main.c:77:5:main	48	static,ignoring_inline_asm
+main.c:259:6:Error_Handler	0	static,ignoring_inline_asm

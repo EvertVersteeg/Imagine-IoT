@@ -1,0 +1,10 @@
+19:50:12 **** Incremental Build of configuration Debug for project Invert_random_integer ****
+make -j8 all 
+arm-none-eabi-size   Invert_random_integer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18556	    120	   1744	  20420	   4fc4	Invert_random_integer.elf
+Finished building: default.size.stdout
+ 
+
+19:50:13 Build Finished. 0 errors, 0 warnings. (took 376ms)
+

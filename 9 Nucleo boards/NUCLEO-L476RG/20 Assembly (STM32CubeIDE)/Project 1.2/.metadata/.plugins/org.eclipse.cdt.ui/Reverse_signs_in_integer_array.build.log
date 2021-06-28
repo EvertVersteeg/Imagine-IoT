@@ -1,0 +1,10 @@
+20:08:32 **** Incremental Build of configuration Debug for project Reverse_signs_in_integer_array ****
+make -j8 all 
+arm-none-eabi-size   Reverse_signs_in_integer_array.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14820	    140	   1732	  16692	   4134	Reverse_signs_in_integer_array.elf
+Finished building: default.size.stdout
+ 
+
+20:08:32 Build Finished. 0 errors, 0 warnings. (took 302ms)
+
