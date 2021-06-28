@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;reverse_sign_in_integer_array/Core/Src/inv_int.s&apos; to &apos;inv_pint.s&apos;" description="Rename resource &apos;inv_int.s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/inv_int.s" name="inv_pint.s" stamp="1624892587080" updateReferences="true"/>
+</session>

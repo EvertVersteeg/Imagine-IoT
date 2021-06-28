@@ -1,0 +1,20 @@
+19:29:07 **** Incremental Build of configuration Debug for project reverse_sign_in_integer_array ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "reverse_sign_in_integer_array.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\20 Assembly examples (STM32CubeIDE)\Project 1.1 invert integer\reverse_sign_in_integer_array\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="reverse_sign_in_integer_array.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: reverse_sign_in_integer_array.elf
+ 
+arm-none-eabi-objdump -h -S  reverse_sign_in_integer_array.elf  > "reverse_sign_in_integer_array.list"
+arm-none-eabi-objcopy  -O binary  reverse_sign_in_integer_array.elf  "reverse_sign_in_integer_array.bin"
+arm-none-eabi-size   reverse_sign_in_integer_array.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14900	    140	   1732	  16772	   4184	reverse_sign_in_integer_array.elf
+Finished building: default.size.stdout
+ 
+Finished building: reverse_sign_in_integer_array.bin
+ 
+Finished building: reverse_sign_in_integer_array.list
+ 
+
+19:29:09 Build Finished. 0 errors, 0 warnings. (took 1s.204ms)
+
