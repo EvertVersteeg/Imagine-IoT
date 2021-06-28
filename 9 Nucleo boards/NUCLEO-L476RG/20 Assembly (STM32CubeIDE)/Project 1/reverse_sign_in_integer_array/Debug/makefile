@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := reverse_sign_in_integer_array
+BUILD_ARTIFACT_NAME := Reverse_sign_in_integer_array
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX := 
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME).$(BUILD_ARTIFACT_EXTENSION)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-reverse_sign_in_integer_array.elf \
+Reverse_sign_in_integer_array.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-reverse_sign_in_integer_array.list \
+Reverse_sign_in_integer_array.list \
 
 OBJCOPY_BIN += \
-reverse_sign_in_integer_array.bin \
+Reverse_sign_in_integer_array.bin \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: reverse_sign_in_integer_array.elf secondary-outputs
+main-build: Reverse_sign_in_integer_array.elf secondary-outputs
 
 # Tool invocations
-reverse_sign_in_integer_array.elf: $(OBJS) $(USER_OBJS) C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9\ Nucleo\ boards\NUCLEO-L476RG\20\ Assembly\ examples\ (STM32CubeIDE)\Project\ 1.1\ invert\ integer\reverse_sign_in_integer_array\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "reverse_sign_in_integer_array.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\20 Assembly examples (STM32CubeIDE)\Project 1.1 invert integer\reverse_sign_in_integer_array\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="reverse_sign_in_integer_array.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Reverse_sign_in_integer_array.elf: $(OBJS) $(USER_OBJS) C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9\ Nucleo\ boards\NUCLEO-L476RG\20\ Assembly\ (STM32CubeIDE)\Project\ 1\reverse_sign_in_integer_array\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Reverse_sign_in_integer_array.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\20 Assembly (STM32CubeIDE)\Project 1\reverse_sign_in_integer_array\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Reverse_sign_in_integer_array.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,13 +71,13 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-reverse_sign_in_integer_array.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "reverse_sign_in_integer_array.list"
+Reverse_sign_in_integer_array.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Reverse_sign_in_integer_array.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-reverse_sign_in_integer_array.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "reverse_sign_in_integer_array.bin"
+Reverse_sign_in_integer_array.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "Reverse_sign_in_integer_array.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 

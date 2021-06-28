@@ -1,0 +1,45 @@
+!SESSION 2021-06-28 19:30:40.433 -----------------------------------------------
+eclipse.buildId=Version 1.6.1
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-06-28 19:30:55.552
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-06-28 19:30:55.607
+!MESSAGE Log4j initialized with config file C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\20 Assembly (STM32CubeIDE)\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-06-28 19:30:57.615
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-06-28 19:30:58.221
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-06-28 19:31:29.984
+!MESSAGE Indexed 'Invert_integer' (25 sources, 106 headers) in 4,14 sec: 10.194 declarations; 46.504 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0,3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-06-28 19:31:33.636
+!MESSAGE Indexed 'reverse_sign_in_integer_array' (25 sources, 106 headers) in 3,56 sec: 10.195 declarations; 46.506 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0,3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-06-28 19:32:48.683
+!MESSAGE Indexed 'Reverse_sign_in_integer_array' (25 sources, 106 headers) in 2,99 sec: 10.195 declarations; 46.506 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0,3%)
+!SESSION 2021-06-28 19:34:38.166 -----------------------------------------------
+eclipse.buildId=Version 1.6.1
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-06-28 19:34:47.176
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-06-28 19:34:47.248
+!MESSAGE Log4j initialized with config file C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\20 Assembly (STM32CubeIDE)\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-06-28 19:34:52.289
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-06-28 19:34:52.903
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
