@@ -23,3 +23,12 @@ Imagine-IoT! maker files repo!
 * Flash: 128kB
 * Description: Low Power
 * Pins: 64
+
+## 3 NUCLEO-H723ZG
+* Cortex M7
+* Max. speed: 550Mhz
+* Flash: 1MB
+* SRAM: 564kB
+* Description: High Performance MCU
+* Pins: 144
+* Link: https://www.st.com/en/evaluation-tools/nucleo-h723zg.html
