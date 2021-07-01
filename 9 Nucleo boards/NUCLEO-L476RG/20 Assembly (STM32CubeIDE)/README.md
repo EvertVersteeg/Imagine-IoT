@@ -11,3 +11,6 @@ Imagine-IoT! maker files repo!
 
 ## Project 1.3
 * Search for the minimum element in an array of integers
+
+## Project 1.4
+* Compute the sum of elements of an integer array

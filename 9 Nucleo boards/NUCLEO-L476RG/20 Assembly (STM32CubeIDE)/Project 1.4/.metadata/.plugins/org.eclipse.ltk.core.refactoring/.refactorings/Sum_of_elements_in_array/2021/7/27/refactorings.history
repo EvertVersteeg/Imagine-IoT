@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Sum_of_elements_in_array/Core/Src/sum_int.s&apos; to &apos;sum_ints.s&apos;" description="Rename resource &apos;sum_int.s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/sum_int.s" name="sum_ints.s" stamp="1625150922787" updateReferences="true"/>
+</session>

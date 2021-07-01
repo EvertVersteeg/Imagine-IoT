@@ -1,0 +1,10 @@
+16:55:13 **** Incremental Build of configuration Debug for project Sum_of_elements_in_array ****
+make -j8 all 
+arm-none-eabi-size   Sum_of_elements_in_array.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14796	    140	   1732	  16668	   411c	Sum_of_elements_in_array.elf
+Finished building: default.size.stdout
+ 
+
+16:55:14 Build Finished. 0 errors, 0 warnings. (took 376ms)
+
