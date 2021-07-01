@@ -15,4 +15,4 @@ cont:
 				b	next
 exit:
 				mov	r0, r2
-				bx	lx
+				bx	lr

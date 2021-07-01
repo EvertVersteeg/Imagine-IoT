@@ -7,7 +7,7 @@
   * @attention
   *
   * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
-  * <h2><center>&copy; Copyright (c) 2021 Imagine Solutions BV.
+  * <h2><center>&copy; Copyright (c) 2021 Imagine Solutions BV - E. Versteeg
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under BSD 3-Clause license,

@@ -1,0 +1,10 @@
+16:33:39 **** Incremental Build of configuration Debug for project Search_min_element_in_integer_array ****
+make -j8 all 
+arm-none-eabi-size   Search_min_element_in_integer_array.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14828	    140	   1732	  16700	   413c	Search_min_element_in_integer_array.elf
+Finished building: default.size.stdout
+ 
+
+16:33:40 Build Finished. 0 errors, 0 warnings. (took 383ms)
+

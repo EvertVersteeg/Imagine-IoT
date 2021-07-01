@@ -1,0 +1,31 @@
+16:33:07 **** Incremental Build of configuration Release for project Search_min_element_in_integer_array ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Search_min_element_in_integer_array.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\9 Nucleo boards\NUCLEO-L476RG\20 Assembly (STM32CubeIDE)\Project 1.3\Search_min_element_in_integer_array\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Search_min_element_in_integer_array.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Search_min_element_in_integer_array.elf
+ 
+arm-none-eabi-objdump -h -S  Search_min_element_in_integer_array.elf  > "Search_min_element_in_integer_array.list"
+arm-none-eabi-objcopy  -O binary  Search_min_element_in_integer_array.elf  "Search_min_element_in_integer_array.bin"
+arm-none-eabi-size   Search_min_element_in_integer_array.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10384	    140	   1732	  12256	   2fe0	Search_min_element_in_integer_array.elf
+Finished building: default.size.stdout
+ 
+Finished building: Search_min_element_in_integer_array.list
+Finished building: Search_min_element_in_integer_array.bin
+ 
+ 
+16:33:19 **** Incremental Build of configuration Debug for project Search_min_element_in_integer_array ****
+make -j8 all 
+arm-none-eabi-size   Search_min_element_in_integer_array.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14828	    140	   1732	  16700	   413c	Search_min_element_in_integer_array.elf
+Finished building: default.size.stdout
+ 
+16:33:39 **** Incremental Build of configuration Debug for project Search_min_element_in_integer_array ****
+make -j8 all 
+arm-none-eabi-size   Search_min_element_in_integer_array.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14828	    140	   1732	  16700	   413c	Search_min_element_in_integer_array.elf
+Finished building: default.size.stdout
+ 

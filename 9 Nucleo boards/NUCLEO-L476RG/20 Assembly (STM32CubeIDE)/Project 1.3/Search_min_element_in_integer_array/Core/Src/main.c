@@ -7,6 +7,7 @@
   * @attention
   *
   * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2021 Imagine Solutions BV - E. Versteeg
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under BSD 3-Clause license,
@@ -16,12 +17,13 @@
   *
   ******************************************************************************
   */
-/* USER CODE END Header */
+/* Return the min and the max element in a integer array */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include <stdio.h>
 
 extern int min_int(int *num, int len);
+extern int max_int(int *num, int len);
 int num[5] = {-57, 63, 11, -99, -542};
 
 /* Private includes ----------------------------------------------------------*/
@@ -54,6 +56,7 @@ UART_HandleTypeDef huart2;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
+void disp_data(int val);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -93,6 +96,9 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+
+  disp_data(min_int(num, sizeof(num)/4));
+  disp_data(max_int(num, sizeof(num)/4));
 
   /* USER CODE END 2 */
 
@@ -230,6 +236,14 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+/* Seriele print routine */
+void disp_data(int val){
+	char buf[128];
+	int bRead;
+	bRead = sprintf(buf, "Returned: %d\n\r",val);
+	HAL_UART_Transmit(&huart2, (uint8_t*)buf, bRead, 300);
+}
 
 /* USER CODE END 4 */
 
