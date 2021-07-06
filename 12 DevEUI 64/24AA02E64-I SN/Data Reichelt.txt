@@ -1,0 +1,43 @@
+24AA02E64-I/SN
+2 Kbit EEPROM met een voorgeprogrammeerd wereldwijd uniek IEEE EUI-64-MAC-adres. Georganiseerd in twee blokken van 128 x 8-bit met een seriële 2-draadsinterface. Laagvoltage-design maakt de werking mogelijk tot 1,7 V, met maximale stand-by- en actieve stromen van slechts 1 µA en 1 mA.
+
+• voorgeprogrammeerd wereldwijd uniek, 64-bit-knooppuntadres
+• Compatibel met EUI-64 ™
+• Enkele levering tot 1,7 V
+• Energiezuinige CMOS-technologie: - 1 mAactieve stroom, typisch - 1 µA ruststroom (max.)
+• 2-draadinterface, I²C™ compatibel
+• Schmitt-trigger-ingangen voor ruisonderdrukking
+• Uitgangshellingcontrole
+• 100 kHz en 400 kHz klokcompatibiliteit
+• Pagina schrijfbuffer: - 8-byte / pagina
+• ESD-bescherming: >4.000 V
+• Meer dan 1 miljoen wis-/schrijfcycli
+• Gegevensopslag: >200 jaar
+
+Model   			EEPROM 
+Type   				serieel 
+Uitvoering   			2-Draht 
+Geheugen   			2 kb (256 x 8) 
+Ontwerp   			SO-8
+
+Elektrische gegevens
+Voedingsspanning   		1.7 ... 5.5 VDC 
+Frequentie   			0.4 MHz
+
+Overige
+Temperatuurbereik   		-40 ... +85 °C 
+
+Details
+Schrijfbeveiliging   		ja
+
+Aanduiding voor energie-efficiëntie
+Levensduur   			1.000.000 E/W Cycles 
+
+Uitvoering
+Paginaformaat   		8 Bytes
+
+Fabrieksgegevens
+Fabrikant   				MICROCHIP 
+Artikelnummer van de fabrikant   	24AA02E64-I/SN 
+Verpakkingsgewicht   			1.0E-4 kg 
+RoHS   conform 				EAN / GTIN   9900001449352
