@@ -1,0 +1,4 @@
+httpserver_socket.c:252:6:http_server_socket_init	16	static
+httpserver_socket.c:263:6:DynWebPage	536	static
+httpserver_socket.c:154:6:http_server_serve	1528	static
+httpserver_socket.c:214:13:http_server_socket_thread	48	static

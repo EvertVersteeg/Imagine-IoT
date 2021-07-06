@@ -1,0 +1,16 @@
+stm32h7xx_nucleo.c:116:9:BSP_GetVersion	0	static
+stm32h7xx_nucleo.c:130:9:BSP_LED_Init	56	static
+stm32h7xx_nucleo.c:177:9:BSP_LED_DeInit	16	static
+stm32h7xx_nucleo.c:207:9:BSP_LED_On	8	static
+stm32h7xx_nucleo.c:232:9:BSP_LED_Off	8	static
+stm32h7xx_nucleo.c:257:9:BSP_LED_Toggle	8	static
+stm32h7xx_nucleo.c:282:9:BSP_LED_GetState	8	static
+stm32h7xx_nucleo.c:309:9:BSP_PB_Init	32	static
+stm32h7xx_nucleo.c:354:9:BSP_PB_DeInit	8	static
+stm32h7xx_nucleo.c:372:9:BSP_PB_GetState	8	static
+stm32h7xx_nucleo.c:382:6:BSP_PB_IRQHandler	0	static
+stm32h7xx_nucleo.c:392:13:BSP_PB_Callback	0	static
+stm32h7xx_nucleo.c:614:13:BUTTON_USER_EXTI_Callback	8	static
+stm32h7xx_nucleo.c:448:9:BSP_COM_DeInit	8	static
+stm32h7xx_nucleo.c:481:26:MX_USART3_Init	0	static
+stm32h7xx_nucleo.c:410:9:BSP_COM_Init	48	static

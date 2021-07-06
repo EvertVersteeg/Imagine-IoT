@@ -1,0 +1,7 @@
+20:39:13 **** Incremental Build of configuration Release for project LwIP_HTTP_Server_Socket_RTOS ****
+make -j8 all 
+arm-none-eabi-size   LwIP_HTTP_Server_Socket_RTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 146168	    156	  65452	 211776	  33b40	LwIP_HTTP_Server_Socket_RTOS.elf
+Finished building: default.size.stdout
+ 

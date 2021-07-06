@@ -1,0 +1,4 @@
+app_ethernet.c:49:6:ethernet_link_status_updated	0	static
+app_ethernet.c:79:6:Ethernet_Link_Periodic_Handle	16	static
+app_ethernet.c:96:6:DHCP_Process	32	static
+app_ethernet.c:167:6:DHCP_Periodic_Handle	16	static
