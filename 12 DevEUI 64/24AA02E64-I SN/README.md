@@ -5,8 +5,12 @@ Imagine-IoT! maker files repo!
 
 ## 24AA02E64-I/SN
 * 2K I2C™ Serial EEPROMs with EUI-48™ or EUI-64™ Node Identity
-*
-* 
+* example 48 => EUI-48
+* example 64 => EUI-64
+* breakout => tiny electonics 1.27mm pin to pin
+* Uno, wire, A4 (SDA) , A5 (SCL)
+* Vcc +1,7V to 5.5V power supply
+* Vss - Ground
 
 
  
