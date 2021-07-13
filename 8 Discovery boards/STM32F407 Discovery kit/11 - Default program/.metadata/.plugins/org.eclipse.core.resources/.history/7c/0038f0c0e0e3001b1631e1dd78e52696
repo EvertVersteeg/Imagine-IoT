@@ -3,7 +3,7 @@
  *                           GPIO API source file
  *************************************************************************************************************************************************************
  *
- *  Created on: 24 mei 2021, update 1: 13-07-2021
+ *  Created on: 24 mei 2021
  *      Author: E. Versteeg
  *      Imagine Solutions BV
  */
@@ -119,55 +119,21 @@ void GPIO_PeriClockControl(GPIO_RegDef_t *pGPIOx, uint8_t EnorDi)
  *
  * @Note		- none
  */
-void GPIO_Init(GPIO_Handle_t *pGPIOHandle)														// GPIO Init
+void GPIO_Init(GPIO_Handle_t *pGIOx)														// GPIO Init
 {
-	uint32_t temp=0;  //temp. register
-
 	//1. Configure the mode
-	if(pGPIOHandle->GPIO_PinConfig.GPIO_PinMode <= GPIO_MODE_ANALOG)
+	if(pGPIO_Handle->GPIO_PinConfig.GPIO_PinMode ,+ GPIO_MODE_ANALOG)
 	{
-		//the non interrupt mode
-		temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode << (2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber));
-		pGPIOHandle->pGPIOx->MODER &= ~(0x3 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);							//Clearing	(2 bits)
-		pGPIOHandle->pGPIOx->MODER |= temp;																			//Setting
 
 	}else
 	{
-		//this part will be code later. (interrupt mode)
+		//this part wil code later. (interrupt mode)
 	}
 
-	temp=0;
 	//2. Configure the speed
-	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinSpeed << (2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber));
-	pGPIOHandle->pGPIOx->OSPEEDR &= ~(0x3 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);							//Clearing	(2 bits)
-	pGPIOHandle->pGPIOx->OSPEEDR |= temp;																			//Setting
-
-	temp=0;
 	//3. Configure the pupd settings
-	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinPuPdControl << (2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber));
-	pGPIOHandle->pGPIOx->PUPDR &= ~(0x3 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);								//Clearing	(2 bits)
-	pGPIOHandle->pGPIOx->PUPDR |= temp;																				//Setting
-
-	temp=0;
-	//4. Configure the op type
-	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinOPType << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);
-	pGPIOHandle->pGPIOx->OTYPER &= ~(0x1 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);								//Clearing   (1 bit)
-	pGPIOHandle->pGPIOx->OTYPER |= temp;																			//Setting
-
-	temp=0;
+	//4. Configure te optype
 	//5. Configure the alt functionality
-	if(pGPIOHandle->GPIO_PinConfig.GPIO_PinMode  == GPIO_MODE_ALTFN)
-	{
-		//configure the alt function registers.
-		uint8_t temp1, temp2;
-
-		temp1 = pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber / 8;
-		temp2 = pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber % 8;
-		pGPIOHandle->pGPIOx->AFR[temp1] &= ~(0xF << (4 * temp2));													//Clearing   (4 bit)
-		pGPIOHandle->pGPIOx->AFR[temp1] |= (pGPIOHandle->GPIO_PinConfig.GPIO_PinALtFunMode << (4 * temp2));			//Setting
-
-	}
-
 
 }
 

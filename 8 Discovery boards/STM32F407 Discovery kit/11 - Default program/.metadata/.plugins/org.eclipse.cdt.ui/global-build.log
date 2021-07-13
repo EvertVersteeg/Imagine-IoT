@@ -1,13 +1,13 @@
-11:56:26 **** Incremental Build of configuration Debug for project DefaultProgram ****
+17:12:24 **** Incremental Build of configuration Debug for project DefaultProgram ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/Src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/evers/Documents/IMAGINE-IOT/Imagine-IoT/Imagine-IoT/8 Discovery boards/STM32F407 Discovery kit/11 - Default program/DefaultProgram/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/Src/stm32f407xx_gpio_driver.d" -MT"Drivers/Src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/Src/stm32f407xx_gpio_driver.o"
 ../Drivers/Src/stm32f407xx_gpio_driver.c: In function 'GPIO_ReadFromInputPin':
-../Drivers/Src/stm32f407xx_gpio_driver.c:166:1: warning: control reaches end of non-void function [-Wreturn-type]
-  166 | }
+../Drivers/Src/stm32f407xx_gpio_driver.c:207:1: warning: control reaches end of non-void function [-Wreturn-type]
+  207 | }
       | ^
 ../Drivers/Src/stm32f407xx_gpio_driver.c: In function 'GPIO_ReadFromInputPort':
-../Drivers/Src/stm32f407xx_gpio_driver.c:183:1: warning: control reaches end of non-void function [-Wreturn-type]
-  183 | }
+../Drivers/Src/stm32f407xx_gpio_driver.c:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+  224 | }
       | ^
 arm-none-eabi-gcc -o "DefaultProgram.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\8 Discovery boards\STM32F407 Discovery kit\11 - Default program\DefaultProgram\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DefaultProgram.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: DefaultProgram.elf
@@ -18,8 +18,8 @@ arm-none-eabi-size   DefaultProgram.elf
    text	   data	    bss	    dec	    hex	filename
    4016	    132	   1596	   5744	   1670	DefaultProgram.elf
 Finished building: default.size.stdout
-Finished building: DefaultProgram.bin
 Finished building: DefaultProgram.list
+Finished building: DefaultProgram.bin
  
  
  
