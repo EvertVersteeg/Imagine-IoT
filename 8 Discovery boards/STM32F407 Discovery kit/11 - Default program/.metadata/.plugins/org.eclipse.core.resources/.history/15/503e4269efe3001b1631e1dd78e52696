@@ -109,9 +109,9 @@ void GPIO_PeriClockControl(GPIO_RegDef_t *pGPIOx, uint8_t EnorDi)
 /************************************************************************************************************************************************************
  * @fn			- GPIO_Init
  *
- * @brief		- This function is for the init of a specific GPIO pin, the desired configuration is stored in the GPIO Handler.
+ * @brief		-
  *
- * @param[in]	- GPIO Handle structure (stucture with the desired configuration (concerning pinnumber, desired pinmode etc))
+ * @param[in]	-
  * @param[in] 	-
  * @param[in]	-
  *
@@ -151,7 +151,7 @@ void GPIO_Init(GPIO_Handle_t *pGPIOHandle)														// GPIO Init
 	temp=0;
 	//4. Configure the op type
 	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinOPType << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);
-	pGPIOHandle->pGPIOx->OTYPER &= ~(0x1 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);							//Clearing   (1 bit)
+	pGPIOHandle->pGPIOx->OTYPER &= ~(0x1 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);								//Clearing   (1 bit)
 	pGPIOHandle->pGPIOx->OTYPER |= temp;																			//Setting
 
 	temp=0;
