@@ -219,42 +219,35 @@ void GPIO_DeInit(GPIO_RegDef_t *pGPIOx)														// De Init
 /*****************************************************************************************************************
  * @fn			- GPIO_ReadFromInputPin
  *
- * @brief		- This function reads the status of an input pin
+ * @brief		-
  *
- * @param[in]	- Base address of the gpio peripheral (GPIOA, B, C etc.)
- * @param[in] 	- Desired pin to read (PinNumber)
+ * @param[in]	-
+ * @param[in] 	-
  * @param[in]	-
  *
- * @return		- 1 bit ( 1 or 0)
+ * @return		- none
  *
  * @Note		- none
  */
 uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber)						// Read from input pin
 {
-	uint8_t value;
-	value = (uint8_t)((pGPIOx->IDR >> PinNumber) & 0x00000001);
-	return value;
 }
-
 
 /************************************************************************************************************************************************************
  * @fn			- GPIO_ReadFromInputPort
  *
- * @brief		-This function reads the status of an input port of GPIO A, B, C etc.
+ * @brief		-
  *
- * @param[in]	-Base address of the gpio peripheral (GPIOA, B, C etc.)
+ * @param[in]	-
  * @param[in] 	-
  * @param[in]	-
  *
- * @return		- 16 bits input register uint16_t
+ * @return		- none
  *
  * @Note		- none
  */
 uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx)										// Read from input port
 {
-	uint16_t value;
-	value = (uint8_t)pGPIOx->IDR;
-	return value;
 }
 
 /************************************************************************************************************************************************************

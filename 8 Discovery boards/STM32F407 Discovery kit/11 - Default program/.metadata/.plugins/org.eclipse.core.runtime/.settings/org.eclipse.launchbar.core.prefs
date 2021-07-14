@@ -5,4 +5,5 @@ configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DefaultProgram D
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DefaultProgram\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DefaultProgram\ Debug/activeLaunchTarget=null\:---
+org.eclipse.launchbar.core.descriptorType.default\:Debug_DefaultProgram.elf/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Debug_DefaultProgram.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -240,13 +240,13 @@ uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber)						// 
 /************************************************************************************************************************************************************
  * @fn			- GPIO_ReadFromInputPort
  *
- * @brief		-This function reads the status of an input port of GPIO A, B, C etc.
+ * @brief		-
  *
- * @param[in]	-Base address of the gpio peripheral (GPIOA, B, C etc.)
+ * @param[in]	-
  * @param[in] 	-
  * @param[in]	-
  *
- * @return		- 16 bits input register uint16_t
+ * @return		- none
  *
  * @Note		- none
  */
