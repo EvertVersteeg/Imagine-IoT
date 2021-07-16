@@ -262,9 +262,9 @@ uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx)										// Read from inp
  *
  * @brief		- This function writes a value (0 or 1) to an output pin
  *
- * @param[in]	- Base address of the gpio peripheral (GPIOA, B, C etc.)
+ * @param[in]	- Value 0 or 1
  * @param[in] 	- PinNumber of the desired output pin
- * @param[in]	- Value => 0 or 1
+ * @param[in]	- Base address of the gpio peripheral (GPIOA, B, C etc.)
  *
  * @return		- none
  *
@@ -274,7 +274,7 @@ void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber, uint8_t Va
 {
 	if(Value == GPIO_PIN_SET)
 	{
-		//write 1 to the output data register at the bit field corresponding to the pin number
+		//write 1 to the output data register at the bit field corresponding to the pinnumber
 		pGPIOx->ODR |= (1 << PinNumber);
 	}else
 	{
@@ -287,10 +287,10 @@ void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber, uint8_t Va
 /************************************************************************************************************************************************************
  * @fn			- GPIO_WriteToOutputPort
  *
- * @brief		- This function writes a value (0 or 1) to an output port
+ * @brief		-
  *
- * @param[in]	- Base address of the gpio peripheral (GPIOA, B, C etc.)
- * @param[in] 	- Value => 0 or 1
+ * @param[in]	-
+ * @param[in] 	-
  * @param[in]	-
  *
  * @return		- none
@@ -299,7 +299,7 @@ void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber, uint8_t Va
  */
 void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint8_t Value)							// Write to output port
 {
-	pGPIOx->ODR = Value;
+
 }
 
 /************************************************************************************************************************************************************

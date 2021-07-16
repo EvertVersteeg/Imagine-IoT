@@ -242,7 +242,7 @@ uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber)						// 
  *
  * @brief		-This function reads the status of an input port of GPIO A, B, C etc.
  *
- * @param[in]	- Base address of the gpio peripheral (GPIOA, B, C etc.)
+ * @param[in]	-Base address of the gpio peripheral (GPIOA, B, C etc.)
  * @param[in] 	-
  * @param[in]	-
  *
@@ -260,11 +260,11 @@ uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx)										// Read from inp
 /************************************************************************************************************************************************************
  * @fn			- GPIO_WriteToOutputPin
  *
- * @brief		- This function writes a value (0 or 1) to an output pin
+ * @brief		-
  *
- * @param[in]	- Base address of the gpio peripheral (GPIOA, B, C etc.)
- * @param[in] 	- PinNumber of the desired output pin
- * @param[in]	- Value => 0 or 1
+ * @param[in]	-
+ * @param[in] 	-
+ * @param[in]	-
  *
  * @return		- none
  *
@@ -272,25 +272,16 @@ uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx)										// Read from inp
  */
 void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber, uint8_t Value)		// Write to output pin
 {
-	if(Value == GPIO_PIN_SET)
-	{
-		//write 1 to the output data register at the bit field corresponding to the pin number
-		pGPIOx->ODR |= (1 << PinNumber);
-	}else
-	{
-		//write 0
-		pGPIOx->ODR &= ~(1 << PinNumber);
-	}
 
 }
 
 /************************************************************************************************************************************************************
  * @fn			- GPIO_WriteToOutputPort
  *
- * @brief		- This function writes a value (0 or 1) to an output port
+ * @brief		-
  *
- * @param[in]	- Base address of the gpio peripheral (GPIOA, B, C etc.)
- * @param[in] 	- Value => 0 or 1
+ * @param[in]	-
+ * @param[in] 	-
  * @param[in]	-
  *
  * @return		- none
@@ -299,7 +290,7 @@ void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber, uint8_t Va
  */
 void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint8_t Value)							// Write to output port
 {
-	pGPIOx->ODR = Value;
+
 }
 
 /************************************************************************************************************************************************************
