@@ -35,9 +35,7 @@ uint32_t volatile *pNVIC_IRQ_EN_Reg				= (uint32_t*)(0xE000E100);   		 // MVIC =
 uint32_t volatile *pCLK_Ctrl_Reg				= (uint32_t*)(0x40023800 + 0x30);    // RCC => GPIOAEN peripheral clock register (RCC_AHB1ENR) (bit 0 = 1 => GPIOA enable
 uint32_t volatile *pCLK_Ctrl_Reg_Abp2			= (uint32_t*)(0x40023800 + 0x44);    // RCC => ABP2 peripheral clock enable register (RCC_ABP2ENR) (bit 14 = 1 => system configuration controller clock enable
 
-void delay(void){
-	for(uint32_t i=0 ; i < 500000 ; i ++);
-}
+
 // MAIN FUNCTION
 int main(void)
 {
@@ -54,11 +52,8 @@ int main(void)
 	GpioLed.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD;
 	GPIO_PeriClockControl(GPIOD, ENABLE);
 	GPIO_Init(&GpioLed);
-	while(1)
-	{
-		GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-		delay();
-	}
+	/* Loop forever */
+	for(;;);
 }
 
 
