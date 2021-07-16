@@ -305,10 +305,10 @@ void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint8_t Value)							// Write
 /************************************************************************************************************************************************************
  * @fn			- GPIO_ToggleOutputPin
  *
- * @brief		- This function toggles the desired output pin in the output register
+ * @brief		-
  *
- * @param[in]	- Base address of the gpio peripheral (GPIOA, B, C etc.)
- * @param[in] 	- PinNumber of the desired output pin
+ * @param[in]	-
+ * @param[in] 	-
  * @param[in]	-
  *
  * @return		- none
@@ -317,7 +317,7 @@ void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint8_t Value)							// Write
  */
 void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber)						// Toggle output pin
 {
-	pGPIOx->ODR ^= (1 << PinNumber);
+
 }
 
 /************************************************************************************************************************************************************
