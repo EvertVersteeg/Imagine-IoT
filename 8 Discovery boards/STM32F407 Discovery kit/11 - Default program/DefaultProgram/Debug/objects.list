@@ -1,3 +1,4 @@
+".metadata/.plugins/org.eclipse.cdt.make.core/specs.o"
 "Drivers/Src/stm32f407xx_gpio_driver.o"
 "Src/main.o"
 "Src/syscalls.o"

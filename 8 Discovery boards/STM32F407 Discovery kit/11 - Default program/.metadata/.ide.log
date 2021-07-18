@@ -451,3 +451,32 @@
 
 
 2021-07-17 09:16:12,738 [INFO] Activator:171 - !SESSION log4j initialized
+2021-07-18 13:38:45,727 [INFO] Activator:170 - 
+
+
+2021-07-18 13:38:45,731 [INFO] Activator:171 - !SESSION log4j initialized
+2021-07-18 14:43:57,709 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_mcu.8987196.880105129.787710112 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:43:57,714 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_cpuid.892708029.486893793.1248019376 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:43:57,718 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_coreid.1042247315.445542867.1124868764 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:43:57,723 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.740492871.2133932354.886486562 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:43:57,727 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.1810958433.1748972140.1815478864 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:43:57,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.1580368352.1302608335.1882397942 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:43:57,735 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.985733630.334477319.1938695237 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:45:28,054 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_mcu.8987196.880105129.1075163376 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:45:28,058 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_cpuid.892708029.486893793.557620955 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:45:28,061 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_coreid.1042247315.445542867.1306197584 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:45:28,065 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.740492871.2133932354.506868838 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:45:28,069 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.1810958433.1748972140.1246252199 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:45:28,072 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.1580368352.1302608335.1333386739 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:45:28,075 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.985733630.334477319.1733091008 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:48:27,958 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_mcu.8987196.880105129.786151685 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:48:27,966 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_cpuid.892708029.486893793.439741507 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:48:27,973 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_coreid.1042247315.445542867.1827880869 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:48:27,978 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.740492871.2133932354.2084570323 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:48:27,984 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.1810958433.1748972140.1667378193 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:48:27,988 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.1580368352.1302608335.1395362009 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:48:27,992 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Option com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.985733630.334477319.740086942 uses a null category that is invalid in its context. The option was ignored.
+2021-07-18 14:49:17,734 [INFO] Activator:170 - 
+
+
+2021-07-18 14:49:17,735 [INFO] Activator:171 - !SESSION log4j initialized

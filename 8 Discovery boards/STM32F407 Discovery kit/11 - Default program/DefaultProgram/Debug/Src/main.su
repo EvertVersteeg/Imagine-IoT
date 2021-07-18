@@ -1,7 +1,6 @@
-main.c:38:6:delay	16	static
-main.c:42:5:main	24	static
-main.c:71:6:HardFault_Handler	8	static
-main.c:77:6:MemManage_Handler	8	static
-main.c:83:6:BusFault_Handler	8	static
-main.c:90:6:EXTI0_IRQHandler	8	static
-main.c:113:6:init	4	static
+main.c:40:6:delay	16	static
+main.c:44:5:main	32	static
+main.c:91:6:HardFault_Handler	8	static
+main.c:97:6:MemManage_Handler	8	static
+main.c:103:6:BusFault_Handler	8	static
+main.c:110:6:EXTI0_IRQHandler	8	static
