@@ -47,8 +47,6 @@
 // ARM Cortex Mx Processor Priority Register Address Calculation
 #define NVIC_PR_BASE_ADDR 	((__vo uint32_t*)0xE000E400)
 
-#define NO_PR_BITS_IMPLEMENTED			4
-
 // BASE ADDRESSES of Flash and SRAM Memories
 #define FLASH_BASEADDR					0x08000000U   		//Base address off flash
 #define SRAM1_BASEADDR					0x20000000U   		//Base address of SRAM1 with size off 112kB

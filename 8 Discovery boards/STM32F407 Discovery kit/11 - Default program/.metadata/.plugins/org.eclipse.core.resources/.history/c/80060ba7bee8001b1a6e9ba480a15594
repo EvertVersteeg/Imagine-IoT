@@ -353,9 +353,9 @@ void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber)						// Tog
 /************************************************************************************************************************************************************
  * @fn			- GPIO_IRQConfig
  *
- * @brief		-This function enables/disables the IRQ (number) in the NVIC
+ * @brief		-Configure a IRQ in NVIC
  *
- * @param[in]	- IRQ number, the desired IRQ
+ * @param[in]	- IRQ number the desired IRQ
  * @param[in] 	- IRQ priority
  * @param[in]	- EnorDi Enable or disable this IRQ
  *
@@ -363,7 +363,7 @@ void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint16_t PinNumber)						// Tog
  *
  * @Note		- none
  */
-void GPIO_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi)
+void GPIO_IRQConfig(uint8_t IRQNumber, uint8_t IRQPriority, uint8_t EnorDi)					// IRQ Configuration and ISR handling
 {
 
 	if(EnorDi == ENABLE)
@@ -400,32 +400,6 @@ void GPIO_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi)
 			*NVIC_ICER2 |= ( 1 << (IRQNumber % 64) );
 		}
 	}
-
-}
-
-/*********************************************************************
- * @fn      		  - SPI_IRQPriorityConfig
- *
- * @brief             - This function sets the IRQ priority of a given IRQ number
- *
- * @param[in]         -IRQ number, the desired IRQ
- * @param[in]         -
- * @param[in]         -
- *
- * @return            -
- *
- * @Note              -
-
- */
-void GPIO_IRQPriorityConfig(uint8_t IRQNumber,uint32_t IRQPriority)
-{
-	//1. first lets find out the ipr register
-	uint8_t iprx = IRQNumber / 4;
-	uint8_t iprx_section  = IRQNumber % 4;
-
-	uint8_t shift_amount = ( 8 * iprx_section) + ( 8 - NO_PR_BITS_IMPLEMENTED) ;
-
-	*(  NVIC_PR_BASE_ADDR + (iprx * 4) ) |=  ( IRQPriority << shift_amount );
 
 }
 
