@@ -275,6 +275,7 @@ typedef struct
 								        (x == GPIOI)?8:0)
 
 // IRQ(Interrupt Request) Numbers of STM32F407x MCU
+
 #define IRQ_NO_EXTI0 		6
 #define IRQ_NO_EXTI1 		7
 #define IRQ_NO_EXTI2 		8
@@ -296,6 +297,7 @@ typedef struct
 #define IRQ_NO_USART6	    71
 
 // macros for all the possible priority levels
+
 #define NVIC_IRQ_PRI0    0
 #define NVIC_IRQ_PRI15    15
 
