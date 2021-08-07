@@ -26,8 +26,8 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "iks01a3_conf.h"
-#include "env_sensor.h"
+//#include "iks01a3_conf.h"
+//#include "env_sensor.h"
 
 #ifndef USE_IKS01A3_ENV_SENSOR_HTS221_0
 #define USE_IKS01A3_ENV_SENSOR_HTS221_0          1

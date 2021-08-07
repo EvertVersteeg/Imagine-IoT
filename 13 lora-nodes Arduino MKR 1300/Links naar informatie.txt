@@ -1,0 +1,13 @@
+getting started:
+https://www.arduino.cc/en/Guide/MKRWAN1300
+
+Library:
+https://www.arduino.cc/en/Reference/MKRWAN
+
+
+Voorbeelden:
+https://www.arduino.cc/en/Tutorial/MKRWANFirstConfiguration
+https://www.arduino.cc/en/Tutorial/MKRWANLoraSendAndReceive
+
+Library:
+https://github.com/arduino-libraries/MKRWAN

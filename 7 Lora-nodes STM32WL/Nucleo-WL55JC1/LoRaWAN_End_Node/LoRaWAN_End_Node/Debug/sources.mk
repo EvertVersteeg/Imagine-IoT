@@ -22,6 +22,7 @@ OBJCOPY_BIN :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Drivers/BSP/IKS01A3 \
 Drivers/STM32WLxx_HAL_Driver/Src \
 LoRaWAN/App \
 LoRaWAN/Target \
