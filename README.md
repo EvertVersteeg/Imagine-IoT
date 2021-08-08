@@ -3,71 +3,53 @@ Imagine-IoT! maker files repo!
 
 #### Imagine IOT Nodes firmware
 
-## 1 ATmega 328p Boards
+## 01 ATmega 328p Boards
 * IMN00x Nodes (Arduino-IDE)
 * Imagine Bootloader
 * PCB Boardfiles (KiCad)
 
-## 2 Nordic nRF52840 Boards
+## 02 Nordic nRF52840 Boards
 * RAK WisBlock LPWAN Module (RAK4631) (Arduino-IDE)
 * RAK Wishblock OTAA (TTN V3)
 * RAK Wishblock BME680 (OLED)
 * RAK Wishblock SHTC3
 * TTN Payload decoder (for WisBlock)
 
-## 3 ATtiny84 Boards
+## 03 ATtiny84 Boards
 * ATTNode ATTiny84 (PlatformIO)
 * Case (3D / SCAD)
 * PCB Boardfiles (KiCad)
 
-## 4 esp8266 Boards
+## 04 esp8266 Boards
 * Wemos node (Wifi Localisation)
 
-## 5 esp32 Boards
+## 05 esp32 Boards
 * P1 smart meter node (TTN Apeldoorn)
 
-## 6 STM32 B-L072Z-LRWAN1
+## 06 STM32 B-L072Z-LRWAN1
 * Solar Node
-BeeHive node
+* BeeHive node
 
-## 7 STM32WL Boards
+## 07 STM32WL Boards
 * STM32 Lora 1.0.3 node
 
-## 8 MKR 1300
+## 08 MKR 1300
 * With sensor ENV shield
 
-## 9 Lora Field tester
+## 09 Lora Field tester
+* Lora tester with display
 
 ## 10 Discovery Boards
-* PSTM32F407 Discovery Kit
+* STM32F407 Discovery Kit
 
 ## 20 NUCLEO Boards
-### NUCLEO-L476RG
-* Blinky (IAR / MBED-OS / CubeIDE)
-* Alternating Flashing LEDs (IAR / CubeIDE)
-* Rotating LEDs (IAR / CubeIDE)
-* Binary Counter with LEDs (IAR)
-* Random Flashing LEDs (IAR)
-* Push button and LEDs (IAR)
-* 7 Segment LED counter (IAR)
-* Two-Digit Multiplexed 7 Segment LED (IAR)
-* LCD Displaying Text (IAR)
-* Debug header file (CubeIDE)
-* I2C Eeprom (CubeIDE)
-* etc.
-
-### NUCLEO-L053R8
-* Blinky (IAR)
-
-### NUCLEO-G071RB
-* Blinky (Cube-IDE / MBED-OS)
-
-## Wemos
-* Wemos WiFi localisation
-* TTN Payload decoder
+* NUCLEO-G071RB
+* NUCLEO-H723ZG
+* NUCLEO-L476RG
+* NUCLEO-L053R8
  
 ## 30 DevEUI chips
-### 24AA02E64-I-SN
+* 24AA02E64-I-SN
 
 License
 =======
