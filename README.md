@@ -26,7 +26,22 @@ Imagine-IoT! maker files repo!
 ## 5 esp32 Boards
 * P1 smart meter node (TTN Apeldoorn)
 
-## 9 NUCLEO Boards
+## 6 STM32 B-L072Z-LRWAN1
+* Solar Node
+BeeHive node
+
+## 7 STM32WL Boards
+* STM32 Lora 1.0.3 node
+
+## 8 MKR 1300
+* With sensor ENV shield
+
+## 9 Lora Field tester
+
+## 10 Discovery Boards
+* PSTM32F407 Discovery Kit
+
+## 20 NUCLEO Boards
 ### NUCLEO-L476RG
 * Blinky (IAR / MBED-OS / CubeIDE)
 * Alternating Flashing LEDs (IAR / CubeIDE)
@@ -39,6 +54,7 @@ Imagine-IoT! maker files repo!
 * LCD Displaying Text (IAR)
 * Debug header file (CubeIDE)
 * I2C Eeprom (CubeIDE)
+* etc.
 
 ### NUCLEO-L053R8
 * Blinky (IAR)
@@ -50,6 +66,9 @@ Imagine-IoT! maker files repo!
 * Wemos WiFi localisation
 * TTN Payload decoder
  
+## 30 DevEUI chips
+### 24AA02E64-I-SN
+
 License
 =======
 The files in this repository are distributed under various licenses.
