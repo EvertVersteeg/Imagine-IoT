@@ -1,8 +1,10 @@
 getting started:
 https://www.arduino.cc/en/Guide/MKRWAN1300
+https://www.arduino.cc/en/Guide/MKRENVShield
 
 Library:
 https://www.arduino.cc/en/Reference/MKRWAN
+https://www.arduino.cc/en/Reference/ArduinoMKRENV
 
 
 Voorbeelden:
@@ -11,3 +13,4 @@ https://www.arduino.cc/en/Tutorial/MKRWANLoraSendAndReceive
 
 Library:
 https://github.com/arduino-libraries/MKRWAN
+https://github.com/arduino-libraries/Arduino_MKRENV
