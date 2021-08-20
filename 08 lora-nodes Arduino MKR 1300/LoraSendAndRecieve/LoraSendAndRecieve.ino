@@ -1,52 +1,34 @@
 /*
-
-  Lora Send And Receive
-
+  Based on the Arduino example:Lora Send And Receive
   This sketch demonstrates how to send and receive data with the MKR WAN 1300/1310 LoRa module.
-
-  This example code is in the public domain.
-
+  
 */
-#include <MKRWAN.h>
+//#include <MKRWAN.h>
+#include "MKRWAN.h"
 #include <CayenneLPP.h>
-uint8_t size = 51;
-CayenneLPP lpp(size);
-LoRaModem modem;
+#include "arduino_secrets.h"
+#include "config.h"
 #include <Arduino_MKRENV.h>
 #include <SPI.h>
 #include <SD.h>
 #include <RTCZero.h>
-// chip select for SD card
-const int SD_CS_PIN = 4;  
-float temperature = 0;
-float humidity    = 0;
-float pressure    = 0;
-float illuminance = 0;
-const byte seconds = 0;
-const byte minutes = 10;
-const byte hours = 16;
-/* Change these values to set the current initial date */
-const byte day = 10;
-const byte month = 8;
-const byte year = 21;
-char filename[] = "000000.CSV";
-byte actualDay =0;
-byte currentDay =0;
+
+CayenneLPP lpp(size);
+LoRaModem modem;
 File dataFile;
 RTCZero rtc;
-// Uncomment if using the Murata chip as a module
-// LoRaModem modem(Serial1);
-#include "arduino_secrets.h"
 // Please enter your sensitive data in the Secret tab or arduino_secrets.h
 String appEui = SECRET_APP_EUI;
 String appKey = SECRET_APP_KEY;
-int payLoadDown = 0;
 
 
+//*****************************************************************************
+// SETUP
+//*****************************************************************************
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(LED, OUTPUT);
   Serial.begin(115200);
-  while (!Serial);
+  //while (!Serial);
   if (!modem.begin(EU868)) {
     Serial.println("Failed to start module");
     while (1) {}
@@ -81,7 +63,6 @@ void setup() {
   // close the file
   dataFile.close();
   delay(100);
-  Serial.println("Opened first file");
   Serial.print("Your module version is: ");
   Serial.println(modem.version());
   Serial.print("Your device EUI is: ");
@@ -91,16 +72,15 @@ void setup() {
     Serial.println("Something went wrong; are you indoor? Move near a window and retry");
     while (1) {}
   }
-
+  modem.setADR(false);
+  modem.dataRate(5); //Method dataRate uses argument dr from 0 (SF12/BW125) to 5 (SF7BW125)
   // Set poll interval to 60 secs.
-
   modem.minPollInterval(60);
-
-  // NOTE: independently by this setting the modem will
-  // not allow to send more than one message every 2 minutes,
-  // this is enforced by firmware and can not be changed.
 }
 
+//*****************************************************************************
+// MAIN LOOP
+//*****************************************************************************
 void loop() {
   delay(300000);
   actualDay = rtc.getDay();
@@ -127,12 +107,14 @@ void loop() {
   lpp.addRelativeHumidity(2, humidity);
   lpp.addBarometricPressure(3, pressure*10);      //kPA => hPA
   lpp.addLuminosity(4, illuminance);
+  lpp.addDigitalInput(5, statusLed);
 
   Serial.print("Sending");
   int err;
+  modem.dataRate(5);
   modem.beginPacket();
   modem.write(lpp.getBuffer(), lpp.getSize());
-  err = modem.endPacket(true);
+  err = modem.endPacket(false);
   
   if (err > 0) {
     Serial.println("Message sent correctly!");
@@ -141,6 +123,23 @@ void loop() {
     Serial.println("(you may send a limited amount of messages per minute, depending on the signal strength");
     Serial.println("it may vary from 1 message every couple of seconds to 1 message every minute)");
   }
+  // Getting the settings
+  
+  int dr = modem.getDataRate();
+  Serial.print("Your device DataRate is (0 - 7 corresponding to DR_X): ");
+  Serial.println(dr);
+  int adr = modem.getADR();
+  Serial.print("Your device Adaptive Data Rate setting is (0: off, 1: on): ");
+  Serial.println(adr);
+  String deviceadres = modem.getDevAddr();
+  Serial.print("Your device adres is: ");
+  Serial.println(deviceadres);
+  
+  int cr = modem.getUplinkFrameCounter();
+  Serial.print("Your device frame uplink counter is: ");
+  Serial.println(cr);
+
+  
 
   delay(1000);
   if (!modem.available()) {
@@ -164,13 +163,15 @@ void loop() {
   payLoadDown=((rcv[0] >> 4));
   //Serial.println(payLoadDown);
   if (payLoadDown == 1){
-    digitalWrite(LED_BUILTIN, LOW);
+    digitalWrite(LED, LOW);
+    statusLed=0;
     Serial.println("Led LOW");            // Downlink 0x10 => Turn build in led "off"
     Serial.println();
       }
-  if (payLoadDown == 2){
-    digitalWrite(LED_BUILTIN, HIGH);      // Downlink 0x20 => Turn build in led "on"
-    Serial.println("Led HIGH");
+  if (payLoadDown == 2){     
+    digitalWrite(LED, HIGH);
+    statusLed=1;
+    Serial.println("Led HIGH");           // Downlink 0x20 => Turn build in led "on"
     Serial.println();
     }
   if (payLoadDown == 3){
@@ -179,10 +180,16 @@ void loop() {
     delay(5000);
     modem.restart();
   }
+  if (payLoadDown == 4){
+    Serial.println("ToDo");                // Downlink 0x40 => ToDo
+    Serial.println();
+  }
 }
 
 
-//read all sensor values
+//*****************************************************************************
+// Function: Read all sensor values
+//*****************************************************************************
 void readSensorValues(){
   temperature = ENV.readTemperature();
   humidity    = ENV.readHumidity();
@@ -191,7 +198,9 @@ void readSensorValues(){
 }
 
 
-// Save sensor values to SD card in CSV file
+//*****************************************************************************
+// Function: Save sensor values to SD card in CSV file
+//*****************************************************************************
 void saveValuesToCard(){
   dataFile = SD.open(filename, FILE_WRITE);
   delay(1000);
@@ -214,9 +223,10 @@ void saveValuesToCard(){
 }
 
 
-// Print sensor values to serial interface
+//*****************************************************************************
+// Function: Print sensor values to serial interface
+//*****************************************************************************
 void printValuesToSerial(){
-  Serial.println("Added data to file");
   // print each of the sensor values
   Serial.print("Temperature = ");
   Serial.print(temperature);
@@ -230,11 +240,14 @@ void printValuesToSerial(){
   Serial.print("Illuminance = ");
   Serial.print(illuminance);
   Serial.println(" lx");
-  Serial.println();
+  Serial.print("statusLed = ");
+  Serial.print(statusLed);
 }
 
 
-//Build a new filename for a file on th SD card
+//*****************************************************************************
+// Function: Build a new filename for a file on th SD card
+//*****************************************************************************
 void getFileName(){
   filename[0] = rtc.getDay()/10 + '0'; //To get 1st digit from day()
   filename[1] = rtc.getDay()%10 + '0'; //To get 2nd digit from day()
