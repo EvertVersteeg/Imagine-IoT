@@ -1,0 +1,22 @@
+Deze sensor dient als vervanger van een PIR sensor en werkt met op basis van microgolven en het doppler effect.
+Door verschil in snelheid kan deze sensor beweging detecteren.
+
+Specificaties:
+
+Ingangsspanning: 4-28V
+Ingangsstroom: 2.8mA (typical);3mA (max)
+Detectie afstand: 5-9m
+Uitzendvermogen: 20mW (typical);30mW (max)
+Uitgangspanning: 3.2-3.4V
+Uitgangsstroom:100mA (max)
+Control Low Level:0V
+9.Output Control High Level:3.3V
+Pinout:
+
+Pin	Functie
+1	3V3
+2	GND
+3	OUTPUT
+4	Vin
+5	CDS
+Voor meer informatie zie: https://github.com/jdesbonnet/RCWL-0516
