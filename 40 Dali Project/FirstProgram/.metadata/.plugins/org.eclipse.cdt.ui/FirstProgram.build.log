@@ -1,10 +1,10 @@
-10:51:21 **** Incremental Build of configuration Debug for project FirstProgram ****
+18:44:13 **** Incremental Build of configuration Release for project FirstProgram ****
 make -j8 all 
 arm-none-eabi-size   FirstProgram.elf 
    text	   data	    bss	    dec	    hex	filename
-  24204	    120	   1904	  26228	   6674	FirstProgram.elf
+  11892	     20	   1956	  13868	   362c	FirstProgram.elf
 Finished building: default.size.stdout
  
 
-10:51:22 Build Finished. 0 errors, 0 warnings. (took 372ms)
+18:44:14 Build Finished. 0 errors, 0 warnings. (took 370ms)
 

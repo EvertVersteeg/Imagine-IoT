@@ -1,0 +1,26 @@
+/*
+ * Dali.h
+ *
+ *  Created on: Aug 27, 2021
+ *      Author: evers
+ */
+
+#ifndef SRC_DALI_H_
+#define SRC_DALI_H_
+
+class Dali {
+public:
+	Dali();
+	void setTxPin(uint8_t pin); //set the arduino digital pin for transmit.
+	void setRxAnalogPin(uint8_t pin); //set the arduino digital pin for receive.
+	virtual ~Dali();
+};
+
+
+
+
+
+
+
+
+#endif /* SRC_DALI_H_ */

@@ -1,0 +1,33 @@
+/*
+ * Dali.cpp
+ *
+ *  Created on: Aug 27, 2021
+ *      Author: evers
+ */
+
+#include "Dali.h"
+
+Dali::Dali() {
+	// TODO Auto-generated constructor stub
+
+}
+
+
+
+void Dali::setTxPin(uint8_t pin)
+{
+  TxPin = pin; // user sets the digital pin as output
+  pinMode(TxPin, OUTPUT);
+  digitalWrite(TxPin, HIGH);
+}
+
+void Dali::setRxAnalogPin(uint8_t pin)
+{
+	RxAnalogPin = pin; // user sets the digital pin as output
+}
+
+
+Dali::~Dali() {
+	// TODO Auto-generated destructor stub
+}
+

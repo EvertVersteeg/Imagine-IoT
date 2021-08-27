@@ -1,0 +1,18 @@
+/*
+ * Dali.cpp
+ *
+ *  Created on: Aug 27, 2021
+ *      Author: evers
+ */
+
+#include "Dali.h"
+
+Dali::Dali() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Dali::~Dali() {
+	// TODO Auto-generated destructor stub
+}
+
