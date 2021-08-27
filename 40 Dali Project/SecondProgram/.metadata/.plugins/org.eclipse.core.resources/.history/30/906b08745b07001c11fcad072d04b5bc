@@ -1,0 +1,64 @@
+/*
+ * dali.h
+ *
+ *  Created on: Aug 27, 2021
+ *      Author: evers
+ */
+
+#ifndef SRC_DALI_H_
+#define SRC_DALI_H_
+
+#include "main.h"
+
+int delay1 = 417;
+int delay2 = 417;
+int period = delay1 + delay2;
+
+void transmit(uint8_t cmd1, uint8_t cmd2) // transmit commands to DALI bus (address byte, command byte)
+{
+	sendBit(1);
+	sendByte(cmd1);
+	sendByte(cmd2);
+	digitalWrite(TxPin, HIGH);
+}
+
+
+void sendByte(uint8_t b)
+{
+	for (int i = 7; i >= 0; i--)
+	{
+		sendBit((b >> i) & 1);
+	}
+}
+
+
+void sendBit(int b)
+{
+ if (b) {
+		sendOne();
+	}
+	else {
+		sendZero();
+	}
+}
+
+
+void sendZero(void)
+{
+  digitalWrite(TxPin, HIGH);
+  delayMicroseconds(delay2);
+  digitalWrite(TxPin, LOW);
+  delayMicroseconds(delay1);
+
+}
+
+
+void sendOne(void)
+{
+  digitalWrite(TxPin, LOW);
+  delayMicroseconds(delay2);
+  digitalWrite(TxPin, HIGH);
+  delayMicroseconds(delay1);
+}
+
+#endif /* SRC_DALI_H_ */

@@ -1,0 +1,22 @@
+/*
+ * dali.h
+ *
+ *  Created on: Aug 27, 2021
+ *      Author: evers
+ */
+
+#ifndef SRC_DALI_H_
+#define SRC_DALI_H_
+
+#include "main.h"
+
+void delay_us(uint16_t us)
+{
+	__HAL_TIM_SET_COUNTER(&htim4,0);  // set the counter value a 0
+	__HAL_TIM_ENABLE(&htim4);
+	while (__HAL_TIM_GET_COUNTER(&htim4) < us);  // wait for the counter to reach the us input in the parameter
+}
+
+
+
+#endif /* SRC_DALI_H_ */

@@ -1,0 +1,17 @@
+/*
+ * dali.h
+ *
+ *  Created on: Aug 27, 2021
+ *      Author: evers
+ */
+
+#ifndef SRC_DALI_H_
+#define SRC_DALI_H_
+
+#include "main.h"
+
+
+
+
+
+#endif /* SRC_DALI_H_ */
