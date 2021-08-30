@@ -1,0 +1,10 @@
+debug.h:12:5:_write	12	static,ignoring_inline_asm
+main.c:234:6:delay_us	0	static
+main.c:207:6:sendZero	8	static
+main.c:215:6:sendOne	8	static
+main.c:196:6:sendBit	0	static
+main.c:187:6:sendByte	16	static
+main.c:178:6:transmit	16	static
+main.c:245:6:SystemClock_Config	96	static,ignoring_inline_asm
+main.c:106:5:main	80	static,ignoring_inline_asm
+main.c:489:6:Error_Handler	0	static,ignoring_inline_asm

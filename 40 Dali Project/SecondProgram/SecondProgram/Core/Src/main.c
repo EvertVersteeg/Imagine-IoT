@@ -59,6 +59,25 @@ void sendBit(int b);
 void sendZero(void);
 void sendOne(void);
 
+#define BROADCAST_DP 0b11111110		// Broadcast Direct ARC Power Control
+#define ON_DP 0b11111110
+#define OFF_DP 0b00000000
+
+
+#define BROADCAST_C 		0b11111111		// Broadcast
+#define RECALL_MAX_LEVEL_C 	0b00000101				//5 RECALL MAX LEVEL (Flash)
+#define OFF_C 				0b00000000				//0 OFF
+#define UP_C  				0b00000001				//1 UP
+#define DOWN_C  			0b00000010				//2 DOWN
+#define STEP_UP_C  			0b00000100				//3 STEP UP
+#define STEP_DOWN_C  		0b00001000				//4 STEP DOWN
+#define RECALL_MAX_LEVEL_C 	0b00000101				//5 RECALL MAX LEVEL (Flash)
+#define ON_AND_STEP_UP_C  	0b00001000				//8 ON AND STEP UP
+
+
+#define QUERY_STATUS 0b10010000
+#define RESET 0b00100000
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -96,7 +115,9 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);		//set uitgang standaard hoog bij start
+  //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);		//set uitgang standaard hoog bij start
+
+
 
   /* USER CODE END Init */
 
@@ -126,13 +147,22 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 		 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);
-		 delay_us(delay1);
+		 transmit(BROADCAST_C, OFF_C);
+		 HAL_Delay(2000);
+		 transmit(BROADCAST_C, ON_AND_STEP_UP_C);
+		 HAL_Delay(2000);
+		 //for (int i=1; i<252;i++){
+			 //transmit(BROADCAST_C, DOWN_C );
+			 //HAL_Delay(100);
+		 //}
+
+		 //HAL_Delay(2000);
 
 		 //HAL_ADC_Start(&hadc1);
 		 //printf ("Analog input = %d\r\n", value_adc);
 
-		 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
-		 delay_us(delay2);
+		 //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
+		 //delay_us(delay2);
 
 		 //HAL_ADC_Start(&hadc1);
 		 //printf ("Analog input = %d\r\n", value_adc);
