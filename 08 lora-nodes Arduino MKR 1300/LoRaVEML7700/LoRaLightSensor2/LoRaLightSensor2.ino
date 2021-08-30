@@ -5,14 +5,13 @@
 #include <MKRWAN.h>
 #include <CayenneLPP.h>
 #include <ArduinoLowPower.h>
-#include <BH1750.h>
+#include "Adafruit_VEML7700.h"
 #include <Wire.h>
 #include "arduino_secrets.h"
 #include "config.h"
 CayenneLPP lpp(size);
 LoRaModem modem;
-BH1750 lightMeter(0x23);
-
+Adafruit_VEML7700 veml = Adafruit_VEML7700();
 
 //*****************************************************************************
 // SETUP
@@ -25,11 +24,39 @@ void setup() {
   delay(1000);
   
   // begin returns a boolean that can be used to detect setup problems.
-  if (lightMeter.begin(BH1750::CONTINUOUS_HIGH_RES_MODE)) {
-    Serial.println(F("BH1750 Advanced begin"));
-  } else {
-    Serial.println(F("Error initialising BH1750"));
+  if (!veml.begin()) {
+    Serial.println("Sensor not found");
+    while (1);
   }
+  Serial.println("Sensor found");
+
+  veml.setGain(VEML7700_GAIN_1);
+  veml.setIntegrationTime(VEML7700_IT_800MS);
+
+  Serial.print(F("Gain: "));
+  switch (veml.getGain()) {
+    case VEML7700_GAIN_1: Serial.println("1"); break;
+    case VEML7700_GAIN_2: Serial.println("2"); break;
+    case VEML7700_GAIN_1_4: Serial.println("1/4"); break;
+    case VEML7700_GAIN_1_8: Serial.println("1/8"); break;
+  }
+
+  Serial.print(F("Integration Time (ms): "));
+  switch (veml.getIntegrationTime()) {
+    case VEML7700_IT_25MS: Serial.println("25"); break;
+    case VEML7700_IT_50MS: Serial.println("50"); break;
+    case VEML7700_IT_100MS: Serial.println("100"); break;
+    case VEML7700_IT_200MS: Serial.println("200"); break;
+    case VEML7700_IT_400MS: Serial.println("400"); break;
+    case VEML7700_IT_800MS: Serial.println("800"); break;
+  }
+
+  //veml.powerSaveEnable(true);
+  //veml.setPowerSaveMode(VEML7700_POWERSAVE_MODE4);
+
+  veml.setLowThreshold(10000);
+  veml.setHighThreshold(20000);
+  veml.interruptEnable(true);
   
   // change this to your regional band (eg. US915, AS923, ...)
   if (!modem.begin(EU868)) {
@@ -56,20 +83,17 @@ void loop() {
   Serial.println(deviceadres);
   
   // GO TO SLEEP
-  LowPower.sleep(300000);
+  LowPower.sleep(120000);
 }
 
 //*****************************************************************************
 // Function: Read all sensor values
 //*****************************************************************************
 void readSensorValues(){
-  if (lightMeter.measurementReady()) {
-    illuminance = lightMeter.readLightLevel();
-    delay(150);
-   }
-   if (!lightMeter.measurementReady()) {
-    Serial.println("Sensor not ready");
-   }
+  illuminance = veml.readLux();
+  white = veml.readWhite();
+  raw = veml.readALS();
+
 }
 
 
@@ -80,6 +104,19 @@ void printValuesToSerial(){
   Serial.print("Illuminance = ");
   Serial.print(illuminance);
   Serial.println(" lux");
+  Serial.print("White = ");
+  Serial.print(white);
+  Serial.println(" lux");
+  Serial.print("raw ALS = ");
+  Serial.print(raw);
+  Serial.println(" lux");
+  uint16_t irq = veml.interruptStatus();
+  if (irq & VEML7700_INTERRUPT_LOW) {
+    Serial.println("** Low threshold"); 
+  }
+  if (irq & VEML7700_INTERRUPT_HIGH) {
+    Serial.println("** High threshold"); 
+  }
 }
 
   
@@ -108,6 +145,8 @@ void connectToLoRaWAN(){
 void sendSensorValues(){
   lpp.reset();
   lpp.addLuminosity(1, illuminance);
+  lpp.addLuminosity(2, white);
+  lpp.addLuminosity(3, raw);
   Serial.println("Sending message...");
   modem.beginPacket();
   modem.write(lpp.getBuffer(), lpp.getSize());
