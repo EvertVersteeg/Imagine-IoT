@@ -19,12 +19,12 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "debug.h"
-#include "dali.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "dali.h"
+#include "debug.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,9 +47,8 @@ DMA_HandleTypeDef hdma_adc1;
 
 TIM_HandleTypeDef htim4;
 
+UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
-
-
 
 /* USER CODE BEGIN PV */
 void delay_us(uint16_t us);
@@ -59,36 +58,38 @@ void sendBit(int b);
 void sendZero(void);
 void sendOne(void);
 
-#define BROADCAST_DP 0b11111110		// Broadcast Direct ARC Power Control
-#define ON_DP 0b11111110
-#define OFF_DP 0b00000000
+uint8_t rx_Data[8];
+#define BROADCAST_DP 		0b11111110				// Broadcast DIRECT ARC Power Control, BASE ADDRESS
+#define OFF_DP 				0b00000000				//0 OFF, repeat=no, answer=no
+#define UP_DP  				0b00000001				//1 UP, repeat=no, answer=no
+#define DOWN_DP  			0b00000010				//2 DOWN, repeat=no, answer=no
+#define STEP_DOWN_DP  		0b00001000				//4 STEP DOWN, repeat=no, answer=no
+#define ON_AND_STEP_UP_DP  	0b00001000				//8 ON AND STEP UP, repeat=no, answer=no
 
 
-#define BROADCAST_C 		0b11111111		// Broadcast
-#define RECALL_MAX_LEVEL_C 	0b00000101				//5 RECALL MAX LEVEL (Flash)
-#define OFF_C 				0b00000000				//0 OFF
-#define UP_C  				0b00000001				//1 UP
-#define DOWN_C  			0b00000010				//2 DOWN
-#define STEP_UP_C  			0b00000100				//3 STEP UP
-#define STEP_DOWN_C  		0b00001000				//4 STEP DOWN
-#define RECALL_MAX_LEVEL_C 	0b00000101				//5 RECALL MAX LEVEL (Flash)
-#define ON_AND_STEP_UP_C  	0b00001000				//8 ON AND STEP UP
+#define BROADCAST_C 		0b11111111				// Broadcast INDIRECT (C), BASE ADDRESS
+#define OFF_C 				0b00000000				//0 OFF, repeat=no, answer=no
+#define UP_C  				0b00000001				//1 UP, repeat=no, answer=no
+#define DOWN_C  			0b00000010				//2 DOWN, repeat=no, answer=no
+#define STEP_UP_C  			0b00000100				//3 STEP UP, repeat=no, answer=no
+#define STEP_DOWN_C  		0b00001000				//4 STEP DOWN, repeat=no, answer=no
+#define RECALL_MAX_LEVEL_C 	0b00000101				//5 RECALL MAX LEVEL (Flash), repeat=no, answer=no
+#define ON_AND_STEP_UP_C  	0b00001000				//8 ON AND STEP UP, repeat=no, answer=no
+#define QUERY_STATUS		0b10010000				//144 Query Status, repeat=no, answer=yes
+#define RESET 				0b00100000				//22 Reset, repeat=yes, answer=no
 
 
-#define QUERY_STATUS 0b10010000
-#define RESET 0b00100000
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
-
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_DMA_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_TIM4_Init(void);
-
+static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -134,7 +135,9 @@ int main(void)
   MX_DMA_Init();
   MX_ADC1_Init();
   MX_TIM4_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
 
   /* USER CODE END 2 */
 
@@ -146,19 +149,23 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-		 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);
+		 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
 		 transmit(BROADCAST_C, OFF_C);
 		 HAL_Delay(2000);
 		 transmit(BROADCAST_C, ON_AND_STEP_UP_C);
 		 HAL_Delay(2000);
-		 //for (int i=1; i<252;i++){
-			 //transmit(BROADCAST_C, DOWN_C );
-			 //HAL_Delay(100);
-		 //}
+		 transmit(BROADCAST_C, QUERY_STATUS);
+		 HAL_UART_Receive(&huart1, (uint8_t*)rx_Data,2,100);
+		 printf("Start: \n");
+		 printf("\r\nBuffer : %d\r\n", rx_Data[0]);
+		 printf("\r\nBuffer : %d\r\n", rx_Data[1]);
+		 //printf("\r\nBuffer : %d\r\n", rx_Data[2]);
+		 //printf("\r\nBuffer : %d\r\n", rx_Data[3]);
+
 
 		 //HAL_Delay(2000);
 
-		 //HAL_ADC_Start(&hadc1);
+		// HAL_ADC_Start(&hadc1);
 		 //printf ("Analog input = %d\r\n", value_adc);
 
 		 //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
@@ -170,72 +177,6 @@ int main(void)
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
-}
-
-
-
-
-void transmit(uint8_t cmd1, uint8_t cmd2) // transmit commands to DALI bus (address byte, command byte)
-{
-	sendBit(1);
-	sendByte(cmd1);
-	sendByte(cmd2);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);		//digitalWrite(TxPin, HIGH); Set signaal weer hoog wanneer verzonden (STOP)
-}
-
-
-void sendByte(uint8_t b)
-{
-	for (int i = 7; i >= 0; i--)
-	{
-		sendBit((b >> i) & 1);
-	}
-}
-
-
-void sendBit(int b)
-{
- if (b) {
-		sendOne();
-	}
-	else {
-		sendZero();
-	}
-}
-
-
-void sendZero(void)
-{
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);		//digitalWrite(TxPin, HIGH);
-	delay_us(delay2);											//delayMicroseconds(delay2);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);		//digitalWrite(TxPin, LOW);
-	delay_us(delay1);											//delayMicroseconds(delay1);
-}
-
-void sendOne(void)
-{
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);		//digitalWrite(TxPin, LOW);
-	delay_us(delay2); 											//delayMicroseconds(delay2);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET); 		//digitalWrite(TxPin, HIGH);
-	delay_us(delay1);											//delayMicroseconds(delay1);
-}
-
-
-
-
-
-
-
-
-/**
-  * @brief Setup us delay function with timer 4
-  * @retval None
-  */
-void delay_us(uint16_t us)
-{
-	__HAL_TIM_SET_COUNTER(&htim4,0);  // set the counter value a 0
-	__HAL_TIM_ENABLE(&htim4);
-	while (__HAL_TIM_GET_COUNTER(&htim4) < us);  // wait for the counter to reach the us input in the parameter
 }
 
 /**
@@ -395,6 +336,41 @@ static void MX_TIM4_Init(void)
 }
 
 /**
+  * @brief USART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART1_Init 0 */
+
+  /* USER CODE END USART1_Init 0 */
+
+  /* USER CODE BEGIN USART1_Init 1 */
+
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = 74880;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART1_Init 2 */
+
+  /* USER CODE END USART1_Init 2 */
+
+}
+
+/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -461,7 +437,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LD2_Pin|GPIO_PIN_10, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LD2_Pin|GPIO_PIN_8, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -469,8 +445,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LD2_Pin PA10 */
-  GPIO_InitStruct.Pin = LD2_Pin|GPIO_PIN_10;
+  /*Configure GPIO pins : LD2_Pin PA8 */
+  GPIO_InitStruct.Pin = LD2_Pin|GPIO_PIN_8;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -480,6 +456,61 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+/**
+  * @brief Setup us delay function with timer 4
+  * @retval None
+  */
+void delay_us(uint16_t us)
+{
+	__HAL_TIM_SET_COUNTER(&htim4,0);  // set the counter value a 0
+	__HAL_TIM_ENABLE(&htim4);
+	while (__HAL_TIM_GET_COUNTER(&htim4) < us);  // wait for the counter to reach the us input in the parameter
+}
+
+void transmit(uint8_t cmd1, uint8_t cmd2) // transmit commands to DALI bus (address byte, command byte)
+{
+	sendBit(1);
+	sendByte(cmd1);
+	sendByte(cmd2);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);		//digitalWrite(TxPin, HIGH); Set signaal weer hoog wanneer verzonden (STOP)
+}
+
+
+void sendByte(uint8_t b)
+{
+	for (int i = 7; i >= 0; i--)
+	{
+		sendBit((b >> i) & 1);
+	}
+}
+
+
+void sendBit(int b)
+{
+ if (b) {
+		sendOne();
+	}
+	else {
+		sendZero();
+	}
+}
+
+
+void sendZero(void)
+{
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);		//digitalWrite(TxPin, HIGH);
+	delay_us(delay2);											//delayMicroseconds(delay2);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);		//digitalWrite(TxPin, LOW);
+	delay_us(delay1);											//delayMicroseconds(delay1);
+}
+
+void sendOne(void)
+{
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);		//digitalWrite(TxPin, LOW);
+	delay_us(delay2); 											//delayMicroseconds(delay2);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET); 		//digitalWrite(TxPin, HIGH);
+	delay_us(delay1);											//delayMicroseconds(delay1);
+}
 /* USER CODE END 4 */
 
 /**

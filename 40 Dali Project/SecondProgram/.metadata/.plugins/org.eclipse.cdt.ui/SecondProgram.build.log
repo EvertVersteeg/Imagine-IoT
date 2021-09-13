@@ -1,10 +1,10 @@
-16:18:16 **** Incremental Build of configuration Debug for project SecondProgram ****
+16:10:40 **** Incremental Build of configuration Debug for project SecondProgram ****
 make -j8 all 
 arm-none-eabi-size   SecondProgram.elf 
    text	   data	    bss	    dec	    hex	filename
-  19380	     24	   1952	  21356	   536c	SecondProgram.elf
+  24872	    124	   2116	  27112	   69e8	SecondProgram.elf
 Finished building: default.size.stdout
  
 
-16:18:17 Build Finished. 0 errors, 0 warnings. (took 428ms)
+16:10:41 Build Finished. 0 errors, 0 warnings. (took 392ms)
 
