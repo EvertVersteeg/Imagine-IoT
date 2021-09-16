@@ -47,10 +47,12 @@ DMA_HandleTypeDef hdma_adc1;
 
 TIM_HandleTypeDef htim4;
 
-UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+void busTest(void);
+uint16_t maxResponseLevel(void);
+uint16_t minResponseLevel(void);
 void delay_us(uint16_t us);
 void transmit(uint8_t cmd1, uint8_t cmd2);
 void sendByte(uint8_t b);
@@ -89,7 +91,6 @@ static void MX_USART2_UART_Init(void);
 static void MX_DMA_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_TIM4_Init(void);
-static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -135,9 +136,10 @@ int main(void)
   MX_DMA_Init();
   MX_ADC1_Init();
   MX_TIM4_Init();
-  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  printf("Start\r\n");
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+  busTest();
 
   /* USER CODE END 2 */
 
@@ -148,30 +150,28 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  printf ("Main loop start\r\n");
 
 		 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
 		 transmit(BROADCAST_C, OFF_C);
+
 		 HAL_Delay(2000);
 		 transmit(BROADCAST_C, ON_AND_STEP_UP_C);
 		 HAL_Delay(2000);
-		 transmit(BROADCAST_C, QUERY_STATUS);
-		 HAL_UART_Receive(&huart1, (uint8_t*)rx_Data,2,100);
-		 printf("Start: \n");
-		 printf("\r\nBuffer : %d\r\n", rx_Data[0]);
-		 printf("\r\nBuffer : %d\r\n", rx_Data[1]);
-		 //printf("\r\nBuffer : %d\r\n", rx_Data[2]);
-		 //printf("\r\nBuffer : %d\r\n", rx_Data[3]);
+
 
 
 		 //HAL_Delay(2000);
 
-		// HAL_ADC_Start(&hadc1);
+		//HAL_ADC_Start(&hadc1);
+		 //value_adc = HAL_ADC_GetValue(&hadc1);
 		 //printf ("Analog input = %d\r\n", value_adc);
 
-		 //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
+
 		 //delay_us(delay2);
 
 		 //HAL_ADC_Start(&hadc1);
+		 //value_adc = HAL_ADC_GetValue(&hadc1);
 		 //printf ("Analog input = %d\r\n", value_adc);
 
     /* USER CODE BEGIN 3 */
@@ -336,41 +336,6 @@ static void MX_TIM4_Init(void)
 }
 
 /**
-  * @brief USART1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART1_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART1_Init 0 */
-
-  /* USER CODE END USART1_Init 0 */
-
-  /* USER CODE BEGIN USART1_Init 1 */
-
-  /* USER CODE END USART1_Init 1 */
-  huart1.Instance = USART1;
-  huart1.Init.BaudRate = 74880;
-  huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_1;
-  huart1.Init.Parity = UART_PARITY_NONE;
-  huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART1_Init 2 */
-
-  /* USER CODE END USART1_Init 2 */
-
-}
-
-/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -452,9 +417,83 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : PA10 */
+  GPIO_InitStruct.Pin = GPIO_PIN_10;
+  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
 }
 
 /* USER CODE BEGIN 4 */
+
+
+void busTest(void)
+{
+	//Luminaries must turn on and turn off. If not, check connection.
+	printf("Start bus test\r\n");
+	HAL_Delay(100);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+	transmit(BROADCAST_C, OFF_C);
+	printf ("Lampen 2s uit\r\n");
+	HAL_Delay(2000);
+	transmit(BROADCAST_C, ON_AND_STEP_UP_C);
+	printf ("Lampen 2s aan\r\n");
+	HAL_Delay(2000);
+	transmit(BROADCAST_C, OFF_C);
+	printf ("Lampen 2s uit\r\n");
+	HAL_Delay(2000);
+	printf("Einde aansturing lampen\r\n");
+
+	//Receive response from luminaries: max and min level
+	transmit(BROADCAST_C, QUERY_STATUS);
+	maxLevel = maxResponseLevel();
+	printf("maxResponseLevel = %d\r\n", maxLevel);
+	transmit(BROADCAST_C, QUERY_STATUS);
+	minLevel = minResponseLevel();
+	printf("minResponseLevel = %d\r\n", minLevel);
+
+	analogLevel = (uint16_t)(maxLevel + minLevel) / 2;
+	printf("analogLevel = %d\r\n", analogLevel);
+	printf("Einde bus test\r\n");
+
+}
+
+uint16_t maxResponseLevel(void)
+{
+	const uint8_t dalistep = 40; //us
+	uint16_t rxmax = 0;
+	uint16_t dalidata;
+	uint32_t idalistep;
+	for (idalistep = 0; idalistep < daliTimeout; idalistep = idalistep + dalistep) {
+		HAL_ADC_Start(&hadc1);
+		dalidata = HAL_ADC_GetValue(&hadc1);
+
+		if (dalidata > rxmax) {
+			rxmax = dalidata;
+			};
+		delay_us(dalistep);
+		}
+		return rxmax;
+}
+
+uint16_t minResponseLevel(void)
+{
+	const uint8_t dalistep = 40; //us
+	uint16_t rxmin = 1024;
+	uint16_t dalidata;
+	uint32_t idalistep;
+	for (idalistep = 0; idalistep < daliTimeout; idalistep = idalistep + dalistep) {
+		HAL_ADC_Start(&hadc1);
+		dalidata = HAL_ADC_GetValue(&hadc1);
+
+		if (dalidata < rxmin) {
+			rxmin = dalidata;
+			};
+		delay_us(dalistep);
+		}
+		return rxmin;
+}
 
 /**
   * @brief Setup us delay function with timer 4
