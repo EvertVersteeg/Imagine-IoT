@@ -1,12 +1,14 @@
 #MicroXplorer Configuration settings - do not modify
+CAN1.ABOM=DISABLE
 CAN1.BS1=CAN_BS1_12TQ
-CAN1.BS2=CAN_BS2_4TQ
-CAN1.CalculateBaudRate=117647
-CAN1.CalculateTimeBit=8500.00
-CAN1.CalculateTimeQuantum=500.0
-CAN1.IPParameters=CalculateTimeQuantum,CalculateTimeBit,CalculateBaudRate,Prescaler,BS1,BS2
-CAN1.Prescaler=21
+CAN1.BS2=CAN_BS2_2TQ
+CAN1.CalculateBaudRate=200000
+CAN1.CalculateTimeBit=4999.99
+CAN1.CalculateTimeQuantum=333.33333333333337
+CAN1.IPParameters=CalculateTimeQuantum,CalculateTimeBit,CalculateBaudRate,ABOM,Prescaler,BS1,BS2
+CAN1.Prescaler=14
 File.Version=6
+GPIO.groupedBy=Group By Peripherals
 KeepUserPlacement=false
 Mcu.Family=STM32F4
 Mcu.IP0=CAN1

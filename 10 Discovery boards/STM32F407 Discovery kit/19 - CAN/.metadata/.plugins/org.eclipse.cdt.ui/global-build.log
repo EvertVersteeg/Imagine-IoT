@@ -1,14 +1,18 @@
-15:45:10 **** Incremental Build of configuration Debug for project canBus ****
+18:39:45 **** Incremental Build of configuration Release for project canBus ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "canBus.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\10 Discovery boards\STM32F407 Discovery kit\19 - CAN\canBus\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="canBus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: canBus.elf
+ 
 arm-none-eabi-size   canBus.elf 
+arm-none-eabi-objdump -h -S  canBus.elf  > "canBus.list"
+arm-none-eabi-objcopy  -O binary  canBus.elf  "canBus.bin"
    text	   data	    bss	    dec	    hex	filename
-  11480	     20	   1788	  13288	   33e8	canBus.elf
+   6844	     20	   1796	   8660	   21d4	canBus.elf
 Finished building: default.size.stdout
  
-15:46:14 **** Incremental Build of configuration Debug for project canBus ****
-make -j8 all 
-arm-none-eabi-size   canBus.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11480	     20	   1788	  13288	   33e8	canBus.elf
-Finished building: default.size.stdout
+Finished building: canBus.bin
+Finished building: canBus.list
+ 
  

@@ -23,6 +23,13 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+extern CAN_HandleTypeDef hcan1;
+extern CAN_TxHeaderTypeDef   TxHeader;
+extern CAN_RxHeaderTypeDef   RxHeader;
+extern CAN_FilterTypeDef FilterConfig;
+extern uint32_t TxMailbox;
+extern uint8_t TxData[8];
+extern uint8_t RxData[8];
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,13 +65,15 @@
 /* External variables --------------------------------------------------------*/
 extern CAN_HandleTypeDef hcan1;
 extern TIM_HandleTypeDef htim1;
-extern CAN_TxHeaderTypeDef pHeader;
-extern CAN_RxHeaderTypeDef pRxHeader;
-extern uint32_t TxMailbox;
-extern uint8_t a;
-extern uint8_t r;
-/* USER CODE BEGIN EV */
 
+/* USER CODE BEGIN EV */
+extern CAN_TxHeaderTypeDef TxHeader;
+extern CAN_RxHeaderTypeDef RxHeader;
+extern CAN_FilterTypeDef FilterConfig;
+extern uint32_t TxMailbox;
+extern uint8_t TxData[8];               					// Byte to transmit (wordt met 1 verhoogt als je op de button drukt
+extern uint8_t RxData[8];               					// Byte to recieve
+extern uint8_t a;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -214,8 +223,14 @@ void EXTI0_IRQHandler(void)
 	for(int n=0;n<1000000;n++);
 	if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0))
 	{
+
 		a++;
-		HAL_CAN_AddTxMessage(&hcan1, &pHeader, &a, &TxMailbox);
+		TxData[0] = a;
+		TxData[1] = 10;
+		//verstuur data (a) naar andere bord, a wordt elke keer als er op de knop wordt gedrukt verhoogd ,et 1
+		//a wordt gebruikt om vier ledjes (binair) aan te sturen   0001 brand ledje 12, 0010 brand ledje 13  (xxxx = 15,14,13,12)
+		HAL_CAN_AddTxMessage(&hcan1, &TxHeader, TxData, &TxMailbox);
+
 	}
   /* USER CODE END EXTI0_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
@@ -234,8 +249,12 @@ void CAN1_RX0_IRQHandler(void)
   /* USER CODE END CAN1_RX0_IRQn 0 */
   HAL_CAN_IRQHandler(&hcan1);
   /* USER CODE BEGIN CAN1_RX0_IRQn 1 */
-  HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &pRxHeader, &r);
-  GPIOD->ODR=r<<12;
+
+  //Lezen binnenkomende bericht, data
+  HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &RxHeader, RxData);
+  //Aansturen leds
+  GPIOD->ODR=RxData[0]<<12;
+
   /* USER CODE END CAN1_RX0_IRQn 1 */
 }
 
