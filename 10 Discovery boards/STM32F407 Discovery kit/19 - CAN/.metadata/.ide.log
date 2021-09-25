@@ -4699,3 +4699,7 @@
 2021-09-23 18:40:46,530 [INFO] Can:66 - Can Add PropertyChangeListener com.st.microxplorer.plugins.ip.can.Can@3b5f0d56
 2021-09-23 18:40:46,651 [INFO] OpenFileManager:333 - Restore cursor
 2021-09-23 18:45:27,609 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,650x506,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-09-24 09:09:26,487 [INFO] Activator:177 - 
+
+
+2021-09-24 09:09:26,489 [INFO] Activator:178 - !SESSION log4j initialized

@@ -16,3 +16,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-09-22 15:52:10.167
 !MESSAGE Indexed 'canBus' (25 sources, 84 headers) in 4.65 sec: 6,114 declarations; 37,154 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0046%)
+!SESSION 2021-09-24 09:09:51.571 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-09-24 09:10:04.103
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-09-24 09:10:04.170
+!MESSAGE Log4j initialized with config file C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\20 Nucleo boards\NUCLEO-L476RG\21 CAN (STM32CubeIDE)\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-09-24 09:10:12.263
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-24 09:57:51.687
+!MESSAGE Indexed 'canBus' (26 sources, 107 headers) in 6.44 sec: 10,483 declarations; 48,612 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.29%)

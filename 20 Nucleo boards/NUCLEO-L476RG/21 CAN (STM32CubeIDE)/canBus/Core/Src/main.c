@@ -52,6 +52,7 @@ CAN_FilterTypeDef FilterConfig;
 uint32_t TxMailbox;
 uint8_t TxData[8] = {0,0,0,0,0,0,0,0};
 uint8_t RxData[8] = {0,0,0,0,0,0,0,0};
+uint8_t a = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -99,7 +100,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
-  FilterConfig.FilterBank = 14; //SLAve
+  FilterConfig.FilterBank = 0; //SLAve
   FilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
   FilterConfig.FilterFIFOAssignment = CAN_FILTER_FIFO0;
   FilterConfig.FilterIdHigh = 0x245<<5;
@@ -114,8 +115,12 @@ int main(void)
   TxHeader.IDE = CAN_ID_STD;   			// standaard
   TxHeader.RTR = CAN_RTR_DATA;
   TxHeader.StdId = 0x245;        			// identificatie nummer
-  //TxHeader.ExtId = 0x02;
   TxHeader.TransmitGlobalTime = DISABLE;
+
+  HAL_CAN_ConfigFilter(&hcan1,&FilterConfig);
+  HAL_CAN_Start(&hcan1);
+  HAL_CAN_ActivateNotification(&hcan1,CAN_IT_RX_FIFO0_MSG_PENDING);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -192,11 +197,11 @@ static void MX_CAN1_Init(void)
 
   /* USER CODE END CAN1_Init 1 */
   hcan1.Instance = CAN1;
-  hcan1.Init.Prescaler = 5;
+  hcan1.Init.Prescaler = 80;
   hcan1.Init.Mode = CAN_MODE_NORMAL;
   hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
-  hcan1.Init.TimeSeg1 = CAN_BS1_12TQ;
-  hcan1.Init.TimeSeg2 = CAN_BS2_3TQ;
+  hcan1.Init.TimeSeg1 = CAN_BS1_2TQ;
+  hcan1.Init.TimeSeg2 = CAN_BS2_2TQ;
   hcan1.Init.TimeTriggeredMode = DISABLE;
   hcan1.Init.AutoBusOff = DISABLE;
   hcan1.Init.AutoWakeUp = DISABLE;

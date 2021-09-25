@@ -23,13 +23,7 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-extern CAN_HandleTypeDef hcan1;
-extern CAN_TxHeaderTypeDef   TxHeader;
-extern CAN_RxHeaderTypeDef   RxHeader;
-extern CAN_FilterTypeDef FilterConfig;
-extern uint32_t TxMailbox;
-extern uint8_t TxData[8];
-extern uint8_t RxData[8];
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
