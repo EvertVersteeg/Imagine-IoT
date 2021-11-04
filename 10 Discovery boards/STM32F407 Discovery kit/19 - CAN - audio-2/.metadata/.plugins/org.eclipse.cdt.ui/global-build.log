@@ -1,0 +1,24 @@
+20:46:08 **** Incremental Build of configuration Release for project canBus ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "canBus.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\evers\Documents\IMAGINE-IOT\Imagine-IoT\Imagine-IoT\10 Discovery boards\STM32F407 Discovery kit\19 - CAN - audio-2\canBus\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="canBus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: canBus.elf
+ 
+arm-none-eabi-size   canBus.elf 
+arm-none-eabi-objdump -h -S  canBus.elf  > "canBus.list"
+arm-none-eabi-objcopy  -O binary  canBus.elf  "canBus.bin"
+   text	   data	    bss	    dec	    hex	filename
+  36440	    156	  24788	  61384	   efc8	canBus.elf
+Finished building: default.size.stdout
+ 
+Finished building: canBus.bin
+ 
+Finished building: canBus.list
+ 
+20:47:00 **** Incremental Build of configuration Release for project canBus ****
+make -j8 all 
+arm-none-eabi-size   canBus.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36440	    156	  24788	  61384	   efc8	canBus.elf
+Finished building: default.size.stdout
+ 

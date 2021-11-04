@@ -1,0 +1,13 @@
+18:47:43 **** Incremental Build of configuration Release for project uc_methods ****
+make all 
+arm-none-eabi-gcc "../src/flag.c" -mcpu=cortex-m4 -std=gnu11 -DSTM32F4XX -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -c -I../src -I../Libraries/CMSIS/Include -I../Libraries/Device/STM32F4xx/Include -I../Libraries/STM32F4xx_StdPeriph_Driver/inc -I../Libraries/cmsis -I../Libraries/cmsis_boot -I../Libraries/cmsis_boot/startup -I../Libraries/ports -I../Libraries/stdio -I"../Libraries/uC-OS II" -I"../Libraries/uC-OS II/Application specific" -I"../Libraries/uC-OS II/Processor independent" -I"../Libraries/Processor specific" -I"C:/Users/evers/Desktop/uc_methods_STM_ec/uc_methods_STM_ec/Libraries/uC-OS II" -I"C:/Users/evers/Desktop/uc_methods_STM_ec/uc_methods_STM_ec/Libraries/uC-OS II/Processor specific" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/flag.d" -MT"src/flag.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/flag.o"
+In file included from ../src/flag.c:8:
+../Libraries/uC-OS II/Application specific/includes.h:65:10: fatal error: misc.h: No such file or directory
+   65 | #include "misc.h"
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:40: src/flag.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+18:47:43 Build Failed. 2 errors, 0 warnings. (took 436ms)
+

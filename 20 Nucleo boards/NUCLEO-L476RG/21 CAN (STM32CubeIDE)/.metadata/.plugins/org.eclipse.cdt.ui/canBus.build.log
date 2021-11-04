@@ -1,10 +1,10 @@
-09:58:49 **** Incremental Build of configuration Debug for project canBus ****
+19:38:18 **** Incremental Build of configuration Debug for project canBus ****
 make -j8 all 
 arm-none-eabi-size   canBus.elf 
    text	   data	    bss	    dec	    hex	filename
-  15816	     20	   1860	  17696	   4520	canBus.elf
+  16980	     24	   1928	  18932	   49f4	canBus.elf
 Finished building: default.size.stdout
  
 
-09:58:50 Build Finished. 0 errors, 0 warnings. (took 369ms)
+19:38:18 Build Finished. 0 errors, 0 warnings. (took 297ms)
 

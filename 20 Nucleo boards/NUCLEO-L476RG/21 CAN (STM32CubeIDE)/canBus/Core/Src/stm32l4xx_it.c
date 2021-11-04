@@ -58,6 +58,7 @@
 
 /* External variables --------------------------------------------------------*/
 extern CAN_HandleTypeDef hcan1;
+extern TIM_HandleTypeDef htim6;
 /* USER CODE BEGIN EV */
 extern CAN_TxHeaderTypeDef TxHeader;
 extern CAN_RxHeaderTypeDef RxHeader;
@@ -66,6 +67,7 @@ extern uint32_t TxMailbox;
 extern uint8_t TxData[8];               					// Byte to transmit (wordt met 1 verhoogt als je op de button drukt
 extern uint8_t RxData[8];               					// Byte to recieve
 extern uint8_t a;
+extern uint8_t b;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -219,9 +221,13 @@ void CAN1_RX0_IRQHandler(void)
   /* USER CODE BEGIN CAN1_RX0_IRQn 1 */
 
   //Lezen binnenkomende bericht, data
-    HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &RxHeader, RxData);
-    //Aansturen leds
-    GPIOA->ODR=RxData[0]<<5;
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+  for(int n=0;n<1000000;n++);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &RxHeader, RxData);
+  //Aansturen led
+
+
 
 
   /* USER CODE END CAN1_RX0_IRQn 1 */
@@ -232,31 +238,41 @@ void CAN1_RX0_IRQHandler(void)
   */
 void EXTI15_10_IRQHandler(void)
 {
-  /* USER CODE BEGIN EXTI0_IRQn 0 */
+  /* USER CODE BEGIN EXTI15_10_IRQn 0 */
+	for(int n=0;n<1000000;n++);
+	if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_13))
+	{
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET);
+			for(int n=0;n<1000000;n++);
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);
 
 
-		a++;
-		TxData[0] = a;
-		TxData[1] = 10;
-		//verstuur data (a) naar andere bord, a wordt elke keer als er op de knop wordt gedrukt verhoogd ,et 1
-		//a wordt gebruikt om vier ledjes (binair) aan te sturen   0001 brand ledje 12, 0010 brand ledje 13  (xxxx = 15,14,13,12)
-		HAL_CAN_AddTxMessage(&hcan1, &TxHeader, TxData, &TxMailbox);
+			TxData[0] = a;
+			TxData[1] = b;
+			//verstuur data (a) naar andere bord, a wordt elke keer als er op de knop wordt gedrukt verhoogd ,et 1
+			//a wordt gebruikt om vier ledjes (binair) aan te sturen   0001 brand ledje 12, 0010 brand ledje 13  (xxxx = 15,14,13,12)
+			HAL_CAN_AddTxMessage(&hcan1, &TxHeader, TxData, &TxMailbox);
+			a++;
+			b++;
+			if(a==4)
+			{
+				a=2;
+			}
+			if(b==6)
+			{
+				b=1;
+			}
+	}
 
 
-  /* USER CODE END EXTI0_IRQn 0 */
-	HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_13);
-  /* USER CODE BEGIN EXTI0_IRQn 1 */
 
-  /* USER CODE END EXTI0_IRQn 1 */
+
+  /* USER CODE END EXTI15_10_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_13);
+  /* USER CODE BEGIN EXTI15_10_IRQn 1 */
+
+  /* USER CODE END EXTI15_10_IRQn 1 */
 }
-
-
-
-
-
-
-
-
 
 /* USER CODE BEGIN 1 */
 

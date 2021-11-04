@@ -1,0 +1,9 @@
+MY_CS43L22.c:41:13:read_register	32	static
+MY_CS43L22.c:32:13:write_register.isra.0	24	static
+MY_CS43L22.c:159:6:CS43_SetMute.part.0	8	static
+MY_CS43L22.c:51:6:CS43_Init	16	static
+MY_CS43L22.c:120:6:CS43_Enable_RightLeft	0	static
+MY_CS43L22.c:150:6:CS43_SetVolume	16	static
+MY_CS43L22.c:159:6:CS43_SetMute	16	static
+MY_CS43L22.c:181:6:CS43_Start	16	static
+MY_CS43L22.c:207:6:CS43_Stop	8	static

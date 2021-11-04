@@ -50,6 +50,9 @@ TIM_HandleTypeDef htim4;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+void test(void);
+void splitAdd(long input, uint8_t highbyte, uint8_t middlebyte, uint8_t lowbyte);
+void initialisation(void);
 void busTest(void);
 uint16_t maxResponseLevel(void);
 uint16_t minResponseLevel(void);
@@ -59,6 +62,12 @@ void sendByte(uint8_t b);
 void sendBit(int b);
 void sendZero(void);
 void sendOne(void);
+void scanShortAdd();
+uint8_t recieve();
+
+uint16_t CURRENT_TIMER4_COUNT =0;
+uint16_t currentMillis = 0;
+uint16_t systemMillis = 0;
 
 uint8_t rx_Data[8];
 #define BROADCAST_DP 		0b11111110				// Broadcast DIRECT ARC Power Control, BASE ADDRESS
@@ -76,6 +85,8 @@ uint8_t rx_Data[8];
 #define STEP_UP_C  			0b00000100				//3 STEP UP, repeat=no, answer=no
 #define STEP_DOWN_C  		0b00001000				//4 STEP DOWN, repeat=no, answer=no
 #define RECALL_MAX_LEVEL_C 	0b00000101				//5 RECALL MAX LEVEL (Flash), repeat=no, answer=no
+#define ON_C 				0b00000101
+
 #define ON_AND_STEP_UP_C  	0b00001000				//8 ON AND STEP UP, repeat=no, answer=no
 #define QUERY_STATUS		0b10010000				//144 Query Status, repeat=no, answer=yes
 #define RESET 				0b00100000				//22 Reset, repeat=yes, answer=no
@@ -139,7 +150,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
   printf("Start\r\n");
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+  msgMode = true;
+  //initialisation();
+  //test();
   busTest();
+  //msgMode = true;
+  //scanShortAdd();
+  getResponse = false;
 
   /* USER CODE END 2 */
 
@@ -157,7 +174,9 @@ int main(void)
 
 		 HAL_Delay(2000);
 		 transmit(BROADCAST_C, ON_AND_STEP_UP_C);
+		 //transmit(0x01, 0xA1);
 		 HAL_Delay(2000);
+
 
 
 
@@ -426,7 +445,135 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void initialisation(void)
+{
+	const int delaytime = 10; //ms
+	long low_longadd = 0x000000;
+	long high_longadd = 0xFFFFFF;
+	long input;
+	long longadd = (long)(low_longadd + high_longadd) / 2;
+	uint8_t highbyte;
+	uint8_t middlebyte;
+	uint8_t lowbyte;
+	uint8_t short_add = 0;
+	//uint8_t cmd2;
+	HAL_Delay(delaytime);
+	transmit(BROADCAST_C, RESET);
+	HAL_Delay(delaytime);
+	transmit(BROADCAST_C, RESET);
+	HAL_Delay(delaytime);
+	transmit(BROADCAST_C, OFF_C);
+	HAL_Delay(delaytime);
+	transmit(0b10100101, 0b00000000); //initialise
+	HAL_Delay(delaytime);
+	transmit(0b10100101, 0b00000000); //initialise
+	HAL_Delay(delaytime);
+	transmit(0b10100111, 0b00000000); //randomise
+	HAL_Delay(delaytime);
+	transmit(0b10100111, 0b00000000); //randomise
+	if (msgMode) {
+		printf ("Searching for long addresses:\r\n");
+		}
+	while (longadd <= 0xFFFFFF - 2 && short_add <= 64) {
+		while ((high_longadd - low_longadd) > 1) {
 
+			//splitAdd(longadd, highbyte, middlebyte, lowbyte); //divide 24bit adress into three 8bit adresses
+			input = longadd;
+			highbyte = input >> 16;
+			middlebyte = input >> 8;
+			lowbyte = input;
+			HAL_Delay(delaytime);
+			transmit(0b10110001, highbyte); //search HB
+			HAL_Delay(delaytime);
+			transmit(0b10110011, middlebyte); //search MB
+			HAL_Delay(delaytime);
+			transmit(0b10110101, lowbyte); //search LB
+			HAL_Delay(delaytime);
+			transmit(0b10101001, 0b00000000); //compare
+
+			if (minResponseLevel() > analogLevel)
+			{
+				low_longadd = longadd;
+			}
+			else
+			{
+				high_longadd = longadd;
+			}
+
+			longadd = (low_longadd + high_longadd) / 2; //center
+
+			if (msgMode) {
+				printf ("BIN: \r\n");
+				printf("longadd = %d\r\n", (longadd + 1));
+				printf (" \r\n");
+				//printf ("DEC: ");
+				//printf (longadd + 1, DEC);
+				//printf (" ");
+				//printf ("HEX: ");
+				//printf (longadd + 1, HEX);
+				printf("longadd = %p\r\n", (longadd + 1));
+				//printf ();
+			}
+			else {
+				//printf (longadd + 1);
+				printf("longadd = %d\r\n", (longadd + 1));
+			}
+		} // second while
+
+
+		if (high_longadd != 0xFFFFFF)
+		{
+			//splitAdd(longadd + 1, highbyte, middlebyte, lowbyte);
+			input = longadd;
+			highbyte = input >> 16;
+			middlebyte = input >> 8;
+			lowbyte = input;
+
+			transmit(0b10110001, highbyte); //search HB
+			HAL_Delay(delaytime);
+			transmit(0b10110011, middlebyte); //search MB
+			HAL_Delay(delaytime);
+			transmit(0b10110101, lowbyte); //search LB
+			HAL_Delay(delaytime);
+			transmit(0b10110111, 1 + (short_add << 1)); //program short adress
+			HAL_Delay(delaytime);
+			transmit(0b10101011, 0b00000000); //withdraw
+			HAL_Delay(delaytime);
+			transmit((1 + (short_add << 1)), ON_C);
+			HAL_Delay(1000);
+			transmit(1 + (short_add << 1), OFF_C);
+			HAL_Delay(delaytime);
+			short_add++;
+
+			if (msgMode) {
+			printf ("Assigning a short address/r/n");
+			}
+
+			high_longadd = 0xFFFFFF;
+			longadd = (low_longadd + high_longadd) / 2;
+
+		}
+		else {
+			if (msgMode) {
+				printf ("End/r/n");
+			}
+		}
+	} // first while
+
+
+	transmit(0b10100001, 0b00000000);  //terminate
+	transmit(BROADCAST_C, ON_C);  //broadcast on
+}
+
+
+
+
+void splitAdd(long input, uint8_t highbyte, uint8_t middlebyte, uint8_t lowbyte)
+{
+	highbyte = input >> 16;
+	middlebyte = input >> 8;
+	lowbyte = input;
+}
 
 void busTest(void)
 {
@@ -446,10 +593,10 @@ void busTest(void)
 	printf("Einde aansturing lampen\r\n");
 
 	//Receive response from luminaries: max and min level
-	transmit(BROADCAST_C, QUERY_STATUS);
+	//transmit(BROADCAST_C, QUERY_STATUS);
 	maxLevel = maxResponseLevel();
 	printf("maxResponseLevel = %d\r\n", maxLevel);
-	transmit(BROADCAST_C, QUERY_STATUS);
+	//transmit(BROADCAST_C, QUERY_STATUS);
 	minLevel = minResponseLevel();
 	printf("minResponseLevel = %d\r\n", minLevel);
 
@@ -459,14 +606,33 @@ void busTest(void)
 
 }
 
+void test(void)
+{
+	uint8_t number = 0x0000000;
+	uint8_t number2 = 0x00000000;
+	uint8_t i= 0;
+	for (i = 0; i<64; i++){
+		HAL_Delay(100);
+		number2 = (number << 1) + 1;
+		transmit(number2,  QUERY_STATUS);
+		HAL_Delay(100);
+	}
+	HAL_Delay(100);
+	transmit(number,  QUERY_STATUS);
+
+}
+
 uint16_t maxResponseLevel(void)
 {
 	const uint8_t dalistep = 40; //us
+	HAL_ADC_Start(&hadc1);
+	//HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
 	uint16_t rxmax = 0;
-	uint16_t dalidata;
+	uint32_t dalidata;
 	uint32_t idalistep;
+	transmit(BROADCAST_C, QUERY_STATUS);
 	for (idalistep = 0; idalistep < daliTimeout; idalistep = idalistep + dalistep) {
-		HAL_ADC_Start(&hadc1);
+
 		dalidata = HAL_ADC_GetValue(&hadc1);
 
 		if (dalidata > rxmax) {
@@ -480,9 +646,10 @@ uint16_t maxResponseLevel(void)
 uint16_t minResponseLevel(void)
 {
 	const uint8_t dalistep = 40; //us
-	uint16_t rxmin = 1024;
+	uint16_t rxmin = 4095;
 	uint16_t dalidata;
 	uint32_t idalistep;
+	transmit(BROADCAST_C, QUERY_STATUS);
 	for (idalistep = 0; idalistep < daliTimeout; idalistep = idalistep + dalistep) {
 		HAL_ADC_Start(&hadc1);
 		dalidata = HAL_ADC_GetValue(&hadc1);
@@ -504,6 +671,18 @@ void delay_us(uint16_t us)
 	__HAL_TIM_SET_COUNTER(&htim4,0);  // set the counter value a 0
 	__HAL_TIM_ENABLE(&htim4);
 	while (__HAL_TIM_GET_COUNTER(&htim4) < us);  // wait for the counter to reach the us input in the parameter
+}
+
+uint32_t micros(void)
+{
+    systemMillis = __HAL_TIM_GET_COUNTER(&htim4);
+
+
+
+     //systemMillis = systemMillis + currentMillis;
+     //__HAL_TIM_SET_COUNTER (&htim4, 0);
+
+    return systemMillis;
 }
 
 void transmit(uint8_t cmd1, uint8_t cmd2) // transmit commands to DALI bus (address byte, command byte)
@@ -550,6 +729,89 @@ void sendOne(void)
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET); 		//digitalWrite(TxPin, HIGH);
 	delay_us(delay1);											//delayMicroseconds(delay1);
 }
+
+void scanShortAdd()
+{
+	const uint8_t delayTime = 10;
+	const uint8_t start_ind_adres = 0;
+	//const uint8_t finish_ind_adres =127;
+	uint8_t add_byte;
+	uint8_t device_short_add;
+
+	transmit(BROADCAST_C, OFF_C);
+	delay_us(delayTime);
+	if(msgMode)
+	{
+		printf ("Short addresses:\r\n");
+	}
+	for (device_short_add = start_ind_adres; device_short_add <=63; device_short_add++)
+	{
+		add_byte = 1 + (device_short_add << 1);
+		transmit(add_byte, 0xA1);    //1010 0001 ?? A1 moet zijn 91
+		uint32_t response = recieve();
+		if(getResponse){
+			transmit(add_byte, OFF_C);
+			HAL_Delay(1000);
+			transmit(add_byte, ON_AND_STEP_UP_C);
+			HAL_Delay(1000);
+			transmit(add_byte, OFF_C);
+			HAL_Delay(1000);
+		}else {response = 0;}
+		HAL_Delay(500);
+	}
+
+}
+
+uint8_t recieve()
+{
+
+	bool previousLogicLevel = 1;
+	bool currentLogicLevel = 1;
+	uint8_t arrLength = 20;
+	uint8_t timeArray[arrLength];
+	uint8_t i = 0;
+	uint8_t k = 0;
+	bool logicLevelArray[arrLength];
+	uint32_t response = 0;
+	getResponse=false;
+
+	__HAL_TIM_SET_COUNTER(&htim4,0);  // set the counter value a 0
+	__HAL_TIM_ENABLE(&htim4);
+	uint32_t startFuncTime = micros();
+
+	while (micros() - startFuncTime < daliTimeout && i < arrLength)
+	{
+		HAL_ADC_Start(&hadc1);
+		uint32_t value = HAL_ADC_GetValue(&hadc1);
+		printf("value = %ld\r\n", value);
+		if(value > analogLevel){currentLogicLevel = 1;}else{currentLogicLevel = 0;}
+		if (previousLogicLevel != currentLogicLevel){
+			timeArray[i] = micros() - startFuncTime;
+			logicLevelArray[i] = currentLogicLevel;
+			previousLogicLevel = currentLogicLevel;
+			getResponse = true;
+		}
+		arrLength = i;
+
+		//decoding to manchester
+		for (i = 0; i < arrLength - 1; i++) {
+			if ((timeArray[i + 1] - timeArray[i]) > 0.75 * period) {
+				for (k = arrLength; k > i; k--) {
+					timeArray[k] = timeArray[k - 1];
+					logicLevelArray[k] = logicLevelArray[k - 1];
+				}
+				arrLength++;
+				timeArray[i + 1] = (timeArray[i] + timeArray[i + 2]) / 2;
+				logicLevelArray[i + 1] = logicLevelArray[i];
+			}
+
+		}
+	}
+	return response;
+}
+
+
+
 /* USER CODE END 4 */
 
 /**

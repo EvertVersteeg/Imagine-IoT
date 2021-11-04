@@ -1,0 +1,4 @@
+getResponse
+daliTimeout
+__HAL_TIM_GET_COUNTER(&htim4)
+msgMode
