@@ -7,6 +7,7 @@
 C_SRCS += \
 ../Core/Src/MY_CS43L22.c \
 ../Core/Src/audioI2S.c \
+../Core/Src/lcd.c \
 ../Core/Src/main.c \
 ../Core/Src/stm32f4xx_hal_msp.c \
 ../Core/Src/stm32f4xx_hal_timebase_tim.c \
@@ -19,6 +20,7 @@ C_SRCS += \
 OBJS += \
 ./Core/Src/MY_CS43L22.o \
 ./Core/Src/audioI2S.o \
+./Core/Src/lcd.o \
 ./Core/Src/main.o \
 ./Core/Src/stm32f4xx_hal_msp.o \
 ./Core/Src/stm32f4xx_hal_timebase_tim.o \
@@ -31,6 +33,7 @@ OBJS += \
 C_DEPS += \
 ./Core/Src/MY_CS43L22.d \
 ./Core/Src/audioI2S.d \
+./Core/Src/lcd.d \
 ./Core/Src/main.d \
 ./Core/Src/stm32f4xx_hal_msp.d \
 ./Core/Src/stm32f4xx_hal_timebase_tim.d \

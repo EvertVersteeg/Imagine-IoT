@@ -151,11 +151,12 @@ int main(void)
   printf("Start\r\n");
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
   msgMode = true;
-  //initialisation();
+
   //test();
   busTest();
+  //initialisation();
   //msgMode = true;
-  //scanShortAdd();
+  scanShortAdd();
   getResponse = false;
 
   /* USER CODE END 2 */
@@ -581,11 +582,11 @@ void busTest(void)
 	printf("Start bus test\r\n");
 	HAL_Delay(100);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
-	transmit(BROADCAST_C, OFF_C);
+	transmit(BROADCAST_C, OFF_C);  //0x00 FE
 	printf ("Lampen 2s uit\r\n");
 	HAL_Delay(2000);
 	transmit(BROADCAST_C, ON_AND_STEP_UP_C);
-	printf ("Lampen 2s aan\r\n");
+	printf ("Lampen 2s aan\r\n");  //0x00 DE
 	HAL_Delay(2000);
 	transmit(BROADCAST_C, OFF_C);
 	printf ("Lampen 2s uit\r\n");
@@ -595,10 +596,10 @@ void busTest(void)
 	//Receive response from luminaries: max and min level
 	//transmit(BROADCAST_C, QUERY_STATUS);
 	maxLevel = maxResponseLevel();
-	printf("maxResponseLevel = %d\r\n", maxLevel);
+	printf("maxResponseLevel = %d\r\n", maxLevel); //0x00 EC EB
 	//transmit(BROADCAST_C, QUERY_STATUS);
 	minLevel = minResponseLevel();
-	printf("minResponseLevel = %d\r\n", minLevel);
+	printf("minResponseLevel = %d\r\n", minLevel); //0x00 EC EB
 
 	analogLevel = (uint16_t)(maxLevel + minLevel) / 2;
 	printf("analogLevel = %d\r\n", analogLevel);
@@ -783,7 +784,7 @@ uint8_t recieve()
 	{
 		HAL_ADC_Start(&hadc1);
 		uint32_t value = HAL_ADC_GetValue(&hadc1);
-		printf("value = %ld\r\n", value);
+		//printf("value = %ld\r\n", value);
 		if(value > analogLevel){currentLogicLevel = 1;}else{currentLogicLevel = 0;}
 		if (previousLogicLevel != currentLogicLevel){
 			timeArray[i] = micros() - startFuncTime;
@@ -807,6 +808,7 @@ uint8_t recieve()
 
 		}
 	}
+	printf("response = %ld\r\n", response);
 	return response;
 }
 

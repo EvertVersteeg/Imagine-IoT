@@ -1,0 +1,37 @@
+/*
+ * lcd.h
+ *
+ *  Created on: 15 nov. 2021
+ *      Author: evers
+ */
+
+#ifndef INC_LCD_H_
+#define INC_LCD_H_
+
+#define LCD_display_on()     LCD_writecontrol(0x0E)
+#define LCD_display_off()    LCD_writecontrol(0x08)
+#define LCD_cursor_blink()   LCD_writecontrol(0x0F)
+#define LCD_cursor_on()      LCD_writecontrol(0x0E)
+#define LCD_cursor_off()     LCD_writecontrol(0x0C)
+#define LCD_cursor_left()    LCD_writecontrol(0x10)
+#define LCD_cursor_right()   LCD_writecontrol(0x14)
+#define LCD_display_sleft()  LCD_writecontrol(0x18)
+#define LCD_display_sright() LCD_writecontrol(0x1C)
+
+#define eenregel										// define voor 1x16 display
+#define  STARTBIT       0
+#define Bit_RESET  0
+#define Bit_SET  1
+
+
+
+//Functie om alle vier de Bits naar het display te resetten
+void ClearBits(void);
+
+//Functie om de cursor naar de home positie te zetten
+void LCD_cursor_home(void);
+
+//Functie om een commando naar het display te geven
+void LCD_writecontrol(unsigned char data);
+
+#endif /* INC_LCD_H_ */

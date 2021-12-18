@@ -49,7 +49,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/usbh_diskio.h \
  ../USB_HOST/App/usb_host.h ../Core/Inc/audioI2S.h \
- ../Core/Inc/MY_CS43L22.h ../Core/Inc/wav_player.h
+ ../Core/Inc/MY_CS43L22.h ../Core/Inc/wav_player.h ../Core/Inc/lcd.h
 
 ../Core/Inc/main.h:
 
@@ -164,3 +164,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/MY_CS43L22.h:
 
 ../Core/Inc/wav_player.h:
+
+../Core/Inc/lcd.h:

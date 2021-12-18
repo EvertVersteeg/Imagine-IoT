@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="ontvangen"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="ontvangen"/>
+			<item value="delay_LCD"/>
+			<item value="STARTBIT"/>
+			<item value="LCD_writenibble"/>
+			<item value="curpos"/>
+			<item value="beginBoodschap"/>
+			<item value="LCD_writecontrol"/>
+			<item value="LCD_D7"/>
+			<item value="LCD_DATA "/>
+			<item value="GPIO_ResetBits"/>
+			<item value="led"/>
 			<item value="MODE_ANALOG "/>
 			<item value="CAN_FILTERMODE_IDMASK"/>
 			<item value="TxMailbox"/>
 			<item value="CAN_filter_FIFO"/>
-			<item value="FilterFIFOAssignment"/>
-			<item value="CAN_filter_mode"/>
-			<item value="HAL_CAN_ConfigFilter(CAN_HandleTypeDef *hcan, CAN_FilterTypeDef *sFilterConfig)"/>
-			<item value="@ref CAN_filter_activation"/>
-			<item value="FilterBank"/>
-			<item value="GPIO_Pi"/>
-			<item value="GPIO_Pin"/>
-			<item value="filter"/>
-			<item value="GetRxMessage"/>
-			<item value="activate"/>
-			<item value="HAL_CAN_Start"/>
 		</list>
 		<list key="replacehistory">
 		</list>

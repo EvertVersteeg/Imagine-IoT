@@ -1,0 +1,20 @@
+/*
+ * lcd.c
+ *
+ *  Created on: 15 nov. 2021
+ *      Author: evers
+ */
+#include "lcd.h"
+#include "main.h"
+#include "fatfs.h"
+#include "usb_host.h"
+
+void LCD_clear(void);
+
+void ClearBits(void)
+{
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_3, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_5, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_RESET);
+}

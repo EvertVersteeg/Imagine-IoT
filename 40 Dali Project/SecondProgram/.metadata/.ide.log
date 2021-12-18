@@ -3761,3 +3761,15 @@
 2021-10-22 13:27:54,063 [INFO] Gpio:254 - dependency for GPIO [ADC1, RCC, SYS, USART2]
 2021-10-22 13:27:54,143 [INFO] DmaTabbedPanel:198 - Cannot restore the selected Tab for DMA
 2021-10-22 13:27:59,652 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-11-22 14:22:19,053 [INFO] Activator:177 - 
+
+
+2021-11-22 14:22:19,054 [INFO] Activator:178 - !SESSION log4j initialized
+2021-11-22 14:33:56,211 [INFO] Activator:177 - 
+
+
+2021-11-22 14:33:56,213 [INFO] Activator:178 - !SESSION log4j initialized
+2021-12-06 14:46:07,260 [INFO] Activator:177 - 
+
+
+2021-12-06 14:46:07,262 [INFO] Activator:178 - !SESSION log4j initialized

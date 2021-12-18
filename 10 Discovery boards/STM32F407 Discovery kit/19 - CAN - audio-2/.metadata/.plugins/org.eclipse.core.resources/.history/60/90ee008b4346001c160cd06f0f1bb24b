@@ -1,0 +1,33 @@
+/*
+ * lcd.c
+ *
+ *  Created on: 15 nov. 2021
+ *      Author: evers
+ */
+#include "lcd.h"
+#include "main.h"
+
+extern unsigned char curpos; 								// remember cursorposition
+
+//Functie om alle vier de Bits naar het display te resetten
+void ClearBits(void)
+{
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_3, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_5, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_RESET);
+}
+
+//Functie om de cursor naar de home positie te zetten
+void LCD_cursor_home(void)
+{
+   LCD_writecontrol(0x02); // cursur home
+   curpos=0;               // reset position
+}
+
+// Stuurt een commando naar het display
+void LCD_writecontrol(unsigned char data)
+{
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+    LCD_writebyte(data);
+}
